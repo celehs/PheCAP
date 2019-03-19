@@ -1,0 +1,8 @@
+pandoc: 2.2.1
+pkgdown: 1.1.0
+pkgdown_sha: ~
+articles:
+  ex1-sim: ex1-sim.html
+  ex2-ehr: ex2-ehr.html
+  main: main.html
+
