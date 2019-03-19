@@ -1,0 +1,20 @@
+template:
+  params:
+    bootswatch: spacelab
+
+navbar:
+  title: "PheCAP"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Main Steps"
+      href: articles/main.html  
+    - text: "Examples"
+      menu:
+      - text: "Simulated Data"
+        href: articles/ex1-sim.html  
+      - text: "Real EHR Data"
+        href: articles/ex2-ehr.html  
+    - text: "Reference"
+      href: reference/index.html
