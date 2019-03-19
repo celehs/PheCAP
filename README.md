@@ -14,6 +14,10 @@ Install development version from GitHub:
 devtools::install_github("celehs/PheCAP")
 ```
 
+## Get Started
+
+Follow the [main steps](https://celehs.github.io/PheCAP/articles/main.html), and then try the R codes from the [simulated data](https://celehs.github.io/PheCAP/articles/ex1-sim.html) and [real EHR data](https://celehs.github.io/PheCAP/articles/ex2-ehr.html) examples. 
+
 ## References
 
 - Yu, S., Chakrabortty, A., Liao, K. P., Cai, T., Ananthakrishnan, A. N., Gainer, V. S., … Cai, T. (2016). Surrogate-assisted feature extraction for high-throughput phenotyping. Journal of the American Medical Informatics Association, ocw135. <[doi:10.1093/jamia/ocw135](https://doi.org/10.1093/jamia/ocw135)>
