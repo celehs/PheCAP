@@ -8,8 +8,8 @@ Yu et al. (2017) <[doi:10.1093/jamia/ocw135](https://doi.org/10.1093/jamia/ocw13
 ## Installation
 
 Install development version from GitHub:
-
-```{r, eval=FALSE}
+ 
+```r
 # install.packages("devtools")
 devtools::install_github("celehs/PheCAP")
 ```
