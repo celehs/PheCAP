@@ -115,7 +115,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Define or Read Datasets for Phenotyping</h1>
-    <small class="dont-index">Source: <a href='https://github.com/celehs/PheCAP/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    
     <div class="hidden name"><code>PhecapData.Rd</code></div>
     </div>
 
@@ -126,8 +126,9 @@
     </div>
 
     <pre class="usage"><span class='fu'>PhecapData</span>(
-<span class='no'>data</span>, <span class='no'>hu_feature</span>, <span class='no'>label</span>, <span class='no'>validation</span>,
-<span class='kw'>patient_id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>seed</span> <span class='kw'>=</span> <span class='fl'>12300L</span>, <span class='kw'>feature_transformation</span> <span class='kw'>=</span> <span class='no'>log1p</span>)</pre>
+  <span class='no'>data</span>, <span class='no'>hu_feature</span>, <span class='no'>label</span>, <span class='no'>validation</span>,
+  <span class='kw'>patient_id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>subject_weight</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>seed</span> <span class='kw'>=</span> <span class='fl'>12300L</span>, <span class='kw'>feature_transformation</span> <span class='kw'>=</span> <span class='no'>log1p</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -172,8 +173,13 @@ will be drawn from all labeled samples.</p></td>
     <tr>
       <th>patient_id</th>
       <td><p>A character vector for the column names, if any, that uniquely identifies
-each patient. Such variables must appear in the data.
+each patient.
+Such variables must appear in the data.
 patient_id can be NULL if such fields are not contained in the data.</p></td>
+    </tr>
+    <tr>
+      <th>subject_weight</th>
+      <td><p>An optional numeric vector of weights for observations.</p></td>
     </tr>
     <tr>
       <th>seed</th>
@@ -194,6 +200,10 @@ no transformation will be done on any of the feature.</p></td>
 
     <p>An object of class <code>PhecapData</code>.</p>
     
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
+    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -202,6 +212,8 @@ no transformation will be done on any of the feature.</p></td>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
+
+      <li><a href="#see-also">See also</a></li>
           </ul>
 
   </div>
@@ -209,7 +221,7 @@ no transformation will be done on any of the feature.</p></td>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>A Synthetic EHR Dataset — ehr_data • PheCAP</title>
+<title>Perform Majority Voting on the CUIs from Multiple Knowledge Sources — phecap_perform_majority_voting • PheCAP</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,12 +30,10 @@
 
 
 
-<meta property="og:title" content="A Synthetic EHR Dataset — ehr_data" />
+<meta property="og:title" content="Perform Majority Voting on the CUIs from Multiple Knowledge Sources — phecap_perform_majority_voting" />
 
-<meta property="og:description" content="This dataset gives a sample dataset for EHR phenotyping.
-  It contains counts for ICD codes, counts for NLP mentions,
-  healthcare utilization (HU) features for all observations.
-  It also contains the accurate phenotypes for 181 observations." />
+<meta property="og:description" content="Read parsed knowledge sources and identify CUIs.
+Generate a list of CUIs that appear in at least half of the sources." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -117,33 +115,43 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>A Synthetic EHR Dataset</h1>
+    <h1>Perform Majority Voting on the CUIs from Multiple Knowledge Sources</h1>
     
-    <div class="hidden name"><code>ehr_data.Rd</code></div>
+    <div class="hidden name"><code>phecap_perform_majority_voting.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>This dataset gives a sample dataset for EHR phenotyping.
-  It contains counts for ICD codes, counts for NLP mentions,
-  healthcare utilization (HU) features for all observations.
-  It also contains the accurate phenotypes for 181 observations.</p>
+    <p>Read parsed knowledge sources and identify CUIs.
+Generate a list of CUIs that appear in at least half of the sources.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/data'>data</a></span>(<span class='no'>ehr_data</span>)</pre>
-        
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <pre class="usage"><span class='fu'>phecap_perform_majority_voting</span>(
+  <span class='no'>input_folder</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>input_folder</th>
+      <td><p>a character scalar for the path to the folder that contains the parsed knowledge sources</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A data.frame with 10000 observations of 588 variables.</p>
+    <p>A character vector consisting of CUIs that
+pass the majority voting criterion.</p>
     
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#format">Format</a></li>
+      <li><a href="#value">Value</a></li>
           </ul>
 
   </div>

@@ -32,7 +32,8 @@
 
 <meta property="og:title" content="Run Surrogate-Assisted Feature Extraction (SAFE) — phecap_run_feature_extraction" />
 
-<meta property="og:description" content="Run surrogate-assisted feature extraction (SAFE) using unlabeled data and subsampling." />
+<meta property="og:description" content="Run surrogate-assisted feature extraction (SAFE)
+using unlabeled data and subsampling." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -115,20 +116,22 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Run Surrogate-Assisted Feature Extraction (SAFE)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/celehs/PheCAP/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    
     <div class="hidden name"><code>phecap_run_feature_extraction.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Run surrogate-assisted feature extraction (SAFE) using unlabeled data and subsampling.</p>
+    <p>Run surrogate-assisted feature extraction (SAFE)
+using unlabeled data and subsampling.</p>
     
     </div>
 
     <pre class="usage"><span class='fu'>phecap_run_feature_extraction</span>(
-<span class='no'>data</span>, <span class='no'>surrogates</span>,
-<span class='kw'>subsample_size</span> <span class='kw'>=</span> <span class='fl'>1000L</span>, <span class='kw'>num_subsamples</span> <span class='kw'>=</span> <span class='fl'>200L</span>,
-<span class='kw'>start_seed</span> <span class='kw'>=</span> <span class='fl'>45600L</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>0L</span>)</pre>
+  <span class='no'>data</span>, <span class='no'>surrogates</span>,
+  <span class='kw'>subsample_size</span> <span class='kw'>=</span> <span class='fl'>1000L</span>, <span class='kw'>num_subsamples</span> <span class='kw'>=</span> <span class='fl'>200L</span>,
+  <span class='kw'>dropout_proportion</span> <span class='kw'>=</span> <span class='fl'>0</span>, <span class='kw'>frequency_cutoff</span> <span class='kw'>=</span> <span class='fl'>0.5</span>,
+  <span class='kw'>start_seed</span> <span class='kw'>=</span> <span class='fl'>45600L</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>0L</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -151,8 +154,19 @@ list(PhecapSurrogate(...), PhecapSurrogate(...))</p></td>
       <td><p>The number of subsamples drawn for each surrogate</p></td>
     </tr>
     <tr>
+      <th>dropout_proportion</th>
+      <td><p>A scalar between 0 and 1. If it is positive,
+for each predictor a random subset of observations will be set to zero</p></td>
+    </tr>
+    <tr>
+      <th>frequency_cutoff</th>
+      <td><p>A scalar between 0 and 1.
+Variables selected in at least this proportion of the subsamples
+are the variables finally selected</p></td>
+    </tr>
+    <tr>
       <th>start_seed</th>
-      <td><p>in the i-th subsample, the seed is set to start_seed + i.</p></td>
+      <td><p>in the i-th subsample, the seed is set to start_seed + i</p></td>
     </tr>
     <tr>
       <th>verbose</th>
@@ -161,16 +175,24 @@ or remain quiet if <code>verbose</code> is zero</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A character vector consisting of the names of the variables selected,
-with attribute frequency, which consists of the proportion of being selected
-among all subsamples for each variable.</p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>In this unlabeled setting, the extremes of each surrogate are used to define cases and 
-controls. The variables selected are those selected in at least half of the subsamples.</p>
+    <p>In this unlabeled setting, the extremes of each surrogate
+are used to define cases and controls.
+The variables selected are
+those selected in at least half (or the proportion specified)
+of the subsamples.</p>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>An object of class <code>PhecapFeatureExtraction</code>, with components</p>
+<dt>selected</dt><dd><p>the names of selected features</p></dd>
+  <dt>frequency</dt><dd><p>the proportion of being selected for each feature</p></dd>
+
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
     
 
   </div>
@@ -179,9 +201,11 @@ controls. The variables selected are those selected in at least half of the subs
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       
+      <li><a href="#details">Details</a></li>
+
       <li><a href="#value">Value</a></li>
 
-      <li><a href="#details">Details</a></li>
+      <li><a href="#see-also">See also</a></li>
           </ul>
 
   </div>
@@ -189,7 +213,7 @@ controls. The variables selected are those selected in at least half of the subs
 
       <footer>
       <div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

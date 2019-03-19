@@ -1,17 +1,19 @@
 ## model fitting ----
 
-fit_plain <- function(x, y, ...)
+fit_plain <- function(
+  x, y, subject_weight, penalty_weight = NULL, ...)
 {
   family <- binomial()
   if (length(unique(y)) > 2L) {
     family <- quasibinomial()
   }
-  as.double(coef(glm(y ~ x, family = family)))
+  model <- glm(y ~ x, family = family, weights = subject_weight)
+  as.double(coef(model))
 }
 
 
-fit_lasso_cv <- function(
-  x, y, penalty_weight = NULL, ...)
+fit_ridge_cv <- function(
+  x, y, subject_weight, penalty_weight = NULL, ...)
 {
   if (!is.matrix(x)) {
     x <- as.matrix(x)
@@ -20,22 +22,23 @@ fit_lasso_cv <- function(
     penalty_weight <- rep(1.0, ncol(x))
   }
   if (sum(penalty_weight) < 1e-4 || ncol(x) == 1L) {
-    return(fit_plain(x, y))
+    return(fit_plain(x, y, subject_weight))
   }
   if (!is.matrix(y) && length(unique(y)) > 2L) {
     y <- cbind(1.0 - y, y)
   }
   penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
   model <- cv.glmnet(
-    x, y, family = "binomial", thresh = 5e-7,
-    penalty.factor = penalty_weight, 
-    nlambda = 50L, lambda.min.ratio = 5e-3)
+    x, y, weights = subject_weight, alpha = 0.05,
+    family = "binomial", thresh = 5e-7,
+    penalty.factor = penalty_weight,
+    nlambda = 100L, lambda.min.ratio = 1e-4)
   as.double(coef(model, s = "lambda.min"))
 }
 
 
-fit_lasso_bic <- function(
-  x, y, penalty_weight = NULL, ...)
+fit_lasso_cv <- function(
+  x, y, subject_weight, penalty_weight = NULL, ...)
 {
   if (!is.matrix(x)) {
     x <- as.matrix(x)
@@ -44,22 +47,78 @@ fit_lasso_bic <- function(
     penalty_weight <- rep(1.0, ncol(x))
   }
   if (sum(penalty_weight) < 1e-4 || ncol(x) == 1L) {
-    return(fit_plain(x, y))
+    return(fit_plain(x, y, subject_weight))
+  }
+  if (!is.matrix(y) && length(unique(y)) > 2L) {
+    y <- cbind(1.0 - y, y)
+  }
+  penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
+  model <- cv.glmnet(
+    x, y, weights = subject_weight,
+    family = "binomial", thresh = 5e-7,
+    penalty.factor = penalty_weight,
+    nlambda = 100L, lambda.min.ratio = 1e-3)
+  as.double(coef(model, s = "lambda.min"))
+}
+
+
+fit_lasso_bic <- function(
+  x, y, subject_weight, penalty_weight = NULL, ...)
+{
+  if (!is.matrix(x)) {
+    x <- as.matrix(x)
+  }
+  if (is.null(penalty_weight)) {
+    penalty_weight <- rep(1.0, ncol(x))
+  }
+  if (sum(penalty_weight) < 1e-4 || ncol(x) == 1L) {
+    return(fit_plain(x, y, subject_weight))
   }
   if (!is.matrix(y) && length(unique(y)) > 2L) {
     y <- cbind(1.0 - y, y)
   }
   penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
   model <- glmnet(
-    x, y, family = "binomial", thresh = 5e-7,
-    penalty.factor = penalty_weight, 
-    nlambda = 50L, lambda.min.ratio = 5e-3)
+    x, y, weights = subject_weight,
+    family = "binomial", thresh = 5e-7,
+    penalty.factor = penalty_weight,
+    nlambda = 100L, lambda.min.ratio = 1e-3)
   n <- length(y)
   dev <- deviance(model)
   nonzero <- sapply(predict(model, type = "nonzero"), length) + 1L
   complexity <- nonzero * log(n)
   lambda <- model$lambda[which.min(dev + complexity)]
   as.double(predict(model, s = lambda, type = "coefficients"))
+}
+
+
+fit_alasso_cv <- function(
+  x, y, subject_weight, penalty_weight = NULL, gamma = 1, ...)
+{
+  init <- fit_ridge_cv(x, y, subject_weight, penalty_weight, ...)
+  alasso_weight <- 1.0 / abs(init[-1L]) ** gamma
+  alasso_weight <- pmin(pmax(alasso_weight, 1e-4), 1e4)
+  if (is.null(penalty_weight)) {
+    penalty_weight <- alasso_weight
+  } else {
+    penalty_weight <- penalty_weight * alasso_weight
+  }
+  fit_lasso_cv(x, y, subject_weight, penalty_weight, ...)
+}
+
+
+fit_alasso_bic <- function(
+  x, y, subject_weight, penalty_weight = NULL, gamma = 1, ...)
+{
+  init <- fit_ridge_cv(x, y, subject_weight, penalty_weight, ...)
+  alasso_weight <- 1.0 / abs(init[-1L]) ** gamma
+  alasso_weight <- pmin(pmax(alasso_weight, 1e-4), 1e4)
+  if (is.null(penalty_weight)) {
+    penalty_weight <- alasso_weight
+  } else {
+    penalty_weight <- penalty_weight * alasso_weight
+  }
+  fit_lasso_bic(x, y, subject_weight, penalty_weight, ...)
 }
 
 
@@ -72,13 +131,19 @@ predict_linear <- function(beta, x, ...)
 }
 
 
-fit_svm <- function(x, y, ...)
+fit_svm <- function(
+  x, y, subject_weight, ...)
 {
+  if (!(
+    missing(subject_weight) || is.null(subject_weight) ||
+    sd(subject_weight) < 1e-8)) {
+    warning("'subject_weight' not supported in SVM")
+  }
   if (requireNamespace("e1071", quietly = TRUE)) {
     y1 <- factor(y, c(0, 1))
     tuning <- e1071::tune.svm(
       x, y1, gamma = c(0.2, 1, 5) / ncol(x), cost = 4.0 ** (-5L : 5L),
-      kernel = "radial", type = "C-classification", 
+      kernel = "radial", type = "C-classification",
       probability = TRUE)
     return(tuning$best.model)
   } else {
@@ -98,83 +163,157 @@ predict_svm <- function(beta, x, ...)
 }
 
 
-fit_rf <- function(x, y, ...)
+fit_rf <- function(
+  x, y, subject_weight, ...)
 {
-  if (requireNamespace("randomForest", quietly = TRUE)) {
-    return(randomForest::randomForest(x, factor(y, c(0, 1))))
+  if (requireNamespace("randomForestSRC", quietly = TRUE)) {
+    y <- factor(y, c(0, 1))
+    return(randomForestSRC::rfsrc(
+      y ~ ., data = data.frame(y = y, x = x),
+      case.wt = subject_weight))
   } else {
-    stop("Package randomForest not found")
+    stop("Package randomForestSRC not found")
   }
 }
 
 
 predict_rf <- function(beta, x, ...)
 {
-  if (requireNamespace("randomForest", quietly = TRUE)) {
-    return(as.numeric(predict(beta, x, type = "prob")[, "1"]))
+  if (requireNamespace("randomForestSRC", quietly = TRUE)) {
+    return(as.numeric(
+      predict(beta, data.frame(x = x))$predicted[, "1"]))
   } else {
-    stop("Package randomForest not found")
+    stop("Package randomForestSRC not found")
   }
+}
+
+
+fit_xgb <- function(
+  x, y, subject_weight, ...)
+{
+  if (requireNamespace("xgboost", quietly = TRUE)) {
+    return(xgboost::xgboost(
+      data = x, label = y,
+      weight = subject_weight,
+      nrounds = 20, verbose = 0,
+      objective = "binary:logistic"))
+  } else {
+    stop("Package xgboost not found")
+  }
+}
+
+
+predict_xgb <- function(beta, x, ...)
+{
+  if (requireNamespace("xgboost", quietly = TRUE)) {
+    return(as.numeric(predict(beta, x)))
+  } else {
+    stop("Package xgboost not found")
+  }
+}
+
+
+## multiple models
+
+fit_multiple <- function(method, ...)
+{
+  all <- list(
+    plain = fit_plain,
+    ridge_cv = fit_ridge_cv,
+    lasso_cv = fit_lasso_cv,
+    lasso_bic = fit_lasso_bic,
+    alasso_cv = fit_alasso_cv,
+    alasso_bic = fit_alasso_bic,
+    svm = fit_svm,
+    rf = fit_rf,
+    xgb = fit_xgb)
+  relevant <- all[method]
+  beta <- lapply(relevant, function(f) f(...))
+  beta
+}
+
+
+predict_multiple <- function(beta_list, ...)
+{
+  all <- list(
+    plain = predict_linear,
+    ridge_cv = predict_linear,
+    lasso_cv = predict_linear,
+    lasso_bic = predict_linear,
+    alasso_cv = predict_linear,
+    alasso_bic = predict_linear,
+    svm = predict_svm,
+    rf = predict_rf,
+    xgb = predict_xgb)
+  predictions <- lapply(names(beta_list), function(method)
+    all[[method]](beta_list[[method]], ...))
+  predictions <- do.call("cbind", predictions)
+  rowMeans(predictions)
 }
 
 
 ## roc and auc ----
 
-get_roc <- function(
-  y_true, y_score, 
-  cut = seq(0.001, 0.999, 0.001),
-  tol = sqrt(.Machine$double.eps))
+get_raw_roc_auc <- function(y_true, y_score, subject_weight)
 {
-  i <- order(y_score, decreasing = TRUE)
-  y_score <- y_score[i]
-  y_true <- y_true[i]
-  
-  n <- length(y_true)
-  t1 <- sum(y_true)
-  t0 <- n - t1
-  p1 <- seq_len(n)
-  p0 <- n - p1
-  
-  true_positive <- cumsum(y_true)
-  false_positive <- p1 - true_positive
-  true_negative <- t0 - false_positive
-  
-  thr <- y_score
-  pct <- p1 / n
-  acc <- (true_positive + true_negative) / n
-  
-  tpr <- true_positive / t1
-  fpr <- false_positive / t0
-  tnr <- true_negative / t0
-  
-  ppv <- true_positive / p1
-  fdr <- false_positive / p1
-  npv <- true_negative / p0
-  
+  ties <- aggregate(
+    data.frame(
+      w0 = (1 - y_true) * subject_weight,
+      w1 = y_true * subject_weight),
+    list(y_score = y_score), sum)
+  ties <- ties[order(ties$y_score, decreasing = TRUE), ]
+
+  fact1 <- sum(ties$w1)
+  fact0 <- sum(ties$w0)
+  total <- fact1 + fact0
+
+  true_positive <- cumsum(ties$w1)
+  false_positive <- cumsum(ties$w0)
+  true_negative <- fact0 - false_positive
+
+  prediction1 <- true_positive + false_positive
+  prediction0 <- total - prediction1
+
+  thr <- ties$y_score
+  pct <- prediction1 / total
+  acc <- (true_positive + true_negative) / total
+
+  tpr <- true_positive / fact1
+  fpr <- false_positive / fact0
+  tnr <- true_negative / fact0
+
+  ppv <- true_positive / prediction1
+  fdr <- false_positive / prediction1
+  npv <- true_negative / prediction0
+  npv[length(npv)] <- 1
+
   sen <- tpr
   rec <- tpr
   spec <- tnr
   prec <- ppv
   f1 <- prec * rec / (prec + rec)
-  
-  i <- which(diff(thr) < -tol)
-  df <- data.frame(
-    thr = thr[i], 
-    pct = pct[i], 
-    acc = acc[i],
-    tpr = tpr[i], 
-    fpr = fpr[i], 
-    tnr = tnr[i],
-    ppv = ppv[i], 
-    fdr = fdr[i], 
-    npv = npv[i],
-    sen = sen[i], 
-    spec = spec[i], 
-    prec = prec[i], 
-    rec = rec[i],
-    f1 = f1[i])
-  df <- df[order(df$thr), ]
-  
+
+  term1 <- diff(c(0, 1 - spec, 1))
+  term2 <- c(0, sen) + c(sen, 1)
+  auc <- sum(0.5 * term1 * term2)
+
+  roc <- data.frame(
+    thr = thr, pct = pct, acc = acc,
+    tpr = tpr, fpr = fpr, tnr = tnr,
+    ppv = ppv, fdr = fdr, npv = npv,
+    sen = sen, rec = rec, spec = spec, prec = prec,
+    f1 = f1)
+
+  list(auc = auc, roc = roc)
+}
+
+
+get_roc <- function(
+  y_true, y_score, subject_weight,
+  cut = seq(0.001, 0.999, 0.001))
+{
+  df <- get_raw_roc_auc(y_true, y_score, subject_weight)$roc
+
   f <- function(x, y) {
     approxfun(x, y, method = "constant", rule = 2L)(cut)
   }
@@ -182,7 +321,7 @@ get_roc <- function(
     cut = cut,
     pct = f(df$thr, df$pct),
     acc = f(df$thr, df$acc),
-    tpr = f(df$thr, df$tor),
+    tpr = f(df$thr, df$tpr),
     fpr = f(df$thr, df$fpr),
     tnr = f(df$thr, df$tnr),
     ppv = f(df$thr, df$ppv),
@@ -193,17 +332,13 @@ get_roc <- function(
     prec = f(df$thr, df$prec),
     rec = f(df$thr, df$rec),
     f1 = f(df$thr, df$f1))
-  
+
   return(df)
 }
 
 
-get_auc <- function(y_true, y_score) 
+get_auc <- function(
+  y_true, y_score, subject_weight)
 {
-  t1 <- sum(y_true)
-  t0 <- length(y_true) - t1
-  r <- rank(y_score, ties.method = "average")
-  auc <- (sum(r[y_true > 0.5]) - t1 * (t1 + 1) / 2) / t1 / t0
-  
-  return(auc)
+  get_raw_roc_auc(y_true, y_score, subject_weight)$auc
 }

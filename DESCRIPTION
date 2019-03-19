@@ -1,33 +1,24 @@
 Package: PheCAP
-Title: High-Throughput Phenotyping with Electronic Health Records using 
-    a Common Automated Pipeline
+Type: Package
+Title: High-Throughput Phenotyping with Electronic Health Records
+       using a Common Automated Pipeline
 Version: 1.0
-Authors@R: c(
-    person("Yichi", "Zhang", role = c("aut", "cre"), email = "yzhang52@ncsu.edu"),
-    person("Ming", "Yang", role = "aut"),
-    person("Tianxi", "Cai", role = "aut")
-    )
-Description: Implement surrogate-assisted feature extraction (SAFE) and common 
-    machine learning approaches to train and validate phenotyping models. 
-    Background and details about the methods can be found at Yu et al. (2017) 
-    <doi:10.1093/jamia/ocw135> and Liao et al. (2015) <doi:10.1136/bmj.h1885>.
+Date: 2019-03-16
+Authors@R: c(person("Yichi", "Zhang", role = c("aut", "cre"),
+		         email = "yichizhang@uri.edu"))
+Author: Yichi Zhang [aut, cre]
+Maintainer: Yichi Zhang <yichizhang@uri.edu>
+Description: Implement surrogate-assisted feature extraction (SAFE) and
+             common machine learning approaches to train and validate phenotyping models.
+             Background and details about the methods can be found at <doi:10.1093/jamia/ocw135> and <doi:10.1136/bmj.h1885>.
 URL: https://github.com/celehs/PheCAP
 BugReports: https://github.com/celehs/PheCAP/issues
-License: GPL-3
+License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 6.1.1
-Depends:
-    R (>= 3.0)
-Imports: 
-    stats, 
-    utils, 
-    graphics, 
-    methods, 
-    glmnet
-Suggests: 
-    knitr, 
-    ggplot2, 
-    e1071, 
-    randomForest
+ByteCompile: yes
+Imports: graphics, methods, stats, utils, glmnet, RMySQL
+Suggests: ggplot2, e1071, randomForestSRC, xgboost, knitr
 VignetteBuilder: knitr    
+Depends: R (>= 3.3.0)
+RoxygenNote: 6.1.1
 LazyData: true

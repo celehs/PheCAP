@@ -114,23 +114,19 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-##  97.124   0.108  97.238</code></pre>
+## 200.328   0.288 200.630</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"  
-## [7] "NLP243"   "NLP306"   "NLP403"</code></pre>
+## [7] "NLP306"   "NLP403"</code></pre>
 <p>Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">model &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(data, surrogates, feature_selected)
 model</code></pre></div>
 <pre><code>## Phenotyping model:
-##            (Intercept)               main_ICD               main_NLP 
-##              1.6266135              0.3797182              1.3387043 
-##      main_ICD&amp;main_NLP healthcare_utilization                  NLP56 
-##              0.0000000             -1.2363665              0.0000000 
-##                  NLP93                 NLP160                 NLP161 
-##              0.0000000              0.0000000              0.0000000 
-##                 NLP243                 NLP306                 NLP403 
-##              0.0000000              0.0000000              0.0000000 
+## $lasso_bic
+##  [1]  1.636105  0.381872  1.342744  0.000000 -1.242392  0.000000  0.000000
+##  [8]  0.000000  0.000000  0.000000  0.000000
+## 
 ## AUC on training data: 0.919 
 ## Average AUC on random splits: 0.905</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC</p>
@@ -145,7 +141,7 @@ validation</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">phenotype &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(data, model)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(phenotype)</code></pre></div>
 <pre><code>## 'data.frame':    10000 obs. of  1 variable:
-##  $ prediction: num  0.1054 0.9661 0.0504 0.0269 0.2279 ...</code></pre>
+##  $ prediction: num  0.1046 0.9663 0.0498 0.0264 0.2271 ...</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -155,7 +151,7 @@ validation</code></pre></div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

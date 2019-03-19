@@ -115,7 +115,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Plot ROC and Related Curves for Phenotyping Models</h1>
-    <small class="dont-index">Source: <a href='https://github.com/celehs/PheCAP/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    
     <div class="hidden name"><code>phecap_plot_roc_curves.Rd</code></div>
     </div>
 
@@ -126,16 +126,16 @@
     </div>
 
     <pre class="usage"><span class='fu'>phecap_plot_roc_curves</span>(
-<span class='no'>x</span>, <span class='kw'>axis_x</span> <span class='kw'>=</span> <span class='st'>"1 - spec"</span>, <span class='kw'>axis_y</span> <span class='kw'>=</span> <span class='st'>"sen"</span>,
-<span class='kw'>what</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"training"</span>, <span class='st'>"random-splits"</span>, <span class='st'>"validation"</span>),
-<span class='kw'>ggplot</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
+  <span class='no'>x</span>, <span class='kw'>axis_x</span> <span class='kw'>=</span> <span class='st'>"1 - spec"</span>, <span class='kw'>axis_y</span> <span class='kw'>=</span> <span class='st'>"sen"</span>,
+  <span class='kw'>what</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"training"</span>, <span class='st'>"random-splits"</span>, <span class='st'>"validation"</span>),
+  <span class='kw'>ggplot</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>x</th>
-      <td><p>either a single object of class PhecapModel or PhecapValidation 
+      <td><p>either a single object of class PhecapModel or PhecapValidation
 (returned from <code>phecap_train_phenotyping_model</code> or
 <code>phecap_validate_phenotyping_model</code>), or a named list of such objects</p></td>
     </tr>
@@ -165,7 +165,7 @@ Recognized quantities are the same as those in <code>axis_x</code>.</p></td>
     </tr>
     <tr>
       <th>what</th>
-      <td><p>TThe curves to be included in the figure.</p></td>
+      <td><p>The curves to be included in the figure.</p></td>
     </tr>
     <tr>
       <th>ggplot</th>
@@ -178,20 +178,26 @@ Otherwise, the base R graphics functions will be used.</p></td>
     </tr>
     </table>
     
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
+    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+      
+      <li><a href="#see-also">See also</a></li>
+          </ul>
 
   </div>
 </div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

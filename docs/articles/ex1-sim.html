@@ -133,7 +133,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-##  12.536   0.056  12.592</code></pre>
+##   8.772   0.000   8.771</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "ICD1" "ICD2" "NLP1" "NLP2" "NLP3"</code></pre>
@@ -141,16 +141,16 @@ data</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">model &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(data, surrogates, feature_selected)
 model</code></pre></div>
 <pre><code>## Phenotyping model:
-## (Intercept)        ICD1        NLP1          HU        ICD2        NLP2 
-##   -4.841289    1.691698    1.319161   -0.369438    0.000000    0.000000 
-##        NLP3 
-##    0.000000 
+## $lasso_bic
+## [1] -4.8667672  1.7010237  1.3281989 -0.3738916  0.0000000  0.0000000
+## [7]  0.0000000
+## 
 ## AUC on training data: 0.936 
 ## Average AUC on random splits: 0.933</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)
 validation</code></pre></div>
-<pre><code>## AUC on validation data: 0.942 
+<pre><code>## AUC on validation data: 0.943 
 ## AUC on training data: 0.936 
 ## Average AUC on random splits: 0.933</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(validation)</code></pre></div>
@@ -159,7 +159,7 @@ validation</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">phenotype &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(data, model)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/str">str</a></span>(phenotype)</code></pre></div>
 <pre><code>## 'data.frame':    8000 obs. of  1 variable:
-##  $ prediction: num  0.02719 0.63493 0.98312 0.00783 0.00125 ...</code></pre>
+##  $ prediction: num  0.0266 0.63665 0.98359 0.00764 0.00119 ...</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -169,7 +169,7 @@ validation</code></pre></div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

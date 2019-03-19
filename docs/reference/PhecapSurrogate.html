@@ -6,7 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Define a Surrogate Variable used inSurrogate-Assisted Feature Extraction (SAFE) — PhecapSurrogate • PheCAP</title>
+<title>Define a Surrogate Variable used in
+Surrogate-Assisted Feature Extraction (SAFE) — PhecapSurrogate • PheCAP</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +31,8 @@
 
 
 
-<meta property="og:title" content="Define a Surrogate Variable used inSurrogate-Assisted Feature Extraction (SAFE) — PhecapSurrogate" />
+<meta property="og:title" content="Define a Surrogate Variable used in
+Surrogate-Assisted Feature Extraction (SAFE) — PhecapSurrogate" />
 
 <meta property="og:description" content="Define a surrogate varible from existing features, and specify
 associated lower and upper cutoffs." />
@@ -115,8 +117,9 @@ associated lower and upper cutoffs." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Define a Surrogate Variable used inSurrogate-Assisted Feature Extraction (SAFE)</h1>
-    <small class="dont-index">Source: <a href='https://github.com/celehs/PheCAP/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    <h1>Define a Surrogate Variable used in
+Surrogate-Assisted Feature Extraction (SAFE)</h1>
+    
     <div class="hidden name"><code>PhecapSurrogate.Rd</code></div>
     </div>
 
@@ -140,23 +143,27 @@ the values of each variable.</p></td>
     </tr>
     <tr>
       <th>lower_cutoff</th>
-      <td><p>a numeric scalar. If the surrogate value of a patient is less than 
-or equal to this cutoff, then this patient is treated as a control in SAFE.</p></td>
+      <td><p>a numeric scalar. If the surrogate value of a patient is less than or equal to this cutoff,
+then this patient is treated as a control in SAFE.</p></td>
     </tr>
     <tr>
       <th>upper_cutoff</th>
-      <td><p>a numeric scalar. If the surrogate value of a patient is greater than 
-or equal to this cutoff, then this patient is treated as a case in SAFE.</p></td>
+      <td><p>a numeric scalar. If the surrogate value of a patient is greater than or equal to this cutoff,
+then this patient is treated as a case in SAFE.</p></td>
     </tr>
     </table>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>This function only stores the definition. No calculation is done.</p>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>An object of class <code>PhecapSurrogate</code>.</p>
     
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>This function only stores the definition. No calculation is done.</p>
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
     
 
   </div>
@@ -165,9 +172,11 @@ or equal to this cutoff, then this patient is treated as a case in SAFE.</p></td
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
       
+      <li><a href="#details">Details</a></li>
+
       <li><a href="#value">Value</a></li>
 
-      <li><a href="#details">Details</a></li>
+      <li><a href="#see-also">See also</a></li>
           </ul>
 
   </div>
@@ -175,7 +184,7 @@ or equal to this cutoff, then this patient is treated as a case in SAFE.</p></td
 
       <footer>
       <div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">

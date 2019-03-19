@@ -116,7 +116,7 @@ and evaluate its performance via random splits of the training dataset." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Train Phenotyping Model using the Training Labels</h1>
-    <small class="dont-index">Source: <a href='https://github.com/celehs/PheCAP/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
+    
     <div class="hidden name"><code>phecap_train_phenotyping_model.Rd</code></div>
     </div>
 
@@ -128,45 +128,59 @@ and evaluate its performance via random splits of the training dataset.</p>
     </div>
 
     <pre class="usage"><span class='fu'>phecap_train_phenotyping_model</span>(
-<span class='no'>data</span>, <span class='no'>surrogates</span>, <span class='no'>feature_selected</span>,
-<span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lasso_bic"</span>, <span class='kw'>train_percent</span> <span class='kw'>=</span> <span class='fl'>0.7</span>, <span class='kw'>num_splits</span> <span class='kw'>=</span> <span class='fl'>200L</span>,
-<span class='kw'>start_seed</span> <span class='kw'>=</span> <span class='fl'>78900L</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>0L</span>)</pre>
+  <span class='no'>data</span>, <span class='no'>surrogates</span>, <span class='no'>feature_selected</span>,
+  <span class='kw'>method</span> <span class='kw'>=</span> <span class='st'>"lasso_bic"</span>,
+  <span class='kw'>train_percent</span> <span class='kw'>=</span> <span class='fl'>0.7</span>, <span class='kw'>num_splits</span> <span class='kw'>=</span> <span class='fl'>200L</span>,
+  <span class='kw'>start_seed</span> <span class='kw'>=</span> <span class='fl'>78900L</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>0L</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>data</th>
-      <td><p>an object of class <code>PhecapData</code>, 
-obtained by calling <code><a href='PhecapData.html'>PhecapData(...)</a></code>.</p></td>
+      <td><p>an object of class <code>PhecapData</code>, obtained by calling <code><a href='PhecapData.html'>PhecapData(...)</a></code>.</p></td>
     </tr>
     <tr>
       <th>surrogates</th>
-      <td><p>a list of objects of class <code>PhecapSurrogate</code>, obtained by 
-something like <code><a href='https://www.rdocumentation.org/packages/base/topics/list'>list(PhecapSurrogate(...), PhecapSurrogate(...))</a></code>.</p></td>
+      <td><p>a list of objects of class <code>PhecapSurrogate</code>, obtained by something like
+<code><a href='https://www.rdocumentation.org/packages/base/topics/list'>list(PhecapSurrogate(...), PhecapSurrogate(...))</a></code>.
+The surrogates used here might be different from
+that used in feature extraction.</p></td>
     </tr>
     <tr>
       <th>feature_selected</th>
-      <td><p>a character vector of the features that should be included 
-in the model, probably returned by <code>phecap_run_feature_extraction</code>.</p></td>
+      <td><p>a character vector of the features that should be included in the model,
+probably returned by <code>phecap_run_feature_extraction</code>
+(but not necessary).
+The features listed here might be different from
+those returned from feature extraction.</p></td>
     </tr>
     <tr>
       <th>method</th>
-      <td><p>Either a character scalar or a list of two components.
-If a character scalar is used, possible values are
-<code>'plain'</code> (logistic regression without penalty),
-<code>'lasso_cv'</code> (logistic regression with lasso penalty and CV tuning),
-<code>'lasso_bic'</code> (logistic regression with lasso penalty and BIC tuning),
-<code>'svm'</code> (support vector machine with CV tuning, package <code>e1071</code> needed), and
-<code>'rf'</code> (random forest with default parameters, package <code>randomForest</code> needed).
-If a list is used, it should contain two named components:
-<code>fit</code> --- a function for model fitting, and
-<code>predict</code> ---- a function for prediction.</p></td>
+      <td><p>Either a character vector or a list of two components.
+If a character vector is used, possible entries are given below.
+When at least two methods are specified,
+the predicted probability is the simple average of the
+predicted probabilities from each method.</p><ul>
+<li><p><code>'plain'</code> (logistic regression without penalty)</p></li>
+<li><p><code>'ridge_cv'</code> (logistic regression with ridge penalty and CV tuning)</p></li>
+<li><p><code>'lasso_cv'</code> (logistic regression with lasso penalty and CV tuning)</p></li>
+<li><p><code>'lasso_bic'</code> (logistic regression with lasso penalty and BIC tuning)</p></li>
+<li><p><code>'alasso_cv'</code> (logistic regression with adaptive lasso penalty and CV tuning)</p></li>
+<li><p><code>'alasso_bic'</code> (logistic regression with adaptive lasso penalty and BIC tuning)</p></li>
+<li><p><code>'svm'</code> (support vector machine with CV tuning, package <code>e1071</code> needed, <code>subject_weight</code> not supported)</p></li>
+<li><p><code>'rf'</code> (random forest with default parameters, package <code>randomForestSRC</code> needed)</p></li>
+<li><p><code>'xgb'</code> (extreme gradient boosting with default parameters, package <code>xgboost</code> needed)</p></li>
+</ul><p>If a list is used, it should contain two named components as follows.</p><ul>
+<li><p><code>fit</code> (a function for model fitting, with arguments <code>x</code>, <code>y</code>, <code>subject_weight</code>, <code>penalty_weight</code>)</p></li>
+<li><p><code>predict</code> (a function for prediction, with arguments <code>object</code> which was returned by <code>fit</code>, <code>x</code> which was used as the new data to predict on)</p></li>
+</ul>
+</td>
     </tr>
     <tr>
       <th>train_percent</th>
-      <td><p>The percentage (between 0 and 1) of labels that are used for 
-model training during random splits</p></td>
+      <td><p>The percentage (between 0 and 1) of labels that are used for model training
+during random splits</p></td>
     </tr>
     <tr>
       <th>num_splits</th>
@@ -187,15 +201,19 @@ or remain quiet if verbose is zero</p></td>
 
     <p>An object of class <code>PhecapModel</code>, with components</p>
 <dt>coefficients</dt><dd><p>the fitted object</p></dd>
-<dt>method</dt><dd><p>the method used for model training</p></dd>
-<dt>feature_selected</dt><dd><p>the feature selected by SAFE</p></dd>
-<dt>train_roc</dt><dd><p>ROC on training dataset</p></dd>
-<dt>train_auc</dt><dd><p>AUC on training dataset</p></dd>
-<dt>split_roc</dt><dd><p>average ROC on random splits of training dataset</p></dd>
-<dt>split_auc</dt><dd><p>average AUC on random splits of training dataset</p></dd>
-<dt>fit_function</dt><dd><p>the function used for fitting</p></dd>
-<dt>predict_function</dt><dd><p>the function used for prediction</p></dd>
+  <dt>method</dt><dd><p>the method used for model training</p></dd>
+  <dt>feature_selected</dt><dd><p>the feature selected by SAFE</p></dd>
+  <dt>train_roc</dt><dd><p>ROC on training dataset</p></dd>
+  <dt>train_auc</dt><dd><p>AUC on training dataset</p></dd>
+  <dt>split_roc</dt><dd><p>average ROC on random splits of training dataset</p></dd>
+  <dt>split_auc</dt><dd><p>average AUC on random splits of training dataset</p></dd>
+  <dt>fit_function</dt><dd><p>the function used for fitting</p></dd>
+  <dt>predict_function</dt><dd><p>the function used for prediction</p></dd>
 
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
     
 
   </div>
@@ -205,6 +223,8 @@ or remain quiet if verbose is zero</p></td>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#value">Value</a></li>
+
+      <li><a href="#see-also">See also</a></li>
           </ul>
 
   </div>
@@ -212,7 +232,7 @@ or remain quiet if verbose is zero</p></td>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Yichi Zhang, Ming Yang, Tianxi Cai.</p>
+  <p>Developed by Yichi Zhang.</p>
 </div>
 
 <div class="pkgdown">
