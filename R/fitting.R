@@ -262,48 +262,48 @@ get_raw_roc_auc <- function(y_true, y_score, subject_weight)
       w1 = y_true * subject_weight),
     list(y_score = y_score), sum)
   ties <- ties[order(ties$y_score, decreasing = TRUE), ]
-
+  
   fact1 <- sum(ties$w1)
   fact0 <- sum(ties$w0)
   total <- fact1 + fact0
-
+  
   true_positive <- cumsum(ties$w1)
   false_positive <- cumsum(ties$w0)
   true_negative <- fact0 - false_positive
-
+  
   prediction1 <- true_positive + false_positive
   prediction0 <- total - prediction1
-
+  
   thr <- ties$y_score
   pct <- prediction1 / total
   acc <- (true_positive + true_negative) / total
-
+  
   tpr <- true_positive / fact1
   fpr <- false_positive / fact0
   tnr <- true_negative / fact0
-
+  
   ppv <- true_positive / prediction1
   fdr <- false_positive / prediction1
   npv <- true_negative / prediction0
   npv[length(npv)] <- 1
-
+  
   sen <- tpr
   rec <- tpr
   spec <- tnr
   prec <- ppv
-  f1 <- prec * rec / (prec + rec)
-
+  f1 <- 2*prec * rec / (prec + rec)
+  
   term1 <- diff(c(0, 1 - spec, 1))
   term2 <- c(0, sen) + c(sen, 1)
   auc <- sum(0.5 * term1 * term2)
-
+  
   roc <- data.frame(
     thr = thr, pct = pct, acc = acc,
     tpr = tpr, fpr = fpr, tnr = tnr,
     ppv = ppv, fdr = fdr, npv = npv,
     sen = sen, rec = rec, spec = spec, prec = prec,
     f1 = f1)
-
+  
   list(auc = auc, roc = roc)
 }
 
@@ -313,7 +313,7 @@ get_roc <- function(
   cut = seq(0.001, 0.999, 0.001))
 {
   df <- get_raw_roc_auc(y_true, y_score, subject_weight)$roc
-
+  
   f <- function(x, y) {
     approxfun(x, y, method = "constant", rule = 2L)(cut)
   }
@@ -332,7 +332,7 @@ get_roc <- function(
     prec = f(df$thr, df$prec),
     rec = f(df$thr, df$rec),
     f1 = f(df$thr, df$f1))
-
+  
   return(df)
 }
 
