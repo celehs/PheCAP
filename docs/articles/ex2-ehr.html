@@ -96,7 +96,7 @@
 data &lt;-<span class="st"> </span><span class="kw"><a href="../reference/PhecapData.html">PhecapData</a></span>(ehr_data, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>)
 data</code></pre></div>
 <pre><code>## PheCAP Data
-## Feature: 10000 observations of 587 variables
+## Feature: 10000 observations of 588 variables
 ## Label: 119 yes, 62 no, 9819 missing
 ## Size of training samples: 109
 ## Size of validation samples: 72</code></pre>
@@ -114,7 +114,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-## 188.196   0.324 188.536</code></pre>
+## 188.244   0.304 188.550</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"  
