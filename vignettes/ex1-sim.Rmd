@@ -78,9 +78,9 @@ Validate phenotyping model using validation label, and show the AUC and ROC.
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
-str(validation$valid_roc)
-str(validation$train_roc)
-str(validation$split_roc)
+head(validation$valid_roc) # ROC table: validation data
+head(validation$train_roc) # ROC table: training data
+head(validation$split_roc) # ROC table: random splits
 validation
 ```
 
@@ -92,6 +92,6 @@ Apply the model to all the patients to obtain predicted phenotype.
 
 ```{r}
 phenotype <- phecap_predict_phenotype(data, model)
-str(phenotype)
+head(phenotype) # predicted probability
 ```
 
