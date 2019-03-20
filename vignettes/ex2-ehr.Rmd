@@ -36,7 +36,7 @@ surrogates <- list(
 
 Run surrogate-assisted feature extraction (SAFE) and show result.
 
-```{r, cache=TRUE}
+```{r}
 system.time(feature_selected <- phecap_run_feature_extraction(data, surrogates))
 ```
 
@@ -55,6 +55,9 @@ Validate phenotyping model using validation label, and show the AUC and ROC
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
+str(validation$valid_roc)
+str(validation$train_roc)
+str(validation$split_roc)
 validation
 ```
 

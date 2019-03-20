@@ -78,6 +78,9 @@ Validate phenotyping model using validation label, and show the AUC and ROC.
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
+str(validation$valid_roc)
+str(validation$train_roc)
+str(validation$split_roc)
 validation
 ```
 
