@@ -115,7 +115,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-## 188.272   0.308 188.581</code></pre>
+## 188.496   0.260 188.756</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"  
@@ -138,7 +138,7 @@ model</code></pre></div>
 ## Average AUC on random splits: 0.905</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)
-validation<span class="op">$</span>valid_roc[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">100</span>, <span class="dv">900</span>, <span class="dv">100</span>), ] <span class="co"># ROC: validation data</span></code></pre></div>
+validation<span class="op">$</span>valid_roc[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">100</span>, <span class="dv">900</span>, <span class="dv">100</span>), ] </code></pre></div>
 <pre><code>##     cut       pct       acc       tpr       fpr       tnr       ppv
 ## 100 0.1 0.8194444 0.8611111 0.9454545 0.4117647 0.5882353 0.8813559
 ## 200 0.2 0.7777778 0.8750000 0.9272727 0.2941176 0.7058824 0.9107143
@@ -159,48 +159,6 @@ validation<span class="op">$</span>valid_roc[<span class="kw"><a href="https://w
 ## 700 0.04444444 0.5555556 0.7818182 0.8823529 0.9555556 0.7818182 0.8600000
 ## 800 0.05263158 0.4411765 0.6545455 0.8823529 0.9473684 0.6545455 0.7741935
 ## 900 0.07142857 0.3409091 0.4727273 0.8823529 0.9285714 0.4727273 0.6265060</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation<span class="op">$</span>train_roc[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">100</span>, <span class="dv">900</span>, <span class="dv">100</span>), ] <span class="co"># ROC: training data</span></code></pre></div>
-<pre><code>##     cut       pct       acc      tpr        fpr       tnr       ppv
-## 100 0.1 0.8073394 0.7431193 0.968750 0.57777778 0.4222222 0.7045455
-## 200 0.2 0.7339450 0.8165138 0.968750 0.40000000 0.6000000 0.7750000
-## 300 0.3 0.6880734 0.8623853 0.968750 0.28888889 0.7111111 0.8266667
-## 400 0.4 0.6605505 0.8715596 0.953125 0.24444444 0.7555556 0.8472222
-## 500 0.5 0.6422018 0.8899083 0.953125 0.20000000 0.8000000 0.8714286
-## 600 0.6 0.6146789 0.8623853 0.906250 0.20000000 0.8000000 0.8656716
-## 700 0.7 0.5688073 0.8532110 0.859375 0.15555556 0.8444444 0.8870968
-## 800 0.8 0.4678899 0.8073394 0.734375 0.08888889 0.9111111 0.9215686
-## 900 0.9 0.2935780 0.6513761 0.453125 0.06666667 0.9333333 0.9062500
-##            fdr       npv      sen      spec      prec      rec        f1
-## 100 0.29545455 0.9047619 0.968750 0.4222222 0.7045455 0.968750 0.8157895
-## 200 0.22500000 0.9310345 0.968750 0.6000000 0.7750000 0.968750 0.8611111
-## 300 0.17333333 0.9411765 0.968750 0.7111111 0.8266667 0.968750 0.8920863
-## 400 0.15277778 0.9189189 0.953125 0.7555556 0.8472222 0.953125 0.8970588
-## 500 0.12857143 0.9230769 0.953125 0.8000000 0.8714286 0.953125 0.9104478
-## 600 0.13432836 0.8571429 0.906250 0.8000000 0.8656716 0.906250 0.8854962
-## 700 0.11290323 0.8085106 0.859375 0.8444444 0.8870968 0.859375 0.8730159
-## 800 0.07843137 0.7068966 0.734375 0.9111111 0.9215686 0.734375 0.8173913
-## 900 0.09375000 0.5454545 0.453125 0.9333333 0.9062500 0.453125 0.6041667</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation<span class="op">$</span>split_roc[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">100</span>, <span class="dv">900</span>, <span class="dv">100</span>), ] <span class="co"># ROC: random splits</span></code></pre></div>
-<pre><code>##     cut       pct       acc       tpr        fpr       tnr       ppv
-## 100 0.1 0.8334848 0.7268182 0.9829389 0.62607670 0.3739233 0.6858821
-## 200 0.2 0.7716667 0.7734848 0.9696764 0.49559462 0.5044054 0.7317134
-## 300 0.3 0.7103030 0.8260606 0.9621623 0.35923697 0.6407630 0.7878527
-## 400 0.4 0.6754545 0.8493939 0.9522374 0.29069090 0.7093091 0.8186337
-## 500 0.5 0.6472727 0.8642424 0.9412313 0.23971397 0.7602860 0.8441896
-## 600 0.6 0.6234848 0.8577273 0.9163026 0.21939138 0.7806086 0.8525302
-## 700 0.7 0.5740909 0.8350000 0.8554673 0.18776976 0.8122302 0.8641147
-## 800 0.8 0.4830303 0.7851515 0.7349837 0.13754580 0.8624542 0.8822325
-## 900 0.9 0.3174242 0.6743939 0.4988001 0.07292229 0.9270777 0.9078097
-##            fdr       npv       sen      spec      prec       rec        f1
-## 100 0.31411793 0.9525966 0.9829389 0.3739233 0.6858821 0.9829389 0.8050449
-## 200 0.26828659 0.9332138 0.9696764 0.5044054 0.7317134 0.9696764 0.8308115
-## 300 0.21214729 0.9303968 0.9621623 0.6407630 0.7878527 0.9621623 0.8635109
-## 400 0.18136632 0.9186807 0.9522374 0.7093091 0.8186337 0.9522374 0.8780898
-## 500 0.15581039 0.9048698 0.9412313 0.7602860 0.8441896 0.9412313 0.8878134
-## 600 0.14746983 0.8726951 0.9163026 0.7806086 0.8525302 0.9163026 0.8803077
-## 700 0.13588530 0.8061524 0.8554673 0.8122302 0.8641147 0.8554673 0.8552031
-## 800 0.11776746 0.7079752 0.7349837 0.8624542 0.8822325 0.7349837 0.7937531
-## 900 0.09219028 0.5775341 0.4988001 0.9270777 0.9078097 0.4988001 0.6285665</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation</code></pre></div>
 <pre><code>## AUC on validation data: 0.894 
 ## AUC on training data: 0.919 

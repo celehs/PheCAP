@@ -56,9 +56,7 @@ Validate phenotyping model using validation label, and show the AUC and ROC
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
-validation$valid_roc[seq(100, 900, 100), ] # ROC: validation data
-validation$train_roc[seq(100, 900, 100), ] # ROC: training data
-validation$split_roc[seq(100, 900, 100), ] # ROC: random splits
+validation$valid_roc[seq(100, 900, 100), ] 
 validation
 ```
 

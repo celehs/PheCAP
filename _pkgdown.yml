@@ -15,6 +15,6 @@ navbar:
       - text: "Simulated Data"
         href: articles/ex1-sim.html  
       - text: "Real EHR Data"
-        href: articles/ex2-ehr.html  
+        href: articles/ex2-ehr.html          
     - text: "Reference"
       href: reference/index.html
