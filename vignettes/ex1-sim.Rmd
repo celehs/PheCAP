@@ -21,6 +21,7 @@ Generate simulated data.
 latent <- rgamma(8000, 0.3)
 latent2 <- rgamma(8000, 0.3)
 ehr_data <- data.frame(
+  patient_id = 1:8000,
   ICD1 = rpois(8000, 7 * (rgamma(8000, 0.2) + latent) / 0.5),
   ICD2 = rpois(8000, 6 * (rgamma(8000, 0.8) + latent) / 1.1),
   ICD3 = rpois(8000, 1 * rgamma(8000, 0.5 + latent2) / 0.5),
@@ -39,12 +40,15 @@ ehr_data[ii, "label"] <- with(
   ehr_data[ii, ], rbinom(400, 1, plogis(
     -5 + 1.5 * log1p(ICD1) + log1p(NLP1) +
       0.8 * log1p(NLP3) - 0.5 * log1p(HU))))
+head(ehr_data)
+tail(ehr_data)
 ```
 
 Define features and labels used for phenotyping.
 
 ```{r}
-data <- PhecapData(ehr_data, "HU", "label", 0.4)
+data <- PhecapData(ehr_data, "HU", "label", 0.4, 
+                   patient_id = "patient_id")
 data
 ```
 
@@ -78,9 +82,9 @@ Validate phenotyping model using validation label, and show the AUC and ROC.
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
-head(validation$valid_roc) # ROC table: validation data
-head(validation$train_roc) # ROC table: training data
-head(validation$split_roc) # ROC table: random splits
+validation$valid_roc[seq(100, 900, 100), ] # ROC: validation data
+validation$train_roc[seq(100, 900, 100), ] # ROC: training data
+validation$split_roc[seq(100, 900, 100), ] # ROC: random splits
 validation
 ```
 
@@ -92,6 +96,8 @@ Apply the model to all the patients to obtain predicted phenotype.
 
 ```{r}
 phenotype <- phecap_predict_phenotype(data, model)
-head(phenotype) # predicted probability
+# show predicted probability
+head(phenotype)
+tail(phenotype)
 ```
 
