@@ -15,8 +15,7 @@ Load Data.
 
 ```{r}
 data(ehr_data)
-data <- PhecapData(ehr_data, "healthcare_utilization", "label", 0.4, 
-                   patient_id = "patient_id")
+data <- PhecapData(ehr_data, "healthcare_utilization", "label", 0.4, patient_id = "patient_id")
 data
 ```
 
@@ -56,8 +55,8 @@ Validate phenotyping model using validation label, and show the AUC and ROC
 
 ```{r}
 validation <- phecap_validate_phenotyping_model(data, model)
-validation$valid_roc[seq(100, 900, 100), ] 
 validation
+round(validation$valid_roc[validation$valid_roc[, "FPR"] <= 0.2, ], 3)
 ```
 
 ```{r}
@@ -68,7 +67,9 @@ Apply the model to all the patients to obtain predicted phenotype.
 
 ```{r}
 phenotype <- phecap_predict_phenotype(data, model)
-# show predicted probability
-head(phenotype)
-tail(phenotype)
+idx <- which.min(abs(validation$valid_roc[, "FPR"] - 0.05))
+cut.fpr95 <- validation$valid_roc[idx, "cutoff"]
+case_status <- ifelse(phenotype$prediction >= cut.fpr95, 1, 0)
+predict.table <- cbind(phenotype, case_status)
+predict.table[1:10, ]
 ```
