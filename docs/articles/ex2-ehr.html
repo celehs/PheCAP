@@ -93,8 +93,7 @@
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(PheCAP)</code></pre></div>
 <p>Load Data.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/data">data</a></span>(ehr_data)
-data &lt;-<span class="st"> </span><span class="kw"><a href="../reference/PhecapData.html">PhecapData</a></span>(ehr_data, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, 
-                   <span class="dt">patient_id =</span> <span class="st">"patient_id"</span>)
+data &lt;-<span class="st"> </span><span class="kw"><a href="../reference/PhecapData.html">PhecapData</a></span>(ehr_data, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, <span class="dt">patient_id =</span> <span class="st">"patient_id"</span>)
 data</code></pre></div>
 <pre><code>## PheCAP Data
 ## Feature: 10000 observations of 587 variables
@@ -115,7 +114,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-## 188.496   0.260 188.756</code></pre>
+## 187.832   0.308 188.151</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"  
@@ -138,52 +137,53 @@ model</code></pre></div>
 ## Average AUC on random splits: 0.905</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)
-validation<span class="op">$</span>valid_roc[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/seq">seq</a></span>(<span class="dv">100</span>, <span class="dv">900</span>, <span class="dv">100</span>), ] </code></pre></div>
-<pre><code>##     cut       pct       acc       tpr       fpr       tnr       ppv
-## 100 0.1 0.8194444 0.8611111 0.9454545 0.4117647 0.5882353 0.8813559
-## 200 0.2 0.7777778 0.8750000 0.9272727 0.2941176 0.7058824 0.9107143
-## 300 0.3 0.7500000 0.8750000 0.9090909 0.2352941 0.7647059 0.9259259
-## 400 0.4 0.7222222 0.8750000 0.8909091 0.1764706 0.8235294 0.9423077
-## 500 0.5 0.6944444 0.8472222 0.8545455 0.1764706 0.8235294 0.9400000
-## 600 0.6 0.6527778 0.8333333 0.8181818 0.1176471 0.8823529 0.9574468
-## 700 0.7 0.6250000 0.8055556 0.7818182 0.1176471 0.8823529 0.9555556
-## 800 0.8 0.5277778 0.7083333 0.6545455 0.1176471 0.8823529 0.9473684
-## 900 0.9 0.3888889 0.5694444 0.4727273 0.1176471 0.8823529 0.9285714
-##            fdr       npv       sen      spec      prec       rec        f1
-## 100 0.11864407 0.7692308 0.9454545 0.5882353 0.8813559 0.9454545 0.9122807
-## 200 0.08928571 0.7500000 0.9272727 0.7058824 0.9107143 0.9272727 0.9189189
-## 300 0.07407407 0.7222222 0.9090909 0.7647059 0.9259259 0.9090909 0.9174312
-## 400 0.05769231 0.7000000 0.8909091 0.8235294 0.9423077 0.8909091 0.9158879
-## 500 0.06000000 0.6363636 0.8545455 0.8235294 0.9400000 0.8545455 0.8952381
-## 600 0.04255319 0.6000000 0.8181818 0.8823529 0.9574468 0.8181818 0.8823529
-## 700 0.04444444 0.5555556 0.7818182 0.8823529 0.9555556 0.7818182 0.8600000
-## 800 0.05263158 0.4411765 0.6545455 0.8823529 0.9473684 0.6545455 0.7741935
-## 900 0.07142857 0.3409091 0.4727273 0.8823529 0.9285714 0.4727273 0.6265060</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation</code></pre></div>
+validation</code></pre></div>
 <pre><code>## AUC on validation data: 0.894 
 ## AUC on training data: 0.919 
 ## Average AUC on random splits: 0.905</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Round">round</a></span>(validation<span class="op">$</span>valid_roc[validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">&lt;=</span><span class="st"> </span><span class="fl">0.2</span>, ], <span class="dv">3</span>)</code></pre></div>
+<pre><code>##       cutoff pos.rate   FPR   TPR   PPV   NPV    F1
+##  [1,]  0.984    0.007 0.000 0.209 1.000 0.281 0.346
+##  [2,]  0.959    0.139 0.000 0.287 1.000 0.302 0.446
+##  [3,]  0.934    0.236 0.000 0.364 1.000 0.327 0.533
+##  [4,]  0.910    0.347 0.059 0.437 0.960 0.340 0.600
+##  [5,]  0.909    0.347 0.059 0.440 0.960 0.342 0.603
+##  [6,]  0.909    0.347 0.059 0.443 0.961 0.343 0.606
+##  [7,]  0.908    0.361 0.059 0.446 0.961 0.344 0.609
+##  [8,]  0.906    0.361 0.059 0.449 0.961 0.345 0.612
+##  [9,]  0.904    0.361 0.059 0.452 0.961 0.347 0.615
+## [10,]  0.902    0.375 0.118 0.465 0.928 0.338 0.620
+## [11,]  0.900    0.375 0.118 0.527 0.935 0.366 0.674
+## [12,]  0.899    0.375 0.118 0.589 0.942 0.399 0.725
+## [13,]  0.869    0.458 0.118 0.651 0.947 0.439 0.772
+## [14,]  0.748    0.583 0.118 0.713 0.951 0.487 0.815
+## [15,]  0.628    0.625 0.118 0.775 0.955 0.547 0.855
+## [16,]  0.539    0.667 0.176 0.823 0.938 0.589 0.877
+## [17,]  0.526    0.667 0.176 0.838 0.939 0.611 0.886
+## [18,]  0.514    0.667 0.176 0.854 0.940 0.635 0.895
+## [19,]  0.473    0.694 0.176 0.869 0.941 0.660 0.904
+## [20,]  0.381    0.708 0.176 0.885 0.942 0.688 0.912
+## [21,]  0.288    0.736 0.176 0.900 0.943 0.718 0.921</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(validation)</code></pre></div>
 <p><img src="ex2-ehr_files/figure-html/unnamed-chunk-8-1.png" width="700"></p>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">phenotype &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(data, model)
-<span class="co"># show predicted probability</span>
-<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(phenotype)</code></pre></div>
-<pre><code>##   patient_id prediction
-## 1          1 0.10460871
-## 2          2 0.96628355
-## 3          3 0.04977780
-## 4          4 0.02643754
-## 5          5 0.22712655
-## 6          6 0.84893936</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">tail</a></span>(phenotype)</code></pre></div>
-<pre><code>##       patient_id  prediction
-## 9995        9995 0.356643481
-## 9996        9996 0.007617899
-## 9997        9997 0.859771401
-## 9998        9998 0.250920508
-## 9999        9999 0.044559749
-## 10000      10000 0.067216608</code></pre>
+idx &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/which.min">which.min</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/MathFun">abs</a></span>(validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">-</span><span class="st"> </span><span class="fl">0.05</span>))
+cut.fpr95 &lt;-<span class="st"> </span>validation<span class="op">$</span>valid_roc[idx, <span class="st">"cutoff"</span>]
+case_status &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/ifelse">ifelse</a></span>(phenotype<span class="op">$</span>prediction <span class="op">&gt;=</span><span class="st"> </span>cut.fpr95, <span class="dv">1</span>, <span class="dv">0</span>)
+predict.table &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cbind">cbind</a></span>(phenotype, case_status)
+predict.table[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</code></pre></div>
+<pre><code>##    patient_id  prediction case_status
+## 1           1 0.104608708           0
+## 2           2 0.966283547           1
+## 3           3 0.049777801           0
+## 4           4 0.026437544           0
+## 5           5 0.227126552           0
+## 6           6 0.848939364           0
+## 7           7 0.003127854           0
+## 8           8 0.062386645           0
+## 9           9 0.335662808           0
+## 10         10 0.024669950           0</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
