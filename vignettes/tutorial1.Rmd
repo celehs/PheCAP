@@ -27,7 +27,7 @@ Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finish
 
 ![](img/Screenshot_MetaMap_WikiOutput.png)
 
-Run “MetaMap-postprocessing.R” to extract the CUIs from the output and select by majority voting.
+Run `MetaMap-postprocessing.R` to extract the CUIs from the output and select by majority voting.
 
 ```{r, eval=FALSE}
 library(stringr)

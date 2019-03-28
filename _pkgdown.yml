@@ -20,5 +20,7 @@ navbar:
       menu:
       - text: "NER using MetaMAP"
         href: articles/tutorial1.html  
+      - text: "NLP processing using NILE"
+        href: articles/tutorial2.html         
     - text: "Reference"
       href: reference/index.html

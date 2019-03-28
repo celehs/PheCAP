@@ -67,6 +67,9 @@
 <li>
       <a href="../articles/tutorial1.html">NER using MetaMAP</a>
     </li>
+    <li>
+      <a href="../articles/tutorial2.html">NLP processing using NILE</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -116,7 +119,7 @@
 <div class="figure">
 <img src="img/Screenshot_MetaMap_WikiOutput.png">
 </div>
-<p>Run “MetaMap-postprocessing.R” to extract the CUIs from the output and select by majority voting.</p>
+<p>Run <code>MetaMap-postprocessing.R</code> to extract the CUIs from the output and select by majority voting.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(stringr)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/getwd">setwd</a></span>(<span class="st">"CAD out"</span>) <span class="co"># the directory where MetaMap output files are saved</span>
 outputs =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>()
