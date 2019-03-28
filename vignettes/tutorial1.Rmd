@@ -25,7 +25,9 @@ Acquired Abnormality; Amino Acid, Peptide, or Protein; Anatomical Abnormality; A
 
 Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finished processing the file. Download “text.out” and rename it, such as “Wikipedia.out”. Create a folder and put all the output files in it.
 
-Run “[MetaMap-postprocessing.R](code/MetaMap-postprocessing.R)” to extract the CUIs from the output and select by majority voting.
+![](img/Screenshot_MetaMap_WikiOutput.png)
+
+Run “MetaMap-postprocessing.R” to extract the CUIs from the output and select by majority voting.
 
 ```{r, eval=FALSE}
 library(stringr)
@@ -47,7 +49,6 @@ for(f in dir()) {
 writeLines(CUIs.all[rowSums(CUI.occ) > length(outputs)/2], "CUIs.txt") # majority voting and output
 ```
 
-![](img/Screenshot_MetaMap_WikiOutput.png)
 
 
 

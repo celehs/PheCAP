@@ -113,7 +113,10 @@
 <p>to select the following:</p>
 <p>Acquired Abnormality; Amino Acid, Peptide, or Protein; Anatomical Abnormality; Antibiotic; Biologic Function; Biologically Active Substance; Biomedical or Dental Material; Chemical; Chemical Viewed Functionally; Chemical Viewed Structurally; Clinical Drug; Congenital Abnormality; Diagnostic Procedure; Disease or Syndrome; Element, Ion, or Isotope; Enzyme; Finding; Hazardous or Poisonous Substance; Hormone; Immunologic Factor; Indicator, Reagent, or Diagnostic Aid; Individual Behavior; Injury or Poisoning; Inorganic Chemical; Laboratory or Test Result; Laboratory Procedure; Medical Device; Mental or Behavioral Dysfunction; Neoplastic Process; Nucleic Acid, Nucleoside, or Nucleotide; Organic Chemical; Pathologic Function; Pharmacologic Substance; Phenomenon or Process; Receptor; Sign or Symptom; Therapeutic or Preventive Procedure; Vitamin.</p>
 <p>Click <strong>Submit Batch MetaMap</strong>. An email will notify you once MetaMap has finished processing the file. Download “text.out” and rename it, such as “Wikipedia.out”. Create a folder and put all the output files in it.</p>
-<p>Run “<a href="code/MetaMap-postprocessing.R">MetaMap-postprocessing.R</a>” to extract the CUIs from the output and select by majority voting.</p>
+<div class="figure">
+<img src="img/Screenshot_MetaMap_WikiOutput.png">
+</div>
+<p>Run “MetaMap-postprocessing.R” to extract the CUIs from the output and select by majority voting.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(stringr)
 <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/getwd">setwd</a></span>(<span class="st">"CAD out"</span>) <span class="co"># the directory where MetaMap output files are saved</span>
 outputs =<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>()
@@ -131,9 +134,6 @@ CUI.occ =<span class="st"> </span><span class="kw"><a href="https://www.rdocumen
   CUI.occ[outputs[[f]],f] =<span class="st"> </span><span class="dv">1</span>
 }
 <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/writeLines">writeLines</a></span>(CUIs.all[<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/colSums">rowSums</a></span>(CUI.occ) <span class="op">&gt;</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/length">length</a></span>(outputs)<span class="op">/</span><span class="dv">2</span>], <span class="st">"CUIs.txt"</span>) <span class="co"># majority voting and output</span></code></pre></div>
-<div class="figure">
-<img src="img/Screenshot_MetaMap_WikiOutput.png">
-</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
