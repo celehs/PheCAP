@@ -1,3 +1,4 @@
+importFrom("stats", "approx", "bw.nrd", "pnorm")
 importFrom("graphics", "legend", "lines", "plot")
 importFrom("methods", "is")
 importFrom("stats", "aggregate", "approxfun", "binomial", "coef",

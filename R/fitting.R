@@ -297,7 +297,9 @@ get_auc<- function(y_true, y_score, subject_weight)
 {
   ROC.Est.FUN(y_true,y_score,yy0=0.5,fpr0=seq(0,1,0.01),wgti=subject_weight,yes.smooth=F)[1]
 }
-
+VTM<-function(vc, dm){
+  matrix(vc, ncol=length(vc), nrow=dm, byrow=T)
+}
 S.FUN=function(yy,Yi,Di,yes.smooth=F)
 {
   if(yes.smooth){

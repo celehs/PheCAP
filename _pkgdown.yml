@@ -15,6 +15,10 @@ navbar:
       - text: "Simulated Data"
         href: articles/ex1-sim.html  
       - text: "Real EHR Data"
-        href: articles/ex2-ehr.html          
+        href: articles/ex2-ehr.html       
+    - text: "Tutorials"
+      menu:
+      - text: "NER using MetaMAP"
+        href: articles/tutorial1.html  
     - text: "Reference"
       href: reference/index.html

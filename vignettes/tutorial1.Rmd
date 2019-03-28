@@ -1,0 +1,53 @@
+---
+title: "NER using MetaMAP"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{PheCAP}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+Go to the online MetaMap service (batch mode): <https://ii.nlm.nih.gov/Batch/UTS_Required/metamap.shtml>
+
+![](img/Screenshot_MetaMap_Website.png)
+
+MetaMap will not run on text that contains non-ascii characters, so remove them before using MetaMap. Non-ascii characters can be identified with the regular expression “[^\x00-\x7F]”.
+
+In **Output/Display Options**, check “Show CUIs (-I)”.
+
+In **I would like to only use specific Semantic Types**, check the checkbox, and select the semantic types relevant to the phenotype. For example, use 
+
+acab, aapp, anab, antb, biof, bacs, bodm, chem, chvf, chvs, clnd, cgab, diap, dsyn, elii, enzy, fndg, hops, horm, imft, irda, inbe, inpo, inch, lbpr, lbtr, medd, mobd, neop, nnon, orch, patf, phsu, phpr, rcpt, sosy, topp, vita
+
+to select the following:
+
+Acquired Abnormality; Amino Acid, Peptide, or Protein; Anatomical Abnormality; Antibiotic; Biologic Function; Biologically Active Substance; Biomedical or Dental Material; Chemical; Chemical Viewed Functionally; Chemical Viewed Structurally; Clinical Drug; Congenital Abnormality; Diagnostic Procedure; Disease or Syndrome; Element, Ion, or Isotope; Enzyme; Finding; Hazardous or Poisonous Substance; Hormone; Immunologic Factor; Indicator, Reagent, or Diagnostic Aid; Individual Behavior; Injury or Poisoning; Inorganic Chemical; Laboratory or Test Result; Laboratory Procedure; Medical Device; Mental or Behavioral Dysfunction; Neoplastic Process; Nucleic Acid, Nucleoside, or Nucleotide; Organic Chemical; Pathologic Function; Pharmacologic Substance; Phenomenon or Process; Receptor; Sign or Symptom; Therapeutic or Preventive Procedure; Vitamin.
+
+Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finished processing the file. Download “text.out” and rename it, such as “Wikipedia.out”. Create a folder and put all the output files in it.
+
+Run “[MetaMap-postprocessing.R](code/MetaMap-postprocessing.R)” to extract the CUIs from the output and select by majority voting.
+
+```{r, eval=FALSE}
+library(stringr)
+setwd("CAD out") # the directory where MetaMap output files are saved
+outputs = list()
+for(f in dir()) {
+  textlines = readLines(f)
+  CUIs = str_extract(textlines, "C[0-9]{7}")
+  CUIs = CUIs[!is.na(CUIs)]
+  outputs[[f]] = unique(CUIs)
+}
+CUIs.all = unique(unlist(outputs))
+CUI.occ = matrix(0, nrow = length(CUIs.all), ncol = length(outputs))
+colnames(CUI.occ) = dir()
+row.names(CUI.occ) = CUIs.all
+for(f in dir()) {
+  CUI.occ[outputs[[f]],f] = 1
+}
+writeLines(CUIs.all[rowSums(CUI.occ) > length(outputs)/2], "CUIs.txt") # majority voting and output
+```
+
+![](img/Screenshot_MetaMap_WikiOutput.png)
+
+
+
