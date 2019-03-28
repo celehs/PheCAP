@@ -9,7 +9,7 @@ vignette: >
 
 NLP NILE Output:
 
-![](img/NLE_NILE_output.png)
+![](img/NLP_NILE_output.png)
 
 `iterate_notes.py`
 
