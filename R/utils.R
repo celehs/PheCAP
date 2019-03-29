@@ -442,7 +442,6 @@ phecap_train_phenotyping_model <- function(
   penalty_weight <- c(
     rep.int(0.0, attr(feature, "free")),
     rep.int(1.0, ncol(feature) - attr(feature, "free")))
-
   result <- phecap_get_roc_auc_with_splits(
     x, y, subject_weight, penalty_weight,
     method = method,
