@@ -9,7 +9,7 @@ vignette: >
 
 To generate NLP features, we parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the [NILE](http://celehs.hms.harvard.edu/software/NILE/NILE_main.html). 
 
-As an example, we obtained the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the i2b2 NLP Research Data Sets (https://www.i2b2.org/NLP/DataSets/Main.php). 
+As an example, we obtained the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the [i2b2 NLP Research Data Sets](https://www.i2b2.org/NLP/DataSets/Main.php). 
 
 We use <a href="include/xml_Utils.java" download>xml_Utils.java</a> to extract notes from downloaded xml files. 
 
