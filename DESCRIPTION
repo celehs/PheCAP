@@ -4,10 +4,10 @@ Title: High-Throughput Phenotyping with Electronic Health Records
        using a Common Automated Pipeline
 Version: 1.0
 Date: 2019-03-16
-Authors@R: c(person("Yichi", "Zhang", role = c("aut", "cre"),
-		         email = "yichizhang@uri.edu"))
-Author: Yichi Zhang [aut, cre]
-Maintainer: Yichi Zhang <yichizhang@uri.edu>
+Authors@R: c(
+    person("Yichi", "Zhang", role = c("aut", "cre"), email = "yichizhang@uri.edu"),
+    person("Chuan", "Hong", role = "aut")
+    )
 Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
              Background and details about the methods can be found at <doi:10.1093/jamia/ocw135> and <doi:10.1136/bmj.h1885>.
