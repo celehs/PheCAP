@@ -27,7 +27,6 @@ fit_ridge_cv <- function(
   if (!is.matrix(y) && length(unique(y)) > 2L) {
     y <- cbind(1.0 - y, y)
   }
-  penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
   model <- cv.glmnet(
     x, y, weights = subject_weight, alpha = 0.05,
     family = "binomial", thresh = 5e-7,
@@ -52,7 +51,6 @@ fit_lasso_cv <- function(
   if (!is.matrix(y) && length(unique(y)) > 2L) {
     y <- cbind(1.0 - y, y)
   }
-  penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
   model <- cv.glmnet(
     x, y, weights = subject_weight,
     family = "binomial", thresh = 5e-7,
@@ -77,7 +75,6 @@ fit_lasso_bic <- function(
   if (!is.matrix(y) && length(unique(y)) > 2L) {
     y <- cbind(1.0 - y, y)
   }
-  penalty_weight <- pmin(pmax(penalty_weight, 1e-4), 1e4)
   model <- glmnet(
     x, y, weights = subject_weight,
     family = "binomial", thresh = 5e-7,
@@ -90,7 +87,6 @@ fit_lasso_bic <- function(
   lambda <- model$lambda[which.min(dev + complexity)]
   as.double(predict(model, s = lambda, type = "coefficients"))
 }
-
 
 fit_alasso_cv <- function(
   x, y, subject_weight, penalty_weight = NULL, gamma = 1, ...)
@@ -106,7 +102,6 @@ fit_alasso_cv <- function(
   fit_lasso_cv(x, y, subject_weight, penalty_weight, ...)
 }
 
-
 fit_alasso_bic <- function(
   x, y, subject_weight, penalty_weight = NULL, gamma = 1, ...)
 {
@@ -120,7 +115,6 @@ fit_alasso_bic <- function(
   }
   fit_lasso_bic(x, y, subject_weight, penalty_weight, ...)
 }
-
 
 predict_linear <- function(beta, x, ...)
 {
@@ -297,9 +291,7 @@ get_auc<- function(y_true, y_score, subject_weight)
 {
   ROC.Est.FUN(y_true,y_score,yy0=0.5,fpr0=seq(0,1,0.01),wgti=subject_weight,yes.smooth=F)[1]
 }
-VTM<-function(vc, dm){
-  matrix(vc, ncol=length(vc), nrow=dm, byrow=T)
-}
+
 S.FUN=function(yy,Yi,Di,yes.smooth=F)
 {
   if(yes.smooth){
@@ -332,3 +324,8 @@ Sinv.FUN <- function(uu,Yi,Di,yes.smooth=F)
   yy0<-unique(sort(Yi,decreasing=T)); ss0 <- S.FUN(yy0,Yi,Di,yes.smooth=yes.smooth) 
   return(approx(ss0[!duplicated(ss0)],yy0[!duplicated(ss0)],uu,method="linear",f=0,rule=2)$y)
 }
+
+VTM<-function(vc, dm){
+  matrix(vc, ncol=length(vc), nrow=dm, byrow=T)
+}
+
