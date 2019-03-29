@@ -29,4 +29,4 @@ Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finish
 
 <br>
 
-Run [MetaMap_postprocessing.R](include/MetaMap_postprocessing.R) to extract the CUIs from the output and select by majority voting.
+Run <a href="include/MetaMap_postprocessing.R" download>MetaMap_postprocessing.R</a> to extract the CUIs from the output and select by majority voting.

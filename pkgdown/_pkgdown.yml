@@ -13,9 +13,9 @@ navbar:
     - text: "Examples"
       menu:
       - text: "Simulated Data"
-        href: articles/ex1-sim.html  
+        href: articles/example1.html  
       - text: "Real EHR Data"
-        href: articles/ex2-ehr.html       
+        href: articles/example2.html       
     - text: "NER using MetaMAP"
       href: articles/NER-MetaMAP.html  
     - text: "NLP using NILE"

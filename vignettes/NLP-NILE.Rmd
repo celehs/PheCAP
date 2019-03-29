@@ -11,8 +11,8 @@ To generate NLP features, we parse the EMR narrative notes to identify and count
 
 As an example, we obtained the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the i2b2 NLP Research Data Sets (https://www.i2b2.org/NLP/DataSets/Main.php). 
 
-We use [xml_Utils.java](include/xml_Utils.java) to extract notes from downloaded xml files. 
+We use <a href="include/xml_Utils.java" download>xml_Utils.java</a> to extract notes from downloaded xml files. 
 
-We then used the dictionary [CAD_dict.txt](include/CAD_dict.txt) generated from MetaMap and parse these notes using NILE.
+We then used the dictionary <a href="include/CAD_dict.txt" download>CAD_dict.txt</a> generated from MetaMap and parse these notes using NILE.
 
-Results from processing the “Training: RiskFactors Complete Set 1 MAE” data can be found in [NLP2014_set1_res.txt](include/NLP2014_set1_res.txt). 
+Results from processing the “Training: RiskFactors Complete Set 1 MAE” data can be found in <a href="include/NLP2014_set1_res.txt" download>NLP2014_set1_res.txt</a>. 

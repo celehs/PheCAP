@@ -4,8 +4,8 @@ pkgdown_sha: ~
 articles:
   NER-MetaMAP: NER-MetaMAP.html
   NLP-NILE: NLP-NILE.html
-  ex1-sim: ex1-sim.html
-  ex2-ehr: ex2-ehr.html
+  example1: example1.html
+  example2: example2.html
   include: include/include.html
   main: main.html
 
