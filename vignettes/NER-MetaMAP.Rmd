@@ -27,4 +27,6 @@ Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finish
 
 ![](img/Screenshot_MetaMap_WikiOutput.png)
 
-Run [MetaMap_postprocessing.R](https://github.com/celehs/PheCAP/blob/master/code/MetaMap_postprocessing.R) to extract the CUIs from the output and select by majority voting.
+<br>
+
+Run [MetaMap_postprocessing.R](https://github.com/celehs/PheCAP/blob/master/download/MetaMap_postprocessing.R) to extract the CUIs from the output and select by majority voting.

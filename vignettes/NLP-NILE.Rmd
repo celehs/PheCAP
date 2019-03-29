@@ -7,12 +7,12 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-NLP NILE Output:
+To generate NLP features, we parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the [NILE](http://celehs.hms.harvard.edu/software/NILE/NILE_main.html). 
 
-![](img/NLP_NILE_output.png)
+As an example, we obtained the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the i2b2 NLP Research Data Sets (https://www.i2b2.org/NLP/DataSets/Main.php). 
 
-Related Programs:
+We use [xml_Utils.java](https://github.com/celehs/PheCAP/blob/master/download/xml_Utils.java) to extract notes from downloaded xml files. 
 
-- Python: [iterate_notes.py](https://github.com/celehs/PheCAP/blob/master/code/iterate_notes.py)
+We then used the dictionary [CAD_dict.txt](https://github.com/celehs/PheCAP/blob/master/download/CAD_dict.txt) generated from MetaMap and parse these notes using NILE.
 
-- Java: [i2b2_xml_Utils.java](https://github.com/celehs/PheCAP/blob/master/code/i2b2_xml_Utils.java)
+Results from processing the “Training: RiskFactors Complete Set 1 MAE” data can be found in [NLP2014_set1_res.txt](https://github.com/celehs/PheCAP/blob/master/download/NLP2014_set1_res.txt). 
