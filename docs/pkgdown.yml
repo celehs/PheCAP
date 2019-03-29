@@ -2,9 +2,9 @@ pandoc: 1.19.2.1
 pkgdown: 1.3.0
 pkgdown_sha: ~
 articles:
+  NER-MetaMAP: NER-MetaMAP.html
+  NLP-NILE: NLP-NILE.html
   ex1-sim: ex1-sim.html
   ex2-ehr: ex2-ehr.html
   main: main.html
-  tutorial1: tutorial1.html
-  tutorial2: tutorial2.html
 

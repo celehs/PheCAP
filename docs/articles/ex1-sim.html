@@ -57,20 +57,11 @@
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/tutorial1.html">NER using MetaMAP</a>
-    </li>
-    <li>
-      <a href="../articles/tutorial2.html">NLP processing using NILE</a>
-    </li>
-  </ul>
+  <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
+</li>
+<li>
+  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -179,7 +170,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-##   8.548   0.020   8.569</code></pre>
+##   8.540   0.004   8.546</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "ICD1" "ICD2" "NLP1" "NLP2" "NLP3"</code></pre>
