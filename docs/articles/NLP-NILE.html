@@ -100,119 +100,12 @@
 <div class="figure">
 <img src="img/NLP_NILE_output.png">
 </div>
-<p><code>iterate_notes.py</code></p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> xml.etree.cElementTree <span class="im">as</span> ET
-<span class="im">import</span> os,re
-
-<span class="im">from</span> personal_package <span class="im">import</span> readfiles,writefile
-
-<span class="kw">def</span> folder_walk(folder):
-    <span class="cf">for</span> root, dirs, files <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">in</a></span> os.walk(folder):
-        <span class="cf">return</span> [[name,os.path.join(folder,name)] <span class="cf">for</span> name <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">in</a></span> files]
-
-<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/class">class</a></span> n2c2xml():
-    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>,path):
-        <span class="va">self</span>.path<span class="op">=</span>path
-        <span class="va">self</span>.Tree<span class="op">=</span>ET.parse(<span class="va">self</span>.path)
-        <span class="va">self</span>.Root<span class="op">=</span><span class="va">self</span>.Tree.getroot()
-        <span class="va">self</span>.TAGS <span class="op">=</span> <span class="va">self</span>.Root.find(<span class="st">'TAGS'</span>)
-    <span class="kw">def</span> GetText(<span class="va">self</span>):
-        <span class="cf">return</span> <span class="va">self</span>.Root.find(<span class="st">'TEXT'</span>).text
-    <span class="kw">def</span> GetTAGS(<span class="va">self</span>):
-        <span class="cf">return</span> <span class="bu">dict</span>([[t.tag,t.attrib[<span class="st">'met'</span>]] <span class="cf">for</span> t <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">in</a></span> <span class="va">self</span>.TAGS])
-<span class="kw">def</span> get_date(s):
-    p <span class="op">=</span> re.<span class="bu">compile</span>(<span class="st">'\d+-\d+-\d+'</span>)
-    res <span class="op">=</span> p.search(s)
-    <span class="cf">if</span> res:
-        <span class="cf">return</span> res.group()
-    <span class="cf">else</span>: <span class="cf">return</span> <span class="st">'None'</span>
-
-<span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:
-    folder <span class="op">=</span> PATH_TO_THE_DATA_FOLDER
-    <span class="cf">for</span> line <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">in</a></span> folder_walk(folder):
-        f,p <span class="op">=</span> line
-        data <span class="op">=</span> n2c2xml(p)
-        firstline <span class="op">=</span> data.GetText().strip().split(<span class="st">'</span><span class="ch">\n</span><span class="st">'</span>)[<span class="dv">0</span>]
-        date <span class="op">=</span> get_date(firstline)</code></pre></div>
-<p><code>i2b2_xml_Utils.java</code></p>
-<div class="sourceCode"><pre class="sourceCode java"><code class="sourceCode java"><span class="kw">package</span><span class="im"> NEW_NLP;</span>
-<span class="kw">import</span><span class="im"> javax.xml.parsers.DocumentBuilderFactory;</span>
-<span class="kw">import</span><span class="im"> javax.xml.parsers.DocumentBuilder;</span>
-
-<span class="kw">import</span><span class="im"> org.w3c.dom.Document;</span>
-<span class="kw">import</span><span class="im"> org.w3c.dom.NodeList;</span>
-<span class="kw">import</span><span class="im"> org.w3c.dom.Node;</span>
-<span class="kw">import</span><span class="im"> java.io.File;</span>
-<span class="kw">import</span><span class="im"> java.util.ArrayList;</span>
-<span class="kw">import</span><span class="im"> java.util.regex.Matcher;</span>
-<span class="kw">import</span><span class="im"> java.util.regex.Pattern;</span>
-<span class="kw">public</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/class">class</a></span> xml {
-
-
-    <span class="kw">public</span> <span class="dt">static</span> <span class="bu">String</span> <span class="fu">getnote</span>(<span class="bu">File</span> XmlFile,<span class="bu">String</span> nodename){
-        
-    
-    <span class="bu">StringBuilder</span> note= <span class="kw">new</span> <span class="bu">StringBuilder</span>(<span class="st">""</span>);
-    <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/try">try</a></span> {
-        <span class="bu">DocumentBuilderFactory</span> dbFactory = <span class="bu">DocumentBuilderFactory</span>.<span class="fu">newInstance</span>();
-        <span class="bu">DocumentBuilder</span> dBuilder = dbFactory.<span class="fu">newDocumentBuilder</span>();
-        <span class="bu">Document</span> doc = dBuilder.<span class="fu">parse</span>(XmlFile);
-        doc.<span class="fu">getDocumentElement</span>().<span class="fu">normalize</span>();
-        <span class="bu">NodeList</span> nList = doc.<span class="fu">getElementsByTagName</span>(nodename);
-        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">for</a></span> (<span class="dt">int</span> temp = <span class="dv">0</span>; temp &lt; nList.<span class="fu">getLength</span>(); temp++) {
-            <span class="bu">Node</span> nNode = nList.<span class="fu">item</span>(temp);
-            note.<span class="fu">append</span>(nNode.<span class="fu">getTextContent</span>());
-            
-        }
-        } <span class="kw">catch</span> (<span class="bu">Exception</span> e) {
-        e.<span class="fu">printStackTrace</span>();
-        }
-    <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span> note.<span class="fu">toString</span>();
-    }
-    <span class="kw">public</span> <span class="dt">static</span> <span class="bu">ArrayList</span>&lt;<span class="bu">File</span>&gt; <span class="fu">walk</span>( <span class="bu">String</span> path ) {
-        <span class="bu">ArrayList</span>&lt;<span class="bu">File</span>&gt; filelist = <span class="kw">new</span> <span class="bu">ArrayList</span>&lt;<span class="bu">File</span>&gt;();
-        <span class="bu">File</span> root = <span class="kw">new</span> <span class="bu">File</span>( path );
-        <span class="bu">File</span>[] list = root.<span class="fu">listFiles</span>();
-        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">if</a></span> (list == <span class="kw">null</span>) <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span> filelist;
-        
-        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">for</a></span> ( <span class="bu">File</span> f : list ) {
-            <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">if</a></span> ( f.<span class="fu">isDirectory</span>() ) {
-            }
-            <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">else</a></span> {
-                filelist.<span class="fu">add</span>(f.<span class="fu">getAbsoluteFile</span>());
-            }
-        }
-        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span> filelist;
-    }
-  <span class="kw">public</span> <span class="dt">static</span> <span class="bu">String</span> <span class="fu">extract_date</span>(<span class="bu">String</span> text){
-      <span class="bu">StringBuilder</span> date=<span class="kw">new</span> <span class="bu">StringBuilder</span>();;
-      <span class="bu">Pattern</span> stagepattern = <span class="bu">Pattern</span>.<span class="fu">compile</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">d+-</span><span class="sc">\\</span><span class="st">d+-</span><span class="sc">\\</span><span class="st">d+"</span>,<span class="bu">Pattern</span>.<span class="fu">CASE_INSENSITIVE</span>);
-      <span class="bu">Matcher</span> matcher = stagepattern.<span class="fu">matcher</span>(text);
-      <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">while</a></span> (matcher.<span class="fu">find</span>()) {
-            date.<span class="fu">append</span>(matcher.<span class="fu">group</span>());
-        }
-        <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/function">return</a></span> date.<span class="fu">toString</span>();
-    }
-      
-  
-  <span class="kw">public</span> <span class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span>(<span class="bu">String</span> argv[]) {
-      <span class="bu">String</span> folder = <span class="st">"F:/dropbox2gu/Dropbox (Partners HealthCare)/Phenotyping_Protocol/PheCap_Protocol_R1/2014_i2b2_NLP_set1/data"</span>;
-      <span class="bu">ArrayList</span>&lt;<span class="bu">File</span>&gt; filelist = <span class="fu">walk</span>(folder);
-      <span class="bu">String</span> note;
-      <span class="bu">String</span> date;
-      <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Control">for</a></span>(<span class="bu">File</span> f:filelist){
-          note = <span class="fu">getnote</span>(f,<span class="st">"TEXT"</span>).<span class="fu">trim</span>();
-          <span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(note);
-          date = <span class="fu">extract_date</span>(note.<span class="fu">split</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)[<span class="dv">0</span>]);
-          <span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(date);
-      }
-      
-
-    
-  }
-
-}</code></pre></div>
-  </div>
+<p>Related Programs:</p>
+<ul>
+<li><p>Python: <a href="https://github.com/celehs/PheCAP/blob/master/code/iterate_notes.py">iterate_notes.py</a></p></li>
+<li><p>Java: <a href="https://github.com/celehs/PheCAP/blob/master/code/i2b2_xml_Utils.java">i2b2_xml_Utils.java</a></p></li>
+</ul>
+</div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
       </div>
