@@ -2,8 +2,8 @@ Package: PheCAP
 Type: Package
 Title: High-Throughput Phenotyping with Electronic Health Records
        using a Common Automated Pipeline
-Version: 1.0
-Date: 2019-03-16
+Version: 1.1.0
+Date: 2019-03-29
 Authors@R: c(
     person("Yichi", "Zhang", role = c("aut", "cre"), email = "yichizhang@uri.edu"),
     person("Chuan", "Hong", role = "aut")

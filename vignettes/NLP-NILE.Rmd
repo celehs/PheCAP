@@ -1,5 +1,5 @@
 ---
-title: "Example: Running NLP using NILE"
+title: "Running NLP using NILE"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{PheCAP}

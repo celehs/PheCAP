@@ -74,7 +74,7 @@ using a Common Automated Pipeline — PheCAP-package" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.0</span>
       </span>
     </div>
 
@@ -105,7 +105,7 @@ using a Common Automated Pipeline — PheCAP-package" />
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -232,16 +232,16 @@ Predicted phenotype is provided by
 <span class='no'>model</span></div><div class='output co'>#&gt; Phenotyping model:
 #&gt; $lasso_bic
 #&gt; (Intercept)        ICD1        NLP1          HU        ICD2        NLP3 
-#&gt;  -5.4004350   1.6615203   1.3899667  -0.6024949   0.0000000   0.0000000 
+#&gt;  -5.6520589   1.8344311   1.4716540  -0.7044457   0.0000000   0.8516056 
 #&gt; 
-#&gt; AUC on training data: 0.94 
-#&gt; Average AUC on random splits: 0.932 </div><div class='input'>
+#&gt; AUC on training data: 0.954 
+#&gt; Average AUC on random splits: 0.939 </div><div class='input'>
 <span class='co'># Validate phenotyping model using validation label,</span>
 <span class='co'># and show the AUC and ROC.</span>
 <span class='no'>validation</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='phecap_validate_phenotyping_model.html'>phecap_validate_phenotyping_model</a></span>(<span class='no'>data</span>, <span class='no'>model</span>)
-<span class='no'>validation</span></div><div class='output co'>#&gt; AUC on validation data: 0.943 
-#&gt; AUC on training data: 0.94 
-#&gt; Average AUC on random splits: 0.932 </div><div class='input'>
+<span class='no'>validation</span></div><div class='output co'>#&gt; AUC on validation data: 0.945 
+#&gt; AUC on training data: 0.954 
+#&gt; Average AUC on random splits: 0.939 </div><div class='input'>
 </div><span class='co'># NOT RUN {</span>
 <span class='fu'><a href='phecap_plot_roc_curves.html'>phecap_plot_roc_curves</a></span>(<span class='no'>validation</span>)
 <span class='co'># }</span><div class='input'>

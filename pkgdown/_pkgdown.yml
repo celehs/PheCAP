@@ -18,7 +18,7 @@ navbar:
         href: articles/example2.html       
     - text: "NER using MetaMAP"
       href: articles/NER-MetaMAP.html  
-    - text: "NLP using NILE"
+    - text: "Running NLP using NILE"
       href: articles/NLP-NILE.html         
     - text: "Reference"
       href: reference/index.html

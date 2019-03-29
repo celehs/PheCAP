@@ -36,7 +36,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.0</span>
       </span>
     </div>
 
@@ -67,7 +67,7 @@
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -126,7 +126,7 @@ data</code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
 <pre><code>##    user  system elapsed 
-## 189.492   0.368 189.876</code></pre>
+## 189.928   0.140 190.081</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"  
@@ -137,45 +137,45 @@ model</code></pre></div>
 <pre><code>## Phenotyping model:
 ## $lasso_bic
 ##            (Intercept)               main_ICD               main_NLP 
-##               1.636105               0.381872               1.342744 
+##              2.9385715              1.4945729              3.3069198 
 ##      main_ICD&amp;main_NLP healthcare_utilization                  NLP56 
-##               0.000000              -1.242392               0.000000 
+##             -2.8045580             -1.2310919              0.0000000 
 ##                  NLP93                 NLP160                 NLP161 
-##               0.000000               0.000000               0.000000 
+##             -0.3141447              0.0000000              0.0000000 
 ##                 NLP306                 NLP403 
-##               0.000000               0.000000 
+##              0.0000000              0.0000000 
 ## 
-## AUC on training data: 0.919 
-## Average AUC on random splits: 0.905</code></pre>
+## AUC on training data: 0.941 
+## Average AUC on random splits: 0.902</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)
 validation</code></pre></div>
-<pre><code>## AUC on validation data: 0.894 
-## AUC on training data: 0.919 
-## Average AUC on random splits: 0.905</code></pre>
+<pre><code>## AUC on validation data: 0.92 
+## AUC on training data: 0.941 
+## Average AUC on random splits: 0.902</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Round">round</a></span>(validation<span class="op">$</span>valid_roc[validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">&lt;=</span><span class="st"> </span><span class="fl">0.2</span>, ], <span class="dv">3</span>)</code></pre></div>
 <pre><code>##       cutoff pos.rate   FPR   TPR   PPV   NPV    F1
-##  [1,]  0.984    0.007 0.000 0.209 1.000 0.281 0.346
-##  [2,]  0.959    0.139 0.000 0.287 1.000 0.302 0.446
-##  [3,]  0.934    0.236 0.000 0.364 1.000 0.327 0.533
-##  [4,]  0.910    0.347 0.059 0.437 0.960 0.340 0.600
-##  [5,]  0.909    0.347 0.059 0.440 0.960 0.342 0.603
-##  [6,]  0.909    0.347 0.059 0.443 0.961 0.343 0.606
-##  [7,]  0.908    0.361 0.059 0.446 0.961 0.344 0.609
-##  [8,]  0.906    0.361 0.059 0.449 0.961 0.345 0.612
-##  [9,]  0.904    0.361 0.059 0.452 0.961 0.347 0.615
-## [10,]  0.902    0.375 0.118 0.465 0.928 0.338 0.620
-## [11,]  0.900    0.375 0.118 0.527 0.935 0.366 0.674
-## [12,]  0.899    0.375 0.118 0.589 0.942 0.399 0.725
-## [13,]  0.869    0.458 0.118 0.651 0.947 0.439 0.772
-## [14,]  0.748    0.583 0.118 0.713 0.951 0.487 0.815
-## [15,]  0.628    0.625 0.118 0.775 0.955 0.547 0.855
-## [16,]  0.539    0.667 0.176 0.823 0.938 0.589 0.877
-## [17,]  0.526    0.667 0.176 0.838 0.939 0.611 0.886
-## [18,]  0.514    0.667 0.176 0.854 0.940 0.635 0.895
-## [19,]  0.473    0.694 0.176 0.869 0.941 0.660 0.904
-## [20,]  0.381    0.708 0.176 0.885 0.942 0.688 0.912
-## [21,]  0.288    0.736 0.176 0.900 0.943 0.718 0.921</code></pre>
+##  [1,]  0.992    0.007 0.000 0.282 1.000 0.301 0.440
+##  [2,]  0.950    0.250 0.000 0.384 1.000 0.334 0.555
+##  [3,]  0.909    0.361 0.000 0.486 1.000 0.375 0.654
+##  [4,]  0.870    0.458 0.059 0.583 0.970 0.411 0.728
+##  [5,]  0.870    0.458 0.059 0.595 0.970 0.418 0.738
+##  [6,]  0.870    0.458 0.059 0.607 0.971 0.426 0.747
+##  [7,]  0.869    0.472 0.059 0.620 0.971 0.433 0.757
+##  [8,]  0.861    0.514 0.059 0.632 0.972 0.442 0.766
+##  [9,]  0.853    0.514 0.059 0.644 0.973 0.450 0.775
+## [10,]  0.845    0.528 0.118 0.661 0.948 0.446 0.779
+## [11,]  0.838    0.528 0.118 0.698 0.950 0.475 0.805
+## [12,]  0.830    0.528 0.118 0.735 0.953 0.507 0.830
+## [13,]  0.800    0.542 0.118 0.772 0.955 0.545 0.854
+## [14,]  0.694    0.597 0.118 0.809 0.957 0.589 0.877
+## [15,]  0.589    0.653 0.118 0.847 0.959 0.640 0.899
+## [16,]  0.511    0.708 0.176 0.875 0.941 0.670 0.907
+## [17,]  0.501    0.708 0.176 0.881 0.942 0.681 0.910
+## [18,]  0.491    0.708 0.176 0.887 0.942 0.692 0.914
+## [19,]  0.464    0.722 0.176 0.893 0.942 0.704 0.917
+## [20,]  0.404    0.736 0.176 0.899 0.943 0.716 0.921
+## [21,]  0.345    0.736 0.176 0.905 0.943 0.729 0.924</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(validation)</code></pre></div>
 <p><img src="example2_files/figure-html/unnamed-chunk-8-1.png" width="700"></p>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
@@ -186,16 +186,16 @@ case_status &lt;-<span class="st"> </span><span class="kw"><a href="https://www.
 predict.table &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cbind">cbind</a></span>(phenotype, case_status)
 predict.table[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</code></pre></div>
 <pre><code>##    patient_id  prediction case_status
-## 1           1 0.104608708           0
-## 2           2 0.966283547           1
-## 3           3 0.049777801           0
-## 4           4 0.026437544           0
-## 5           5 0.227126552           0
-## 6           6 0.848939364           0
-## 7           7 0.003127854           0
-## 8           8 0.062386645           0
-## 9           9 0.335662808           0
-## 10         10 0.024669950           0</code></pre>
+## 1           1 0.154521274           0
+## 2           2 0.986655055           1
+## 3           3 0.043015703           0
+## 4           4 0.034496541           0
+## 5           5 0.435714807           0
+## 6           6 0.842739566           0
+## 7           7 0.006126169           0
+## 8           8 0.028935768           0
+## 9           9 0.418866615           0
+## 10         10 0.058719610           0</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
