@@ -6,5 +6,6 @@ articles:
   NLP-NILE: NLP-NILE.html
   ex1-sim: ex1-sim.html
   ex2-ehr: ex2-ehr.html
+  include: include.html
   main: main.html
 

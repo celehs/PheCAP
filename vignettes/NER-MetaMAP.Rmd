@@ -9,7 +9,7 @@ vignette: >
 
 Go to the online MetaMap service (batch mode): <https://ii.nlm.nih.gov/Batch/UTS_Required/metamap.shtml>
 
-![](img/Screenshot_MetaMap_Website.png)
+![](include/img/Screenshot_MetaMap_Website.png)
 
 MetaMap will not run on text that contains non-ascii characters, so remove them before using MetaMap. Non-ascii characters can be identified with the regular expression “[^\x00-\x7F]”.
 
@@ -25,8 +25,8 @@ Acquired Abnormality; Amino Acid, Peptide, or Protein; Anatomical Abnormality; A
 
 Click **Submit Batch MetaMap**. An email will notify you once MetaMap has finished processing the file. Download “text.out” and rename it, such as “Wikipedia.out”. Create a folder and put all the output files in it.
 
-![](img/Screenshot_MetaMap_WikiOutput.png)
+![](include/img/Screenshot_MetaMap_WikiOutput.png)
 
 <br>
 
-Run [MetaMap_postprocessing.R](https://github.com/celehs/PheCAP/blob/master/download/MetaMap_postprocessing.R) to extract the CUIs from the output and select by majority voting.
+Run [MetaMap_postprocessing.R](include/MetaMap_postprocessing.R) to extract the CUIs from the output and select by majority voting.
