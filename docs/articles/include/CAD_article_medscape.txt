@@ -1,0 +1,1133 @@
+Coronary artery atherosclerosis is the single largest killer of men and women in the United States. It is the principal cause of coronary artery disease (CAD), in which atherosclerotic changes are present within the walls of the coronary arteries. See the image below.
+
+Cardiac catheterization and coronary angiography i
+Cardiac catheterization and coronary angiography in the left panel shows severe left anterior descending coronary artery stenosis. This lesion was treated with stent placement in the left anterior descending coronary artery, as observed in the right panel.
+Essential update: ACP releases guidelines on screening for coronary heart disease
+In 2015, the American College of Physicians (ACP) released guidelines on screening for coronary heart disease, including the following[1] :
+
+There is no evidence that cardiac screening improves patient outcomes in asymptomatic, low-risk adults.
+Potential harms of cardiac screening include false-positive results causing patients to undergo potentially unnecessary tests and procedures.
+Among adults at low risk, prevalence of coronary heart disease is low, and cardiac screening is of low predictive value. Therefore, cardiac screening is of low yield, and the probability that positive findings will influence therapeutic decision making is low.
+Clinicians should therefore emphasize strategies to reduce cardiovascular risk even further among low-risk adults by treating modifiable risk factors (smoking, diabetes, blood pressure, hyperlipidemia, overweight, and exercise).
+Clinicians should not screen asymptomatic, low-risk adults for cardiac disease using resting or stress electrocardiography, stress echocardiography, or stress myocardial perfusion imaging.
+Clinicians should conduct cardiovascular risk assessment with a global risk score combining individual risk factor measurements into a single quantitative estimate of risk.
+The ACP recommendations do not apply to symptomatic patients or to screening athletes before participation in various events.
+Signs and symptoms
+The signs and symptoms of coronary artery atherosclerosis include the following:
+
+Chest pain
+Shortness of breath
+Weakness, tiredness, reduced exertional capacity
+Dizziness, palpitations
+Leg swelling
+Weight gain
+Diaphoresis
+Stable angina pectoris
+Intermittent claudication
+Mesenteric angina
+Tachycardia: Common in persons with acute coronary syndrome (ACS) and acute myocardial infarction (AMI)
+High or low blood pressure
+S 4 gallop: A common early finding
+S 3 gallop: An indication of reduced left ventricular function
+Heart murmurs
+Tachypnea
+Xanthelasmas
+Livedo reticularis
+Syncope
+Leg edema
+Rales
+See Clinical Presentation for more detail.
+
+Diagnosis
+Laboratory tests:
+
+Complete blood count (CBC)
+Chemistry panel
+Lipid profile
+Thyroid function tests: To exclude thyroid disorders
+Blood glucose and hemoglobin A 1C (HbA 1C) measurement: Appropriate in patients with diabetes mellitus
+Myocardial fractional flow reserve (FFR)
+Coronary flow reserve (CFR)
+Lipid studies
+C-reactive protein level
+Serum markers
+Imaging studies:
+
+Echocardiography
+Nuclear imaging
+Computed tomography
+Electron beam CT scanning
+Optical coherence tomography imaging
+Magnetic resonance imaging
+Positron emission tomography
+Coronary angiography
+Doppler velocity probes
+Ultrasonography
+See Workup for more detail.
+
+Management
+The following are used in the management of angina[2] :
+
+Nitrates
+Beta blockers
+Statins
+Calcium channel blockers
+Ranolazine
+Other agents used in the treatment of coronary artery stenosis or to aid in the management of stable coronary artery disease after intervention include the following:
+
+Angiotensin-converting enzyme inhibitors to reduce blood pressure
+Antiplatelet agents for acute coronary events
+Intravenous glycoprotein IIb/IIIa inhibitors
+Aspirin
+Clopidogrel
+Ticlopidine
+HMG-CoA reductase inhibitors, or statins to lower LDL cholesterol levels
+Treatment procedures for coronary artery atherosclerosis include the following:
+
+Coronary artery bypass grafting (CABG)
+Percutaneous coronary intervention (PCI)
+Partial ileal bypass
+In high- and intermediate-risk patients with 3-vessel disease, PCI was associated with significantly higher rates of revascularization and of major adverse cardiac and cerebrovascular events than CABG[3, 4] ; the 2 procedures were equally effective in the treatment of low-risk patients with 3-vessel disease and in low- and intermediate-risk patients with left main CAD.
+
+See Treatment and Medication for more detail.
+
+Background
+Coronary artery atherosclerosis is the single largest killer of men and women in the United States. It is the principal cause of coronary artery disease (CAD), in which atherosclerotic changes are present within the walls of the coronary arteries. CAD is a progressive disease process that generally begins in childhood and manifests clinically in middle to late adulthood.
+
+The word atherosclerosis is of Greek origin and literally means focal accumulation of lipid (ie, athere [gruel]) and thickening of arterial intima (ie, sclerosis [hardening]). Atherosclerosis is a disease of large and medium-sized muscular arteries and is characterized by the following:
+
+Endothelial dysfunction
+Vascular inflammation
+Buildup of lipids, cholesterol, calcium, and cellular debris within the intima of the vessel wall
+Atherosclerotic buildup results in the following:
+
+Plaque formation
+Vascular remodeling
+Acute and chronic luminal obstruction
+Abnormalities of blood flow
+Diminished oxygen supply to target organs
+By impairing or obstructing normal blood flow, atherosclerotic buildup causes myocardial ischemia. (See Pathophysiology.)
+
+Approximately 14 million Americans have CAD. Each year, 1.5 million individuals develop acute myocardial infarction (AMI), the most deadly presentation of CAD, and more than 500,000 of these individuals die. (See Epidemiology.)
+
+Nonetheless, there has been a 30% reduction in mortality from CAD since the late 20th century. Many factors have contributed to this, including the introduction of coronary care units, coronary artery bypass grafting (CABG), thrombolytic therapy, percutaneous coronary intervention (PCI), and a renewed emphasis on lifestyle modification. (See Treatment Strategies and Management.)
+
+A major advance in the treatment of coronary artery atherosclerosis has been the development of a refined understanding of the nature of atherosclerotic plaque and the phenomenon of plaque rupture, which is the predominant cause of acute coronary syndrome (ACS) and AMI. Cardiologists now know that in many cases (perhaps more than half), the plaque that ruptures and results in the clinical syndromes of ACS and AMI is less than 50% occlusive. These so-called vulnerable plaques, as compared with stable plaques, consist of a large lipid core, inflammatory cells, and thin, fibrous caps that are subjected to greater biomechanical stress, thus leading to rupture that perpetuates thrombosis and ACS. The process of plaque rupture is illustrated in the diagram below.
+
+A vulnerable plaque and the mechanism of plaque ru
+A vulnerable plaque and the mechanism of plaque rupture.
+The treatment of such ruptured plaques has taken a leap forward with the widespread use of newer antiplatelet and antithrombotic agents. Nonetheless, the greatest impact on the CAD epidemic can only be achieved through therapies tailored to prevent the rupture of these vulnerable plaques. Such plaques are likely more prevalent than occlusive plaques are. Currently, it is not possible to clinically identify most vulnerable plaques, and no data support the local treatment of them. On the other hand, strong evidence from many randomized trials supports the efficacy of statin-class drugs in lipid lowering and of angiotensin-converting enzyme (ACE) inhibitors in improving endothelial function, with the use of both types of agents likely leading to plaque stabilization. (See Medication.)
+
+Anatomy
+The healthy epicardial coronary artery consists of the following 3 layers:
+
+Intima
+Media
+Adventitia
+The intima is an inner monolayer of endothelial cells lining the lumen; it is bound on the outside by internal elastic lamina, a fenestrated sheet of elastin fibers. The thin subendothelial space in between contains thin elastin and collagen fibers along with a few smooth muscle cells (SMCs).
+
+The media are bound on the outside by an external elastic lamina that separates them from the adventitia, which consists mainly of fibroblasts, SMCs, and a matrix containing collagen and proteoglycans.
+
+The endothelium is the monolayered inner lining of the vascular system. It covers almost 700 m2 and weighs 1.5 kg.
+
+The endothelium has various functions. It provides a nonthrombogenic surface via a surface covering of heparan sulfate and through the production of prostaglandin derivatives such as prostacyclin, which is a potent vasodilator and an inhibitor of platelet aggregation.
+
+The endothelium secretes the most potent vasodilator, endothelium-derived relaxing factor (EDRF), a thiolated form of nitric oxide. EDRF formation by endothelium is critical in maintaining a balance between vasoconstriction and vasodilation in the process of arterial homeostasis. The endothelium also secretes agents that are effective in lysing fibrin clots. These agents include plasminogen and procoagulant materials, such as von Willebrand factor and type 1 plasminogen activator inhibitor. In addition, the endothelium secretes various cytokines and adhesion molecules, such as vascular cell adhesion molecule-1 and intercellular adhesion molecule-1, and numerous vasoactive agents, such as endothelin, A-II, serotonin, and platelet-derived growth factor, which may be important in vasoconstriction.
+
+Endothelium, through the above mechanisms, regulates the following:
+
+Vascular tone
+Platelet activation
+Monocyte adhesion and inflammation
+Thrombus generation
+Lipid metabolism
+Cellular growth and vascular remodeling
+Pathophysiology
+Initially thought to be a chronic, slowly progressive, degenerative disease, atherosclerosis is a disorder with periods of activity and quiescence. Although a systemic disease, atherosclerosis manifests in a focal manner and affects different organ systems in different patients for reasons that remain unclear
+
+Plaque growth and vascular remodeling
+The lesions of atherosclerosis do not occur in a random fashion. Hemodynamic factors interact with the activated vascular endothelium. Fluid shear stresses generated by blood flow influence the phenotype of the endothelial cells by modulation of gene expression and regulation of the activity of flow-sensitive proteins.
+
+Atherosclerotic plaques (or atheromas), which may require 10-15 years for full development, characteristically occur in regions of branching and marked curvature at areas of geometric irregularity and where blood undergoes sudden changes in velocity and direction of flow. Decreased shear stress and turbulence may promote atherogenesis at these important sites within the coronary arteries, the major branches of the thoracic and abdominal aorta, and the large conduit vessels of the lower extremities.
+
+A study by Samady et al suggests low shear segments in the coronary arteries develop greater plaque and necrotic core progression and constrictive remodeling, whereas high shear segments develop greater necrotic core and calcium progression, regression of fibrous and fibrofatty tissue, and excessive expansive remodeling.[5] This suggests a transformation to a more vulnerable phenotype.
+
+The earliest pathologic lesion of atherosclerosis is the fatty streak, which is observed in the aorta and coronary arteries of most individuals by age 20 years. The fatty streak is the result of focal accumulation of serum lipoproteins within the intima of the vessel wall. Microscopy reveals lipid-laden macrophages, T lymphocytes, and smooth muscle cells in varying proportions. The fatty streak may progress to form a fibrous plaque, the result of progressive lipid accumulation and the migration and proliferation of SMCs.
+
+Platelet-derived growth factor, insulinlike growth factor, transforming growth factors alpha and beta, thrombin, and angiotensin II (A-II) are potent mitogens that are produced by activated platelets, macrophages, and dysfunctional endothelial cells that characterize early atherogenesis, vascular inflammation, and platelet-rich thrombosis at sites of endothelial disruption. The relative deficiency of endothelium-derived nitric oxide further potentiates this proliferative stage of plaque maturation.
+
+The SMCs are responsible for the deposition of extracellular connective tissue matrix and form a fibrous cap that overlies a core of lipid-laden foam cells, extracellular lipid, and necrotic cellular debris. Growth of the fibrous plaque results in vascular remodeling, progressive luminal narrowing, blood-flow abnormalities, and compromised oxygen supply to the target organ. Human coronary arteries enlarge in response to plaque formation, and luminal stenosis may occur only when the plaque occupies more than 40% of the area bounded by the internal elastic lamina. Developing atherosclerotic plaques acquire their own microvascular network, the vasa vasorum, which are prone to hemorrhage and contribute to progression of atherosclerosis.[6]
+
+As endothelial injury and inflammation progress, fibroatheromas grow and form the plaque. As the plaque grows, 2 types of remodeling, positive remodeling and negative remodeling, occur, as illustrated in the image below.
+
+Positive and negative arterial remodeling. 
+Positive and negative arterial remodeling.
+Positive remodeling is an outward compensatory remodeling (the Glagov phenomenon) in which the arterial wall bulges outward and the lumen remains uncompromised. Such plaques grow further; however, they usually do not cause angina, because they do not become hemodynamically significant for a long time. In fact, the plaque does not begin to encroach on the lumen until it occupies 40% of the cross-sectional area. The encroachment must be at least 50-70% to cause flow limitation. Such positively remodeled lesions thus form the bulk of the vulnerable plaques, grow for years, and are more prone to result in plaque rupture and ACS than stable angina, as documented by intravascular ultrasonography (IVUS) studies.
+
+Many fewer lesions exhibit almost no compensatory vascular dilation, and the atheroma steadily grows inward, causing gradual luminal narrowing. Many of the plaques with initial positive remodeling eventually progress to the negative remodeling stage, causing narrowing of the vascular lumen. Such plaques usually lead to the development of stable angina. They are also vulnerable to plaque rupture and thrombosis.
+
+Plaque rupture
+Denudation of the overlying endothelium or rupture of the protective fibrous cap may result in exposure of the thrombogenic contents of the core of the plaque to the circulating blood. This exposure constitutes an advanced or complicated lesion. The plaque rupture occurs due to weakening of the fibrous cap. Inflammatory cells localize to the shoulder region of the vulnerable plaque. T lymphocytes elaborate interferon gamma, an important cytokine that impairs vascular smooth muscle cell proliferation and collagen synthesis. Furthermore, activated macrophages produce matrix metalloproteinases that degrade collagen.
+
+These mechanisms explain the predisposition to plaque rupture and highlight the role of inflammation in the genesis of the complications of the fibrous atheromatous plaque. A plaque rupture may result in thrombus formation, partial or complete occlusion of the blood vessel, and progression of the atherosclerotic lesion due to organization of the thrombus and incorporation within the plaque.
+
+Plaque rupture is the main event that causes acute presentations. However, severely obstructive coronary atheromas do not usually cause ACS and MI. In fact, most of the atheromas that cause ACS are less than 50% occlusive, as demonstrated by coronary arteriography. Atheromas with smaller obstruction experience greater wall tension, which changes in direct proportion to their radii.
+
+Most plaque ruptures occur because of disruption of the fibrous cap, which allows contact between the highly thrombogenic lipid core and the blood. These modestly obstructive plaques, which have a greater burden of soft lipid core and thinner fibrous caps with chemoactive cellular infiltration near the shoulder region, are called vulnerable plaques. The amount of collagen in the fibrous cap depends on the balance between synthesis and destruction of intercellular matrix and inflammatory cell activation.
+
+T cells that accumulate at sites of plaque rupture and thrombosis produce the cytokine interferon gamma, which inhibits collagen synthesis. Already-formed collagen is degraded by macrophages that produce proteolytic enzymes and by matrix metalloproteinases (MMPs), particularly MMP-1, MMP-13, MMP-3, and MMP-9. The MMPs are induced by macrophage- and SMC-derived cytokines such as IL-1, tumor necrosis factor (TNF), and CD154 or TNF-alpha. Authorities postulate that lipid lowering stabilizes the vulnerable plaques by modulating the activity of the macrophage-derived MMPs.
+
+Histologic composition and structure
+A system devised by Stary et al classifies atherosclerotic lesions according to their histologic composition and structure.[7]
+
+In a type I lesion, the endothelium expresses surface adhesion molecules E selectin and P selectin, attracting more polymorphonuclear cells and monocytes in the subendothelial space.
+
+In a type II lesion, macrophages begin to take up large amounts of LDL (fatty streak).
+
+In a type III lesion, as the process continues, macrophages become foam cells.
+
+In a type IV lesion, lipid exudes into the extracellular space and begins to coalesce to form the lipid core.
+
+In a type V lesion, SMCs and fibroblasts move in, forming fibroatheromas with soft inner lipid cores and outer fibrous caps.
+
+In a type VI lesion, rupture of the fibrous cap with resultant thrombosis causes ACS.
+
+As lesions stabilize, they become fibrocalcific (type VII lesion) and, ultimately, fibrotic with extensive collagen content (type VIII lesion).
+
+Etiology
+A complex and incompletely understood interaction is observed between the critical cellular elements of the atherosclerotic lesion. These cellular elements include endothelial cells, smooth muscle cells, platelets, and leukocytes. Interrelated biologic processes that contribute to atherogenesis and the clinical manifestations of atherosclerosis are as follows:
+
+Vasomotor function
+Thrombogenicity of the blood vessel wall
+State of activation of the coagulation cascade
+The fibrinolytic system
+SMC migration and proliferation
+Cellular inflammation
+The encrustation theory, proposed by Rokitansky in 1851, suggested that atherosclerosis begins in the intima with deposition of thrombus and its subsequent organization by the infiltration of fibroblasts and secondary lipid deposition.
+
+In 1856, Virchow proposed that atherosclerosis starts with lipid transudation into the arterial wall and its interaction with cellular and extracellular elements, causing "intimal proliferation."
+
+Endothelial injury as the mechanism of atherosclerosis
+In his response-to-injury hypothesis, Ross postulated that atherosclerosis begins with endothelial injury, making the endothelium susceptible to the accumulation of lipids and the deposition of thrombus. The mechanisms of atherogenesis remain uncertain, but the response-to-injury hypothesis is the most widely accepted proposal.
+
+In the 1990s, Ross and Fuster proposed that vascular injury starts the atherosclerotic process.[8] Such injuries can be classified as follows:
+
+Type I - Vascular injury involving functional changes in the endothelium, with minimal structural changes, (ie, increased lipoprotein permeability and white blood cell adhesion)
+Type II - Vascular injury involving endothelial disruption, with minimal thrombosis
+Type III - Vascular injury involving damage to media, which may stimulate severe thrombosis, resulting in unstable coronary syndromes
+According to the response-tovascular injury theory, injury to the endothelium by local disturbances of blood flow at angulated or branch points, along with systemic risk factors, perpetuates a series of events that culminate in the development of atherosclerotic plaque.
+
+As discussed in greater detail below, endothelial damage occurs in many clinical settings and can be demonstrated in individuals with dyslipidemia, hypertension, diabetes, advanced age, nicotine exposure, and products of infective organisms (ie, Chlamydia pneumoniae). Damage to the endothelium may cause changes that are localized or generalized and that are transient or persistent, as follows:
+
+Increased permeability to lipoproteins
+Decreased nitric oxide production
+Increased leukocyte migration and adhesion
+Prothrombotic dominance
+Vascular growth stimulation
+Vasoactive substance release
+Endothelial dysfunction is the initial step that allows diffusion of lipids and inflammatory cells (ie, monocytes, T lymphocytes) into the endothelial and subendothelial spaces. Secretion of cytokines and growth factors promotes intimal migration, SMC proliferation, and accumulation of collagen matrix and of monocytes and other white blood cells, forming an atheroma. More advanced atheromas, even though nonocclusive, may rupture, thus leading to thrombosis and the development of ACS and MI.
+
+Role of low-density lipoprotein-oxidative stress
+The most atherogenic type of lipid is the low-density lipoprotein (LDL) component of total serum cholesterol. The endothelium's ability to modify lipoproteins may be particularly important in atherogenesis. LDLs appear to be modified by a process of low-level oxidation when bound to the LDL receptor, internalized, and transported through the endothelium. LDLs initially accrue in the subendothelial space and stimulate vascular cells to produce cytokines for recruiting monocytes, which causes further LDL oxidation. Extensively oxidized LDL (oxLDL), which is exceedingly atherogenic, is picked up by the scavenger receptors on macrophages, which absorb the LDL.
+
+Cholesterol accumulation in macrophages is promoted by oxLDL; the macrophages then become foam cells. In addition, oxLDL enhances endothelial production of leukocyte adhesion molecules (ie, cytokines and growth factors that regulate SMC proliferation, collagen degradation, and thrombosis [eg, vascular cell adhesion molecule-1, intercellular cell adhesion molecule-1]).
+
+Oxidized LDL inhibits nitric oxide synthase activity and increasing reactive oxygen species generation (eg, superoxide, hydrogen peroxide), thus reducing endothelium-dependent vasodilation. Moreover, oxLDL alters the SMC response to A-II stimulation and increasing vascular A-II concentrations. The SMCs that proliferate in the intima to form advanced atheromas are originally derived from the media. The theory that accumulation of SMCs in the intima represents the sine qua non of the lesions of advanced atherosclerosis is now widely accepted.
+
+Substantial evidence suggests that oxLDL is the prominent component of atheromas. Antibodies against oxLDL react with atherosclerotic plaques, and plasma levels of immunoreactive altered LDL are greater in persons with AMI than in controls. Oxidative stress has therefore been recognized as the most significant contributor to atherosclerosis by causing LDL oxidation and increasing nitric oxide breakdown.
+
+Risk factors for coronary artery atherosclerosis
+A number of large epidemiologic studies in North America and Europe have identified numerous risk factors for the development and progression of atherosclerosis. These factors, which can be classified as either modifiable or nonmodifiable, include the following:
+
+Hyperlipidemia and dyslipidemia
+Hypertension
+Cigarette habituation
+Air pollution
+Diabetes mellitus
+Age
+Sex
+The American College of Cardiology Foundation/American Heart Association 2010 report on cardiovascular risk assessment in asymptomatic adults recommends global risk scoring (eg, Framingham Risk Score[9] ) and a family history of cardiovascular disease be obtained in all adult women and men.[10]
+
+Numerous novel risk factors have been identified that add to the predictive value of the established risk factors and may prove to be a target for future medical interventions.
+
+Risk factors specific to women include pregnancy and complications of pregnancy such as gestational diabetes, preeclampsia, third trimester bleeding, preterm birth, and birth of an infant small for gestational age. The 2011 update to the American Heart Association guideline for the prevention of cardiovascular disease (CVD) in women recommends that risk assessment at any stage of life include a detailed history of pregnancy complications. It also states that postpartum, obstetricians should refer women who experience these complications to a primary care physician or cardiologist.[11]
+
+The presence of risk factors accelerates the rate of development of atherosclerosis. Diabetes causes endothelial dysfunction, decreases endothelial thromboresistance, and increases platelet activity, thus accelerating atherosclerosis.
+
+Established risk factors successfully predict future cardiac events in about 50-60% of patients. A concerted effort to identify is also being made to validate new markers of future risk of the clinical consequences of atherosclerosis has been made.
+
+Other risk factors for coronary artery atherosclerosis include the following:
+
+Family history of premature CAD
+Hypoalphalipoproteinemia
+Obesity
+Physical inactivity
+Syndromes of accelerated atherosclerosis - Graft atherosclerosis, CAD after cardiac transplantation
+Chronic kidney disease [12]
+Systemic lupus erythematosus [13]
+Rheumatoid arthritis [14]
+Metabolic syndrome [15]
+Chronic inflammation
+Infectious agents
+Increased fibrinogen levels
+Increased lipoprotein(a) levels
+Familial hypercholesterolemia
+Depression
+According to the 2011 update to the American Heart Association guideline for CVD prevention in women, risk factors that are more common or may be more significant in women include psychosocial factors such as depression and autoimmune diseases such as systemic lupus erythematosus and rheumatoid arthritis. The Heart and Estrogen/progestin Replacement Study evaluated the effects of hormone replacement therapy on cardiovascular events among postmenopausal women with CAD and found that sudden cardiac death comprised most cardiac deaths among this group of women.[16] Women with these conditions should be evaluated for CVD and for other risk factors. Women with clinically evident CVD should also be screened for these conditions, which can affect adherence or otherwise complicate secondary CVD prevention efforts.[11]
+
+A study by Semba et al, however, suggests that high concentrations of plasma klotho, a recently discovered hormone that has been implicated in atherosclerosis, are independently associated with a lower likelihood of having CVD.[17]
+
+For more information, see Risk Factors for Coronary Artery Disease.
+
+Epidemiology
+The true frequency of atherosclerosis is difficult, if not impossible, to accurately determine because it is a predominantly asymptomatic condition. The process of atherosclerosis begins in childhood with the development of fatty streaks. These lesions can be found in the aorta shortly after birth and appear in increasing numbers in those aged 8-18 years. More advanced lesions begin to develop when individuals are aged approximately 25 years. Subsequently, an increasing prevalence of the advanced complicated lesions of atherosclerosis is noted, and the organ-specific clinical manifestations of the disease increase with age through the fifth and sixth decades of life.
+
+United States statistics
+In the United States, approximately 14 million persons experience CAD and its various complications. Congestive heart failure (CHF) that develops because of ischemic cardiomyopathy in hypertensive MI survivors has become the most common discharge diagnosis for patients in American hospitals. Approximately 80 million people, or 36.3% of the population, have cardiovascular disease.
+
+Annually, approximately 1.5 million Americans have an AMI, a third of whom die. In 2009, 785,000 Americans were estimated to have suffered a first MI, and about 470,000 Americans were estimated to have had a recurrent event. An additional 195,000 "silent" heart attacks are estimated to occur each year. About every 34 seconds, an American will have an MI. CAD remains the number 1 cause of death for men and women in the United States and is responsible for approximately 20% of all US deaths. From 19952005, the death rate from CAD declined 34.3%, but the actual number of deaths declined only 19.4%.
+
+International statistics
+The international incidence of ACS and AMI, especially in developed countries, is similar to that observed in the United States. Despite consumption of rich foods, inhabitants of France and the Mediterranean region appear to have a lower incidence of CAD. This phenomenon (sometimes called the French paradox) is partly explained by greater use of alcohol, with its possible HDL-raising benefit, and by consumption of the Mediterranean diet, which includes predominant use of monounsaturated fatty acids, such as olive oil or canola oil, as well as omega-3 fatty acids, which are less atherogenic. Eskimos have been found to have a lower prevalence of CAD as a result of consuming fish oils containing omega-3 fatty acids.
+
+The Spanish cohort of the European Prospective Investigation into Cancer and Nutrition assessed the association between consumption of fried foods and risk of coronary heart disease. They found that among people living in Spain, where olive or sunflower oil is commonly used for frying, the consumption of fried foods was not associated with coronary heart disease or with all-cause mortality. This further suggests that the Mediterranean diet may help lower the risk of CAD.[18]
+
+Findings from the World Health Organization's Monitor Trends in Cardiovascular Diseases (MONICA) project involving 21 countries showed a 4% fall in CAD death rates. Improvement in the case fatality rate accounted for only one third of the decline. However, two thirds of the decline resulted from a reduction in the number of events. These findings strongly suggest that the largest impact on decreasing the global burden of atherosclerosis will come from prevention of events.
+
+The frequency of clinical manifestations of atherosclerosis in Great Britain, west of Scotland in particular, is especially high. The same is true of Scandinavia in general and of Finland in particular. Russia and many of the former states of the Soviet Union have recently experienced an exponential increase in the frequency of coronary heart disease that likely is the result of widespread economic hardship and social upheaval, a high prevalence of cigarette habituation, and a diet high in saturated fats.
+
+Westernization and the rise of coronary heart disease
+The frequency of coronary heart disease in the Far East is significantly lower than that documented in the West. Ill-defined genetic reasons for this phenomenon may exist, but significant interest surrounds the role of diet and other environmental factors in the absence of clinical atherosclerotic vascular disease in these populations. Atherosclerotic cardiovascular disease is also rare on the African continent, although growing evidence indicates that this too is changing, as a result of rapid westernization and urbanization of the traditionally rural and agrarian African populations. The prevalence of coronary heart disease is also increasing in the Middle East, India, and Central and South America.[6] The rate of CAD in ethnic immigrant populations in the United States approaches that of the disease in whites, supporting the role of these putative environmental factors.
+
+Race-associated prevalences of coronary artery disease
+The incidence, prevalence, and manifestations of CAD vary significantly with race, as does the response to therapy.
+
+Blacks appear to have higher morbidity and mortality rates of CAD, even when the statistics are corrected for educational and socioeconomic status. The risk-factor burden experienced by blacks differs from that of whites. The prevalence of hypertension, obesity, dysmetabolic syndrome, and lack of physical activity are much higher in blacks, whereas the prevalence of hypercholesterolemia is lower. Blacks with AMI present for treatment later than patients do on average, are less often subjected to invasive strategies, and experience greater overall mortality. (Similar statistics can also be cited for presentation and treatment of patients with stable CAD.)
+
+Asian Indians exhibit a 2- to 3-fold higher prevalence of CAD than do whites in the United States. They also have greater prevalences of hypoalphalipoproteinemia, high lipoprotein(a) levels, and diabetes.
+
+Sex-associated prevalences of coronary artery disease
+Men traditionally have a higher prevalence of CAD. Women, however, follow men by 10 years, especially after menopause. (The value of estrogen supplementation for prevention of CAD has been discredited by the Heart and Estrogen/Progestin Replacement Study [HERS]).[19, 20]
+
+The presence of diabetes, as well as tobacco use, eliminates the protection from heart disease associated with female sex. In women, as in men, the most common cause of death is CAD, which accounts for more deaths in women than those related to breast and uterine diseases combined. Women with AMI present later than average, are less often subjected to invasive strategies, and experience greater overall mortality. (Similar statistics can also be cited for the presentation and treatment of patients with stable CAD.)
+
+The 2011 update to the American Heart Association guideline for the prevention of cardiovascular disease in women recommends changes in prevention and treatment practices[11] :
+
+Women should be considered as high risk, and as candidates for aggressive treatment, if their risk of dying from any cardiovascular event in the next 10 years is 10% or greater.
+Research studies should publish efficacy and adverse drug reactions (ADRs) by gender, as both can differ in women.
+Evidence from clinical trials tends to overestimate the real-world efficacy of therapies in female patients, who are generally older and have more comorbidities than test subjects. The guideline is now effectiveness-based rather than evidence-based.
+Effectiveness-based considerations have reduced the strength of previous recommendations for use of aspirin, statins (in women with elevated C-reactive protein but normal cholesterol), and aggressive glycemic control in diabetes.
+The elderly and coronary artery disease
+Age is the strongest risk factor for the development of CAD. Most cases of CAD become clinically apparent in patients aged 40 years or older, but elderly persons experience higher mortality and morbidity rates from it. Approximately 82% of people who die of CAD are 65 years or older. Complication rates of multiple therapeutic interventions tend to be higher in the elderly; however, the magnitude of benefit from the same interventions is greater in this population, because these patients form a high-risk subgroup.
+
+Calculating risk of coronary artery atherosclerosis
+Of note, algorithms for predicting the risk of cardiovascular disease have generally been developed for a follow-up period of no more than 10 years. However, clustering of risk factors at younger ages and increasing life expectancy suggest the need for longer-term risk prediction.
+
+In a prospective, 30-year follow-up study, standard risk factors (male sex, systolic blood pressure, antihypertensive treatment, total and high-density lipoprotein cholesterol, smoking, diabetes mellitus), measured at baseline, were significantly related to the incidence of coronary death, myocardial infarction, and stroke and remained significant when updated regularly. This 2009 study by Pencina and colleagues, which utilized 4506 participants of the Framingham Offspring cohort, employed an algorithm for predicting 30-year risk for the above events. The investigators also found that body mass index was associated positively with 30-year risk of such events, but only in models that did not update risk factors.[9]
+
+Prognosis
+As previously mentioned, approximately 1.5 million Americans per year have an AMI, with a third of these events proving fatal. The survivors of MI have a poor prognosis, carrying a 1.5- to 15-fold higher risk of mortality and morbidity than the rest of the population.
+
+Historically, for example, 25% of men and 38% of women die within 1 year after having an MI, although these rates may overstate the 1-year mortality today, given advances in the treatment of CHF and sudden cardiac death. Among survivors, 18% of men and 34% of women have a second MI within 6 years, 7% of men and 6% of women die suddenly, 22% of men and 46% of women are disabled with CHF, and 8% of men and 11% of women have a stroke.
+
+According to a prospective study using data from the Coronary CT Angiography Evaluation for Clinical Outcomes: An International Multicenter (CONFIRM) Registry, incident mortality and MI rates do not differ significantly between men and women among patients matched for age, risk factors, symptoms, and extent of CAD.[21] These findings conflict with those from the Womens Health Initiative, which found that in women with nonspecific or atypical chest pain, the risk of nonfatal MI is twice as great as that in men.
+
+The prognosis in patients with atherosclerosis depends on the following factors:
+
+Presence of inducible ischemia
+Left ventricular function
+Presence of arrhythmias
+Revascularization potential (complete vs incomplete)
+Aggressiveness of risk alteration
+Compliance with medical therapy
+The prognosis of atherosclerosis also depends on systemic burden of disease, the vascular bed(s) involved, and the degree of flow limitation. Wide variability is noted, and clinicians appreciate that many patients with critical limitation of flow to vital organs may survive many years, despite a heavy burden of disease. Conversely, MI or sudden cardiac death may be the first clinical manifestation of atherosclerotic cardiovascular disease in a patient who is otherwise asymptomatic with minimal luminal stenosis and a light burden of disease.
+
+Much of this phenotypic variability is likely to be determined by the relative stability of the vascular plaque burden. Plaque rupture and exposure of the thrombogenic lipid core are critical events in the expression of this disease process and determine the prognosis. The ability to determine and quantify risk and prognosis in patients with atherosclerosis is limited by the inability to objectively measure plaque stability and other predictors of clinical events.
+
+Patient Education
+Education regarding CAD is extremely important. Publications and articles available from the American Heart Association provide a wealth of information.
+
+The most effective and probably the most cost-efficient means of reducing the burden of disease secondary to atherosclerosis in the general population is primary prevention. The role of diet and exercise in the prevention of atherosclerotic cardiovascular disease has been well established. Education of the general population regarding healthy dietary habits and regular exercise will reduce the prevalence of multiple coronary heart disease risk factors. (See Treatment Strategies and Management) For patients with risk factors refractory to lifestyle interventions, education can enhance compliance with prescribed therapy.
+
+For patient education resources, see the Heart Health Center and Cholesterol Center, as well as High Cholesterol, Lifestyle Cholesterol Management, Chest Pain, Coronary Heart Disease, Heart Attack, Angina Pectoris, andStatins for Cholesterol.
+
+History
+The symptoms of atherosclerosis vary widely. Patients with mild atherosclerosis may present with clinically important symptoms and signs of disease and MI, or sudden cardiac death may be the first symptom of coronary heart disease. However, many patients with anatomically advanced disease may have no symptoms and experience no functional impairment.
+
+The spectrum of presentation includes symptoms and signs consistent with the following conditions:
+
+Asymptomatic state (subclinical phase)
+Stable angina pectoris
+Unstable angina (ie, ACS)
+AMI
+Chronic ischemic cardiomyopathy
+Congestive heart failure
+Sudden cardiac arrest
+History may include the following:
+
+Chest pain
+Shortness of breath
+Weakness, tiredness, reduced exertional capacity
+Dizziness, palpitations
+Leg swelling
+Weight gain
+Symptoms related to risk factors
+Progressive luminal narrowing of an artery due to expansion of a fibrous plaque results in impairment of flow once at least 50-70% of the lumen diameter is obstructed. This impairment in flow results in symptoms of inadequate blood supply to the target organ in the event of increased metabolic activity and oxygen demand. Stable angina pectoris, intermittent claudication, and mesenteric angina are examples of the clinical consequences of this mismatch.
+
+Rupture of a plaque or denudation of the endothelium overlying a fibrous plaque may result in exposure of the highly thrombogenic subendothelium and lipid core. This exposure may result in thrombus formation, which may partially or completely occlude flow in the involved artery. Unstable angina pectoris, MI, transient ischemic attack, and stroke are examples of the clinical sequelae of partial or complete acute occlusion of an artery. Atheroembolism is a distinct clinical entity that may occur spontaneously or as a complication of aortic surgery, angiography, or thrombolytic therapy in patients with advanced and diffuse atherosclerosis.
+
+Angina pectoris is characterized by retrosternal chest discomfort that typically radiates to the left arm and may be associated with dyspnea. Angina pectoris is exacerbated by exertion and relieved by rest or nitrate therapy. Unstable angina pectoris describes a pattern of increasing frequency or intensity of episodes of angina pectoris and includes pain at rest. A prolonged episode of angina pectoris that may be associated with diaphoresis is suggestive of MI.
+
+Physical Examination
+Tachycardia is common in persons with ACS and AMI. Heart rate irregularity may signal the presence of atrial fibrillation or frequent supraventricular or ventricular ectopic beats. Ventricular tachycardia is the most common cause of death in persons with AMI.
+
+High or low blood pressure may be noted. Hypotension often reflects hemodynamic compromise and is a predictor of poor outcome in the setting of AMI. Diaphoresis is a common finding. Patients often have rapid breathing (ie, tachypnea). Signs and symptoms of congestive heart failure (CHF) may indicate cardiogenic shock or a mechanical complication of AMI, such as ischemic mitral valve regurgitation.
+
+An S4 gallop is a common early finding. The presence of an S3 is an indication of reduced left ventricular function. Heart murmurs, particularly those of mitral regurgitation and ventricular septal defect, may be found after the initial presentation; their presence indicates a grave prognosis. The murmur of aortic insufficiency may signal the presence of aortic dissection as a primary etiology, with or without the complication of AMI. Central obesity is often seen. Patients may develop xanthelasmas, livedo reticularis, or both. Patients may have scarring from CABG or similar surgeries.
+
+The following may also be noted:
+
+Shock
+Syncope
+Leg edema
+Pulmonary congestion
+Rales
+Diagonal ear crease
+Short stature
+Baldness
+Thoracic hairiness
+
+Diagnostic Considerations
+Typical angina symptoms, such as a substernal pressurelike chest pain with radiation to the jaw or left arm may not be present. Less typical symptoms, such as sharp chest pain, dyspnea, diaphoresis, back pain, neck pain, nausea, fatigue, and palpitations may be manifestations of myocardial ischemia. One-third of patients with chest pain with known coronary disease, negative ECG, and biomarkers subsequently have adverse cardiac events.[22] Less typical symptoms are more prevalent in women. In addition, symptoms suggestive of angina may in fact be due to other causes, listed in Differentials.
+
+Differential Diagnoses
+Acute Pericarditis
+
+Angina Pectoris
+
+Atherosclerosis
+
+Coronary Artery Vasospasm
+
+Dilated Cardiomyopathy
+
+Familial Hypercholesterolemia
+
+Giant Cell Arteritis (Temporal Arteritis)
+
+Hypertension
+
+Hypertensive Heart Disease
+
+Isolated Coronary Artery Anomalies
+
+Kawasaki Disease
+
+Myocardial Ischemia - Nuclear Medicine and Risk Stratification
+
+Myocarditis
+
+Nicotine Addiction
+
+Polygenic Hypercholesterolemia
+
+Pulmonary Embolism
+
+Right Ventricular Infarction
+
+Thromboangiitis Obliterans
+
+Treadmill Stress Testing
+
+Type 1 Diabetes Mellitus
+
+Type 2 Diabetes Mellitus
+
+Unstable Angina
+
+Approach Considerations
+Routine blood tests include complete blood count (CBC), chemistry panel, lipid profile, and thyroid function tests (to exclude thyroid disorders). Routine measurement of blood glucose and hemoglobin A1Cis appropriate in patients with diabetes mellitus. A study by Paynter et al found that models incorporating HbA1c levels significantly improved prediction of CVD risk among patients with diabetes.[23]
+
+Measuring any number of parameters that may reflect coagulation, fibrinolytic status, and platelet aggregability is possible. These measurements may prove to be valuable, but how these measurements affect clinical decision-making is unclear at this time, and including them in routine clinical practice is premature.
+
+Standardization of the CRP assay is required before this test may be clinically useful, and whether CRP is a truly modifiable risk factor remains unclear.
+
+The majority of atherosclerotic lesions responsible for the most serious CAD events (that is, the lesions that are most likely to rupture) are mild stenoses of inconsequential hemodynamic significance and are characterized by an abundance of lipid, numerous inflammatory cells, and a thin, fragile fibrous cap. This suggests that although measurements of coronary flow reserve (CFR) and fractional flow reserve (FFR), both of which are discussed below, may be useful in the assessment of the severity of stenoses and in the identification of lesions responsible for effort angina, they are not likely to identify the more dangerous plaques responsible for unstable angina, AMI, and sudden ischemic death.
+
+Screening for cardiovascular risk
+New guidelines on screening for cardiovascular risk, released in late 2013 by the American Heart Association/American College of Cardiology (AHA/ACC), recommend use of a revised calculator for estimating the 10-year risk of developing a first atherosclerotic CVD event, which is defined as nonfatal myocardial infarction, death from coronary heart disease, or stroke (fatal or nonfatal) in a person who was initially free from atherosclerotic CVD.[24] The calculator uses a combination of clinical and laboratory risk factors to estimate risk.
+
+For patients 20-79 years of age who do not have existing clinical atherosclerotic CVD, the guidelines recommend assessing clinical risk factors every 4-6 years. For patients with low 10-year risk (< 7.5%), the guidelines recommend assessing 30-year or lifetime risk in patients 20-59 years old.
+
+Regardless of the patients age, clinicians should communicate risk data to the patient and refer to the AHA/ACC lifestyle guidelines, which cover diet and physical activity. For patients with elevated 10-year risk, clinicians should communicate risk data and refer to the AHA/ACC guidelines on blood cholesterol and obesity.
+
+Screening for cardiovascular risk without measuring cholesterol
+A screening strategy for calculating cardiovascular risk that uses multiple nonlaboratory-based risk markers performed as well as approaches based on Framingham risk scores, which use cholesterol measurements in all patients. The analysis was conducted using data on 5998 adults in the National Health and Nutrition Examination Survey (NHANES) III. The risk markers included age, sex, smoking status, history of diabetes, blood-pressure treatment, systolic blood pressure, and body mass index.[25, 26]
+
+With the multistage-screening approach, patients deemed high risk would be treated with statins, those deemed low risk would be monitored without treatment, and intermediate-risk patients would undergo laboratory testing of cholesterol levels. There was no significant difference between the multistage approach and the Framingham risk score approach in discriminating risk.[25, 26]
+
+The multistage screening strategy was also more cost effective than the Framingham approach. The incremental cost-effective ratio was $52,000 per quality-adjusted life-year (QALY) for men and $83,000 per QALY for women, compared with more than $300,000 per QALY with the Framingham approach.[25, 26]
+
+Fractional Flow Reserve
+Myocardial FFR has been used as an index of functional severity of coronary artery stenosis. FFR represents the fraction of the normal maximal coronary flow that can be achieved in an artery in which flow is restricted by a coronary stenosis. The concept of FFR is based on the observation that myocardial perfusion is entirely pressure dependent during maximal hyperemia.
+
+Maximal blood flow in the presence of a stenosis is therefore determined by the driving pressure distal (Pd) to the stenosis, whereas the theoretical normal maximal blood flow is determined by the pressure proximal (Pp) to the stenosis. FFR is calculated during maximal hyperemia (obtained with adenosine or papaverine) as FFR = Pd/Pp. FFR less than 0.75 is typically associated with other objective evidence of myocardial ischemia. FFR is calculated from the ratio of the mean pressure distal to a coronary stenosis to the mean aortic pressure during maximal hyperemia. If the FFR is less than 0.75, sensitivity is at least 80% and specificity is at least 85% for the presence of ischemia on noninvasive stress testing.
+
+Lipid Studies
+Fasting lipid profile includes the following[27, 28, 29] :
+
+Total cholesterol level
+LDL cholesterol (LDL-C) level
+HDL cholesterol (HDL-C) level
+Triglyceride level
+Specific lipid studies (if necessary) include the following:
+
+Small, dense LDL-C level
+Lipoprotein (a) level
+Apoprotein profile
+Direct measurement of HDL-C
+C-Reactive Protein
+CRP (see C-Reactive Protein) appears to provide prognostic information for CAD, although as stated above, the CRP assay must be standardized before CRP testing has a clinical benefit.
+
+Men with CRP levels in the highest quartile had a 3-fold greater risk of MI, according to the Physicians Health Study. Use of aspirin resulted in a significant (55.7%) reduction in the risk of MI in men in the highest CRP quartile, suggesting that the aspirin-related reduction in the risk of first MI was clearly related to the level of CRP.[30]
+
+One study found that patients with baseline CRP levels of more than 10 mg/L had significantly worse outcomes than did patients with lower CRP levels. This investigation, the Fragmin and/or Early Revascularization During Instability in Coronary Artery (FRISC-II) study, included 900 subjects followed for 4 years.[31]
+
+CRP can also help to predict treatment efficacy, as demonstrated in the Cholesterol and Recurrent Events (CARE) trial of pravastatin treatment in post-MI patients. CRP levels tended to increase over time in the studys placebo group, whereas levels remained lower in the statin-treatment group at 5 years. Additionally, the efficacy of statin therapy was greater in subjects with higher levels of CRP.[32]
+
+Serum Markers
+Serum markers in patients with suspected acute cardiac events (ACS, MI) include the following:
+
+Troponins (I or T)
+Creatine kinase with MB isozymes
+Lactate dehydrogenase and lactate dehydrogenase isozymes
+Serum aspartate aminotransferase
+Biomarkers
+In a 10-year comparison of 10 biomarkers for predicting death and first major cardiovascular events in approximately 3000 individuals, the most informative biomarkers for predicting death were the following[33] :
+
+B-type natriuretic peptide
+CRP
+Homocysteine
+Renin
+Urinary albumin-to-creatinine ratio
+The most informative biomarkers for predicting major cardiovascular events were B-type natriuretic peptide and the urinary albumin-to-creatinine ratio. Individuals with elevated multimarker scores had a risk of death 4 times higher and a risk of major cardiovascular events almost 2 times higher than those with low multimarker scores. However, the use of multiple biomarkers added only moderately to the overall prediction of risk based on conventional cardiovascular risk factors.
+
+Echocardiography
+Transthoracic echocardiography helps to assess left ventricular function, wall-motion abnormalities in the setting of ACS or AMI, and mechanical complications of AMI.
+
+Transesophageal echocardiography is most often used for assessing possible aortic dissection in the setting of AMI. Stress echocardiography can be used to evaluate hemodynamically significant stenoses in stable patients who are thought to have CAD. Treadmill echocardiography stress testing and dobutamine echocardiography stress testing provide equivalent predictive values. ECG findings are depicted below.
+
+Stress test, part 1. Resting ECG showing normal ba
+Stress test, part 1. Resting ECG showing normal baseline ST segments. (See the image below for part 2.)
+Stress test, part 2. Stress ECG showing significan
+Stress test, part 2. Stress ECG showing significant ST-segment depression. (See the image above for part 1.)
+Nuclear Imaging Studies
+These studies are useful in assessing patients for hemodynamically significant coronary artery stenoses. Stress and rest nuclear scintigraphic studies using thallium, sestamibi, or teboroxime are sometimes helpful.
+
+Types of nuclear imaging stress tests include a treadmill nuclear stress test, a dipyridamole (Persantine) or adenosine nuclear stress test, and a dobutamine nuclear stress test. Stress nuclear imaging findings are depicted below.
+
+Stress nuclear imaging showing anterior, apical, a
+Stress nuclear imaging showing anterior, apical, and septal wall perfusion defect during stress, which is reversible as observed on the rest images. This defect strongly suggests the presence of significant stenosis in the left anterior descending coronary artery.
+Radionuclide stress myocardial perfusion imaging can be used to quantify CFR. Thallium-201 (201 Tl) or sestamibi are widely used for this. Flow reserve is typically assessed during exercise or with pharmacologic coronary vasodilators.
+
+MI-avid scintigraphy may be indicated for detection and localization of infarcted myocardium if evidence from other tests is inconclusive.
+
+Computed Tomography
+Multidetector computed tomography (MDCT) can allow excellent visualization of the coronary arteries, but its relatively high radiation dose is one of the limitations of this approach. Newer generations of CT scanners may be able to reduce the required radiation exposure to make this technology more promising for screening asymptomatic patients. Low-dose CT attenuation correction (CTAC), which is performed for hybrid positron emission tomography (PET)/CT and single-photon emission computed tomography (SPECT)/CT myocardial perfusion imaging (MPI) can visually assess coronary artery calcium with high agreement with the Agatston score (AS).[34] These scans should routinely be assessed for visually estimated coronary artery calcium.
+
+However, guidelines that address the use of CAD imaging tests may disagree. A study by Ferket, et al found several guidelines for risk assessment of asymptomatic CAD to have conflicting recommendations.[35] More research, especially randomized controlled trials, are needed in order to establish the actual impact imaging has on clinical outcomes.
+
+A meta-analysis by Bamberg et al concluded that coronary CT angiography is an important tool in detecting the presence and extent of CAD and independent predictors of significant coronary stenosis and other cardiovascular events.[36] Glineur et al found that preoperative angiography predicts graft patency in the right gastroepiploic artery and right internal thoracic artery, whereas the flow pattern in saphenous vein grafts is significantly less influenced by quantitative angiographic parameters.[37]
+
+The successful use of coronary CT angiography in the Coronary CT Angiography Evaluation for Clinical Outcomes: An International Multicenter (CONFIRM) Registry study suggests that this modality may provide a suitable alternative to cardiac stress testing and conventional angiography in the evaluation of patients with a low to intermediate cardiovascular disease risk.[21]
+
+Plaque characteristics on CT angiography appear to help identify high-risk coronary lesions. In a study addressing the use of CT angiography to detect and characterize coronary plaques prone to rupture, Maurovich-Horvat et al identified several features that were associated with vulnerable plaques.[38, 39] Such high-risk features included large plaque volume, low CT attenuation, the napkin-ring sign, positive remodeling, and spotty calcification.
+
+The investigators findings suggest that coronary CT angiography can be effectively used in this setting for purposes beyond simply ruling out coronary stenosis.[38, 39] For this modality to achieve optimal prognostic value in the identification of high-risk plaques, however, quantitative and qualitative plaque characteristics (eg, plaque volume and the napkin-ring sign) should be combined with functional measures (eg, fractional flow reserve).
+
+Min et al suggest patients with CAD have an increased mortality risk that was highest among those with 3-vessel disease or left main disease. Conversely, the lack of CAD portended a good prognosis.[40]
+
+Electron Beam Computed Tomography
+Electron beam CT (EBCT) is a relatively new, noninvasive method of evaluating calcium content in the coronary arteries. Healthy coronary arteries lack calcium. As atherosclerotic plaques grow, calcium accumulates because of a perpetuating inflammatory process or the healing and scarring induced by this process. EBCT is currently used as a screening test in asymptomatic patients and as a diagnostic test for obstructive CAD in symptomatic patients, although experts in the field have reached no consensus regarding indications for its use.
+
+EBCT has been demonstrated to have high sensitivity, with an overall predictive accuracy of 70%, according to the American College of Cardiology (ACC)/American Heart Association (AHA) Expert Consensus Document.[41] However, it has low specificity (ie, a substantial false-positive rate), which raises the index of suspicion for CAD and leads to expensive and unwarranted additional testing to exclude CAD. Consequently, the ACC/AHA report did not recommend EBCT scanning to help diagnose obstructive CAD.
+
+Whether EBCT is a worthwhile tool for screening of CAD is still unclear. Well-established clinical indicators, such as the Framingham risk score and the National Cholesterol Education Program (NCEP) risk calculator, already accurately predict the likelihood of CAD. Whether EBCT adds to these indicators has yet to be shown. The Multi-Ethnic Study of Atherosclerosis (MESA), sponsored by the US National Institutes of Health, has been assessing prospective evaluation of EBCT in asymptomatic subjects to answer this question.[42]
+
+EBCT may have niche uses, including (1) determination of whether individuals who appear to be at intermediate risk are really at a higher risk (eg, asymptomatic elderly patients who have high calcium scores) and (2) determination of a low likelihood of significant CAD if EBCT demonstrates a low or absent calcium score.
+
+Optical Coherence Tomography Imaging
+Optical coherence tomography (OCT) imaging is a method of catheter-based, high-resolution intravascular imaging. Unlike IVUS, it measures the backreflection of infrared light rather than sound. The main advantage of OCT is its remarkable resolution, which is in the range of 10-20 m. In addition, acquisition rates are near video speed, an advantage relative to many other technologies for assessing plaque. In contrast to IVUS scanning, the typical OCT catheters contain no transducers within their frame, which makes them small and inexpensive. Because OCT imaging uses light, a variety of spectroscopic techniques are available, including polarization spectroscopy, absorption spectroscopy, elastography, OCT Doppler, and dispersion analysis.
+
+Magnetic Resonance Imaging
+Magnetic resonance imaging (MRI) may be used to gain information noninvasively about blood vessel wall structure and to characterize plaque composition. In a study of 393 men and 235 women with suspected CAD, Greenwood et al found that cardiovascular magnetic resonance (CMR) had significantly higher diagnostic sensitivity than SPECT in both sexes (P < .0001).[43]
+
+The sensitivity of CMR was similar in males and females (85.6% vs 88.7%; P = .57), whereas that of SPECT was significantly higher in males than in females (70.8% vs 50.9%; P = .007).[43] The specificity of CMR (82.8% in males vs 83.5% in females; P = .86) was comparable to that of SPECT (81.3% in males vs 84.1% in females; P = .48).
+
+Positron Emission Tomography
+For the diagnosis of obstructive CAD, rubidium-82 (82 Rb) PET appears superior to technetium-99m (99m Tc)based SPECT. In a systematic review of studies that used82 Rb PET or99m Tc SPECT, with coronary angiography as a reference standard, PET and SPECT had sensitivities of 90% and 85%, respectively, and specificities of 88% and 85%, respectively. PET had even greater superiority when patients with low likelihood ratio were excluded.[44]
+
+Although the approximate estimated cost per scan is higher with PET than with SPECT ($1850 versus $1000), radiation exposure was estimated to be 4- to 5-fold lower with PET.[44] In addition, PET offers better spatial and temporal resolution and shorter imaging time.[45]
+
+One study has shown that assessment with PET is a powerful, independent predictor of cardiac mortality in patients with known or suspected coronary artery disease and provides meaningful incremental risk stratification over clinical and gated myocardial perfusion imaging variables.[46]
+
+Coronary Angiography
+Coronary angiography was the first available in vivo assessment of the coronary arteries. In this technique, an iodinated contrast agent is injected through a catheter placed at the ostium of the coronaries. The contrast agent is then visualized through radiographic fluoroscopic examination of the heart.
+
+Coronary angiography remains the criterion standard for detecting significant flow-limiting stenoses that may be revascularized through percutaneous or surgical intervention (as seen in the image below).
+
+Cardiac catheterization and coronary angiography i
+Cardiac catheterization and coronary angiography in the left panel shows severe left anterior descending coronary artery stenosis. This lesion was treated with stent placement in the left anterior descending coronary artery, as observed in the right panel.
+Quantitative coronary angiography (QCA) is used to perform computerized quantitative analysis of the entire coronary tree and has been widely employed in many trials of atherosclerotic progression and regression.
+
+Coronary angiography has several limitations. Severity of stenosis is generally estimated visually, but estimation is limited by the fact that interobserver variability may range from 30-60%. The presence of diffuse disease may also lead to underestimation of stenoses, because the stenosed areas are expressed as a percent of luminal diameter compared with adjacent normal coronary segments, and, in diffuse disease, no such segments are noted. This usually occurs in diabetic patients, in whom coronary arteries are traditionally described as small-caliber vessels, when that appearance is actually due to the presence of diffuse symmetrical involvement of the entire vessel, as elucidated by IVUS studies.
+
+One of the other limitations of coronary angiography is that only the vessel space occupied by blood is visualized. The actual extent of atherosclerotic plaque volume in the wall cannot be assessed with this technique.
+
+Angiography does not provide information about plaque burden, which may be significant due to positive remodeling of the plaque, even when the degree of luminal obstruction is mild.
+
+Because of the inherent limitations of coronary angiography, attention has been directed toward using physiologic approaches to determine the severity of coronary stenoses. The commonly used methods of measuring human coronary blood flow in the cardiac catheterization laboratory are Doppler velocity probes (for measuring CFR) and pressure wires (for measuring FFR). Although most current methods measure relative changes in coronary blood flow, useful information about the physiologic significance of stenosis, cardiac hypertrophy, and pharmacologic interventions can be obtained from these measurements.
+
+Through the Prospective Multicenter Diagnosis of Ischemia-Causing Stenoses Obtained Via Noninvasive Fractional Flow Reserve (DISCOVER-FLOW) Study, Koo et al created a novel technique to noninvasively assess fractional flow reserve, using coronary CT angiograms (CTA). They analyzed 159 vessels in 103 patients. All patients underwent cardiac CTA, invasive angiography fractional flow reserve (FFR), and CT-FFR. FFR-CT and CTA were compared with invasive FFR as the criterion standard. In a per-vessel basis, the accuracy, sensitivity, specificity, positive predictive value, and negative predictive value were 84.3%, 87.9%, 82.2%, 73.9%, 92.2%, respectively, for FFRCT. For cardiac CTA stenosis, they were 58.5%, 91.4%, 39.6%, 46.5%, 88.9%, respectively. This technique, if widely available, may be immensely useful because CTA, although easily interpreted in terms of presence or absence of disease, can be difficult to interpret with regards to severity of disease.[47]
+
+Doppler Velocity Probes
+Doppler velocity probes use a Doppler flow meter, which is based on the principle of the Doppler effect. This is the most widely applied technique for measuring coronary flow in humans. High-frequency sound waves are reflected from moving red blood cells and undergo a shift in sound frequency proportional to the velocity of the blood flow.
+
+In pulsed-wave Doppler methods, a single piezoelectric crystal can transmit and receive high-frequency sound waves. These methods have been successfully applied in humans by using miniaturized crystals fixed to the tip of catheters. Technological developments have further miniaturized steerable 12-MHz Doppler guide wires to a diameter of 0.014 inches. Flow to a stenosis can therefore be assessed distally and proximally. The Doppler guidewire measures phasic flow velocity patterns and tracks linearly with flow rates in small, straight coronary arteries.
+
+Indications for Doppler velocity probe use include determining the severity of intermediate stenosis (40-60%) and evaluating whether normal blood flow has been restored after percutaneous transluminal coronary angioplasty (PTCA).
+
+The use of smaller Doppler catheters allows measurement of selective coronary artery flow velocity. By noting the increase in flow velocity following administration of a strong coronary vasodilator, such as papaverine or adenosine, the CFR can be defined. CFR provides an index of the functional significance of coronary lesions that obviates some of the ambiguity of anatomical description.
+
+The current Doppler probe method has limitations. Limitations include the following:
+
+Only changes in flow velocity, rather than absolute velocity or volumetric flow, are measurable
+The change in flow velocity is directly proportional to changes in volumetric flow only when vessel dimensions are constant at the site of the sample volume
+Other factors, including left ventricular hypertrophy and myocardial scarring, can also affect CFR
+Changes in luminal diameter and arterial cross-sectional area during interventions are not reflected in measurements of flow velocity, thus potentially causing underestimation of the true volume flow
+Because this technique does not measure absolute coronary blood flow, several indices of flow velocity have been used for assessing the physiologic significance of coronary stenoses. Coronary flow velocity reserve is the ratio of maximum flow velocity to baseline flow velocity.
+
+Patients with a coronary flow velocity ratio of less than 2 typically have other corroborating evidence of myocardial ischemia and improve symptomatically with revascularization. Conversely, patients with a ratio of more than 2 usually lack other objective evidence of myocardial ischemia and have a favorable outcome with conservative management; therefore, flow velocity measurements can be helpful in the treatment of patients with coronary lesions of intermediate severity.
+
+Relative coronary flow reserve
+Relative CFR is calculated as follows: ([rCFR] = CFR target/CFR reference). Relative CFR involves Doppler coronary flow measurements of target and reference vessel CFR with a Doppler-tipped guidewire. In one report, El-Shafei et al found that, compared with patients who had negative stress-imaging study findings, patients who had positive stress-study findings showed more angiographically severe stenoses (74% +/- 13% vs 44% +/- 24%) with lower target CFRs (1.68 +/- 0.55 vs 2.46 +/- 0.74) and lower rCFRs (0.72 +/- 0.22 vs 1 +/- 0.26).[48]
+
+Based on cut points (CFR >1.9; rCFR >0.75), compared with CFR, rCFR had similar agreement (kappa 0.54 vs 0.5), sensitivity (63% vs 71%), specificity (88% vs 83%), and positive predictive value (83% vs 81%) with myocardial perfusion tomography.
+
+Although rCFR, as with CFR, correlates with stress myocardial perfusion imaging results, rCFR did not have significant incremental prognostic value over CFR alone for myocardial perfusion imaging. However, rCFR does provide additional information regarding the status of the microcirculation in patients with CAD and complements the CFR for lesion assessment.
+
+Ultrasonography
+Ultrasonography aids in evaluating brachial artery reactivity and carotid artery intima media thickness, which are measures of vessel wall function and anatomy, respectively. These evaluations remain research techniques at this time but hold promise as reliable noninvasive, and therefore repeatable, measures of disease and surrogate endpoints for the evaluation of therapeutic interventions.
+
+Brachial Artery Reactivity
+The loss of endothelium-dependent vasodilation is a feature of even the early stages of atherosclerosis. The availability of high-resolution ultrasonographic systems makes the visualization and measurement of small peripheral conduit vessels, such as the human brachial artery, possible. Flow-mediated dilation of the brachial artery has been pioneered as a means of evaluating the health and integrity of the endothelium. The healthy endothelium dilates in response to an increase in blood flow, whereas vessels affected by atherosclerosis do not dilate and may paradoxically constrict.
+
+Carotid artery intima-media thickness
+B-mode ultrasonography of the common and internal carotid arteries is a noninvasive measure of arterial wall anatomy that may be performed repeatedly and reliably in asymptomatic individuals. The combined thickness of the intima and media of the carotid artery is associated with the prevalence of cardiovascular risk factors and disease and an increased risk of myocardial infarction and stroke. This association is at least as strong as the associations observed with traditional risk factors.
+
+Intravascular Ultrasonography
+IVUS demonstrates the luminal dimensions and, more importantly, the tissue composition of the vascular wall in tomographic subsegments that can be summated to create a 3-dimensional picture showing arterial remodeling and the diffuseness of atherosclerosis with clarity unobtainable by angiography.
+
+IVUS delineates vascular remodelingpositive and negative. Positive remodeling shows adaptive outward expansion of the external elastic membrane to accommodate growing plaques (Glagov phenomenon). Negative remodeling exhibits discrete areas of vascular luminal encroachment by the ingrowing plaques.
+
+Positive remodeling is more commonly associated with unstable angina, whereas negative remodeling is associated with stable angina, according to an IVUS study of 85 patients by Schoenhagen and colleagues.[49]
+
+The apparently paradoxical findings of angiographic studies suggesting that AMI most often occurs in less than 50% of stenosed arterial segments, and those of autopsy studies showing AMI to be associated with large plaques, are reconciled by IVUS findings. IVUS shows the responsible lesions to be large plaques that have positively remodeled, thus causing minimal luminal encroachment and exhibiting echolucency suggesting a lipid-rich pool in the plaque center.
+
+The ability of IVUS to identify positively remodeled plaques and the presence of diffuse disease in some ways makes it better than angiography, the less-than-perfect criterion standard. IVUS can much more clearly demonstrate the presence or absence of fibrosis, calcium, and ulceration, as well as eccentricity of the plaques.
+
+Ostial lesions can also be better defined by IVUS.
+
+Histology
+A system devised by Stary et al classifies atherosclerotic lesions according to their histologic composition and structure.[7]
+
+In a type I lesion, the endothelium expresses surface adhesion molecules E selectin and P selectin, attracting more polymorphonuclear cells and monocytes in the subendothelial space.
+
+In a type II lesion, macrophages begin to take up large amounts of LDL (fatty streak).
+
+In a type III lesion, as the process continues, macrophages become foam cells.
+
+In a type IV lesion, lipid exudes into the extracellular space and begins to coalesce to form the lipid core.
+
+In a type V lesion, SMCs and fibroblasts move in, forming fibroatheromas with soft inner lipid cores and outer fibrous caps.
+
+In a type VI lesion, rupture of the fibrous cap with resultant thrombosis causes ACS.
+
+As lesions stabilize, they become fibrocalcific (type VII lesion) and, ultimately, fibrotic with extensive collagen content (type VIII lesion).
+
+Approach Considerations
+The treatment goals for patients with coronary artery atherosclerosis are to relieve symptoms of coronary artery disease (CAD) and to prevent future cardiac events, such as unstable angina, AMI, and death.
+
+The mainstays of pharmacologic therapy of angina include nitrates, beta-blockers, statins, calcium-channel blockers, and ranolazine.[2] The prevention and treatment of atherosclerosis requires control of the known modifiable risk factors for this disease. This includes therapeutic lifestyle changes and the medical treatment of hypertension, hyperlipidemia, and diabetes mellitus.
+
+Typically, patients with CAD are first seen after they present with a cardiac event. The main focus of their treatment is the index event. The past 4 decades have witnessed tremendous progress in the areas of acute cardiac care, coronary care unit expansion, thrombolytic usage, and PCI. Nevertheless, prevention of cardiac events is likely to have the largest impact on decreasing the burden of atherosclerosis.
+
+High-risk subgroups, in particular, can be targeted for early intervention. Grover and colleagues showed statin therapy in diabetic patients without CAD to be as cost-effective as statin therapy in nondiabetic patients with CAD. Pharmacotherapeutic strategies that affect the risk factor profile, such as the administration of statins for low-density lipoprotein (LDL) reduction or the administration of agents that alter atherosclerotic plaque, are of paramount importance.
+
+Statin monotherapy vs combination therapy
+In a systematic review using data from 36 randomized, controlled trials, Gudzune et al concluded that in patients who cannot tolerate or do not respond to high-intensity statin monotherapy, combination therapy using lower-intensity statin therapy in combination with a bile acid sequestrant or with ezetimibe should be considered, albeit cautiously.[50, 51]
+
+According to the report, in high-risk patients with hyperlipidemia, a combination of low-intensity statin therapy and a bile acid sequestrant produces a 0-14% greater reduction in low-density lipoprotein cholesterol (LDL-C) than does mid-intensity statin monotherapy.[50, 51] Similarly, it was found that compared with high-intensity statin monotherapy, mid-intensity statin therapy combined with ezetimibe results in a 5-15% greater reduction in LDL-C in patients with atherosclerotic cardiovascular disease and a 3-21% greater LDL-C reduction in patients with diabetes.
+
+The investigators urged caution, however, in the use of the above combination therapies, because the trials used in the report lacked data on the long-term benefits and risks of such treatment.[50, 51]
+
+Prevention of future cardiac events
+Findings from the World Health Organization's Monitor Trends in Cardiovascular Diseases (MONICA) project involving 21 countries showed a 4% fall in CAD death rates. Improvement in the case fatality rate accounted for only one third of the decline; two thirds of the decline resulted from a reduction in the number of events. These findings strongly suggest that the largest impact on decreasing the global burden of atherosclerosis will come from prevention of events.
+
+Fortunately, the natural history of CAD is characterized by early onset and a long dormant phase. This provides an excellent opportunity to intervene in order to reduce the number and severity of cardiovascular events.
+
+Preventive Strategies
+The goals of therapy should include arresting atherosclerosis or even reversing its progression. Large, multicenter randomized trials of various pharmacologic modalities have recently achieved great success in the treatment of patients with coronary artery atherosclerosis. In addition, addressing risk factors with lifestyle changes is an integral part of atherosclerosis prevention.
+
+Therapy with lipid-lowering agents should be a component of multiple risk factor intervention and is indicated in primary prevention as an adjunct to diet therapy when the response to a diet restricted in saturated fat and cholesterol has been inadequate. Substantial evidence supports the use of statins in the secondary prevention of CAD, and the efficacy of statins has recently been extended to include primary prevention of CAD in patients with average cholesterol levels.
+
+Niacin is superior to ezetimibe for combination therapy in high-risk patients being treated with statin monotherapy. However, in an industry-supported study, patients with atherosclerotic cardiovascular disease and LDL-C levels of < 70 mg/dl (1.81 mol/L) experienced no incremental clinical benefit from the addition of niacin to statin therapy during a 36-month follow-up period, despite significant improvements in HDL-C and triglyceride levels.[52]
+
+A separate study found that, compared with placebo or statin monotherapy, evacetrapib as monotherapy or in combination with statins increased HDL-C levels and decreased LDL-C levels. However, further investigation is warranted.[53]
+
+A meta-analysis of nearly 5000 patients found that statins administered before invasive procedures significantly reduced the risk for postprocedural myocardial infarction.[54] The risk for MI was reduced after percutaneous coronary intervention and noncardiac surgical procedures, but not for coronary artery bypass grafting (CABG). Statins decreased the risk for atrial fibrillation following CABG.
+
+Current guidelines recommend using statin therapy after CABG to keep LDL levels below 100 mg/dL. Results of the Clopidogrel After Surgery for Coronary Artery Disease (CASCADE) trial confirmed that this practice independently associated with improved graft patency, as demonstrated by coronary angiography and saphenous vein graft intravascular ultrasonography. performed 12 months postoperatively. However, LDL reduction to less than 70 mg/dL did not lead to further improvement in graft patency.[55]
+
+Statin therapy is also safe and can improve liver tests while reducing cardiovascular morbidity in patients with mild- to moderately-abnormal liver test results that may be attributable to nonalcoholic fatty liver disease.[56]
+
+In the United States, the most commonly used guidelines for cholesterol management are those from the NCEP Adult Treatment Panel (ATP). In high-risk persons, the recommended LDL-C goal is less than 100 mg/dL, but when risk is very high, an LDL-C goal of less than 70 mg/dL is a therapeutic option and a reasonable clinical strategy based on available clinical trial evidence. For moderately high-risk persons (2 risk factors and 10-y risk of 10-20%), the recommended LDL-C goal is less than 130 mg/dL, but an LDL-C goal of less than 100 mg/dL is a therapeutic option based on trial evidence.
+
+Newer guidelines on the management of elevated blood cholesterol, released in late 2013 by the American Heart Association/American College of Cardiology (AHA/ACC), no longer specify LDL- and non-HDL-cholesterol targets for the primary and secondary prevention of atherosclerotic cardiovascular disease.[57, 58] The new guidelines identify four groups of primary- and secondary-prevention patients in whom efforts should be focused to reduce cardiovascular disease events and recommend appropriate levels of statin therapy for these groups.
+
+Treatment recommendations include the following :
+
+In patients with atherosclerotic cardiovascular disease, or those with LDL cholesterol levels 190 mg/dL or higher (eg, due to familial hypercholesterolemia), and no contraindications, high-intensity statin therapy should be prescribed to achieve at least a 50% reduction in LDL cholesterol
+In patients aged 40 to 75 years of age with diabetes, a moderate-intensity statin that lowers LDL cholesterol by 30% to 49% should be used; in those patients who also have a 10-year risk of atherosclerotic cardiovascular disease exceeding 7.5%, a high-intensity statin is a reasonable choice
+In individuals aged 40 to 75 years without cardiovascular disease or diabetes but with a 10-year risk of clinical events >7.5% and an LDL-cholesterol level of 70-189 mg/dL, a moderate- or high-intensity statin should be used
+A study applying the 2013 AHA/ACC cholesterol guidelines to data from the 20052010 National Health and Nutrition Examination Surveys (NHANES) estimated that an additional 12.8 million US adults would be eligible for statin therapy as compared with treatment based on the NCEP ATP III guidelines.[59, 60] About 10.4 million of these adults would be eligible to receive statins for primary preventionprimarily older people without cardiovascular disease, men more often than women, those with higher blood pressure, and those with lower LDL-C levels.
+
+New AHA/ACC guidelines also recommend use of a revised calculator to estimate the risk of developing a first atherosclerotic cardiovascular disease (ASCVD) event, which is defined as one of the following, over a 10-year period, in a person who was initially free from ASCVD[24] :
+
+Nonfatal myocardial infarction
+Death from coronary heart disease
+Stroke (fatal or nonfatal)
+For patients 20-79 years of age who do not have existing clinical ASCVD, the guidelines recommend assessing clinical risk factors every 4-6 years. For patients with low 10-year risk (< 7.5%), the guidelines recommend assessing 30-year or lifetime risk in patients 20-59 years old.
+
+Regardless of the patients age, clinicians should communicate risk data to the patient and refer to the AHA/ACC lifestyle guidelines, which cover diet and physical activity. For patients with elevated 10-year risk, clinicians should communicate risk data and refer to the AHA/ACC guidelines on blood cholesterol and obesity.
+
+Treatment of Low HDL levels and High Triglyceride levels in Patients With Diabetes
+A combination of low HDL levels and high triglyceride levels is frequently encountered in patients with diabetes and is often referred to as atherogenic dyslipidemia. Many of these patients have metabolic syndrome.
+
+Additional follow-up and analysis of the Veterans Affairs HDL Intervention Trial (VA-HIT) indicated that treatment with gemfibrozil versus placebo resulted in a 32% reduction in major cardiovascular events and a 41% reduction in CHD deaths, in 769 male subjects with diabetes mellitus and CHD who had HDL-C levels of less than 40 mg/dL and LDL-C levels of less than 140 mg/dL.
+
+Interestingly, among 1733 nondiabetic men, increased plasma fasting insulin levels and insulin resistance, as assessed by the homeostasis model assessment for insulin resistance (HOMA-IR; fasting insulin [U/mL] X fasting glucose [mmol/L]/22.5), were predictive of increased major cardiovascular events and of greater benefit from gemfibrozil treatment.[61, 62]
+
+Somewhat inexplicable was the finding that despite higher plasma triglyceride and lower HDL-C levels in insulin-resistant subjects, these measurements were associated with greater treatment benefit only in those subjects classified as not having insulin resistance by HOMA-IR.
+
+This was the first trial to demonstrate the cardiovascular benefit of treating diabetic and insulin-resistant subjects with low HDL-C levels. Interestingly, the insulin resistance was more predictive of CHD event rate and benefit from gemfibrozil than were HDL-C or triglyceride levels. Because no significant reduction in LDL-C was realized with gemfibrozil therapy, one possibility is that additional CHD benefit would be accrued by adding statins, which have been shown in subgroup analyses of several trials to benefit CHD risk in diabetic patients and in nondiabetic patients with low HDL-C levels.
+
+One caveat is that because of the relatively higher risk of myopathy with combined gemfibrozil-statin treatment and findings that indicate much less risk with statins and fenofibrate, the latter is currently the preferred choice for combined treatment.
+
+ACE Inhibitors to Reduce Blood Pressure
+The efficacy of ACE inhibitors on CAD has been examined in blood pressure reduction studies and in studies of subjects with high risk factors for CAD.
+
+ACE inhibitors are effective blood pressurereducing agents and affect the heart and vasculature through direct and other mechanisms.
+
+ACE inhibitors were not shown to affect plaque in a randomized angiographic regression study, the Quinapril Ischemic Event Trial (QUIET), of 463 subjects with CAD.[63]
+
+B-mode ultrasonographic studies investigating plaque regression have provided confusing results at best. Although the second Prevention of Atherosclerosis with Ramipril Trial (PART 2) showed no reduction in intima-media thickness at 4-year follow-up in 617 subjects randomized to placebo or ramipril (5-10 mg/d), the Study to Evaluate Carotid Ultrasound Changes with Ramipril and Vitamin E (SECURE) showed a reduction in carotid intima-media thickness proportional to the dose of ramipril (2.5-10 mg/d) in 750 subjects over a 4.5-year follow-up period.[64]
+
+ACE inhibitors probably affect endothelial function, as well as those of A-II and kinin, to elicit the clinical effects observed in the clinical trials. Tissue binding is variable among the ACE inhibitors, with the highest affinity shown by quinapril, benazepril, and ramipril. In the Trial on Reversing Endothelial Dysfunction (TREND),[65] which included 105 subjects with CAD (but without CHF or left ventricular dysfunction), the group receiving quinapril at 40 mg/d showed significantly improved response to acetylcholine. ACE inhibitors also increase levels of nitric oxide by increasing its release through a kinin-mediated pathway and through reduction of its breakdown.
+
+Statin therapy decreases cardiovascular events and all-cause mortality in both women and men.[66]
+
+In addition, ACE inhibitors decrease the plasma levels of type 1 plasminogen activator inhibitor, increase the release of tissue-type plasminogen activator, and favorably affect the fibrinolytic balance, an effect not observed with the angiotensin receptorblocking agents.
+
+In terms of blood pressure reduction, even though a greater stroke incidence was observed with higher baseline blood pressure in the treatment group in the Captopril Prevention Project (CAPPP), a pooled analysis of 16,161 patients from blood-pressure control trials evaluating ACE inhibitors showed no difference in the cardiovascular outcome risk.[67]
+
+A possible direct effect of ACE inhibitors on atherosclerosis, independent of blood pressure reduction, was suggested by the Heart Outcomes Prevention Evaluation (HOPE) study,[68] which included 9297 subjects with history of CAD, stroke, peripheral vascular disease, or diabetes, along with one other CAD risk factor (eg, hypertension, hypercholesterolemia, hypoalphalipoproteinemia, tobacco abuse, microalbuminuria). Subjects were randomized to placebo or ramipril (10 mg/d). At 5-year follow-up, the cardiac death rate was reduced by 25%, nonfatal MI by 20%, need for bypass surgery/PTCA by 16%, and all-cause mortality by 16%. The effects were unrelated to the blood pressurelowering effect.
+
+Antiplatelet Agents for Acute Coronary Events
+Antiplatelet agents help reduce the number of acute coronary events. Convincing data are available from the following studies:
+
+Antiplatelet Trialists' Collaboration [69]
+Clopidogrel vs Aspirin in Patients at Risk of Ischemic Events (CAPRIE) trial [70]
+Clopidogrel in Unstable Angina to Prevent Recurrent Ischemic Events (CURE) trial [71]
+Prasugrel versus Clopidogrel in Patients with Acute Coronary Syndromes (TRITON TIMI-38) [72]
+The risk of myocardial ischemic events in patients with ACS has been shown to be reduced by means of platelet inhibition with the use of aspirin. Currently, all patients with documented CAD are recommended to be treated with daily aspirin, unless contraindicated. The CAPRIE trial studies the efficacy of clopidogrel (an inhibitor of the P2Y12 adenosine-diphosphate receptor), compared with that of aspirin, on long-term events.[70] Recurrent cardiovascular events were modestly reduced in patients treated with clopidogrel, in comparison with aspirin.
+
+Extending this, the CURE trial found that regardless of the initial treatment strategy (medical therapy, PCI, or CABG), treatment with the combination of aspirin and clopidogrel was superior to aspirin alone in reducing recurrent events for up to 12 months after hospitalization with ACS. However, in the CHARISMA trial, prolonged dual antiplatelet therapy with aspirin and clopidogrel did not significantly reduce recurrent events in patients with stable cardiovascular disease or in asymptomatic patients at high risk for cardiovascular events.
+
+In the TRITON TIMI-38 trial, prasugrel, a more potent thienopyridine P2Y12 inhibitor, proved more effective than clopidogrel in reducing ischemic events, including stent thrombosis, among patients with ACS who were scheduled for percutaneous coronary intervention. However, the risk of major bleeding, including fatal bleeding, was higher with prasugrel (2.4% versus 1.8% with clopidogrel), although overall mortality did not differ significantly between treatment groups.
+
+Low-dose prasugrel may also be effective in very elderly patients. In a pharmacodynamic and pharmacokinetic study involving 155 patients with stable CAD, investigators found that a 5-mg dose of prasugrel provided adequate platelet inhibition in very elderly patients.[73, 74] The study subjects, who were either aged 45-65 years (mean, 56 y) or older than 75 years (mean, 79 y), were treated for 12 days during each of 3 crossover treatment periods with 1 of 3 regimens: clopidogrel 75 mg, prasugrel 5 mg, or prasugrel 10 mg.
+
+Median maximal platelet aggregation (MPA) response to prasugrel 5 mg in very elderly patients (58%) was noninferior to the 75th percentile of MPA response to prasugrel 10 mg in nonelderly patients (52%).[74] Antiplatelet effect was significantly lower and high on-treatment platelet reactivity rates significantly higher with prasugrel 5 mg in very elderly patients than with prasugrel 10 mg in nonelderly patients. Prasugrel 5 mg had significantly greater antiplatelet effect than clopidogrel 75 mg in very elderly patients, as did prasugrel 10 mg in nonelderly patients.[74]
+
+The incidence of bleeding-related adverse events in older patients was similar to that in younger patients.[74] Bleeding rates were similar with prasugrel 5 mg and clopidogrel 75 mg but were significantly higher with prasugrel 10 mg.
+
+ACC/AHA guidelines recommend that after an ACS, all patients should receive dual antiplatelet therapy, ideally for 12 months, followed by lifelong aspirin therapy.[2] The ACCF/ACG/AHA 2010 Expert Consensus provides a detailed report on reducing the GI risks of antiplatelet therapy and NSAID Uuse.[75]
+
+Pharmacologic Treatment of Angina
+A number of agents have proven helpful for the treatment of angina. These include beta-blockers, calcium channel blockers, nitrates, and ranolazine (see below).[2]
+
+Beta-blockers
+Beta-blockers inhibit sympathetic stimulation of the heart, reducing heart rate and contractility; this can decrease myocardial oxygen demand and thus prevent or relieve angina in patients with CAD. Since beta-blockers reduce the heart rateblood pressure product during exercise, the onset of angina or the ischemic threshold during exercise is delayed or avoided. All types of beta-blockers appear to be equally effective in the treatment of exertional angina. The ACC and AHA recommend beta-blockers, unless contraindicated, in all patients with stable angina who have had an ACS or who have left ventricular dysfunction.
+
+Calcium channel blockers
+Calcium-channel blockers prevent calcium entry into vascular smooth muscle cells and myocytes, which leads to coronary and peripheral vasodilatation, decreased atrioventricular (AV) conduction, and reduced contractility. In patients with angina, these effects result in decreased coronary vascular resistance and increased coronary blood flow. Calcium blockers also reduce systemic vascular resistance and arterial pressure and provide a negative inotropic effect.
+
+Nitrates
+Nitrates are effective in the treatment of acute anginal symptoms. In this situation, they are usually given sublingually. The primary anti-ischemic effect of nitrates is to decrease myocardial oxygen demand by producing systemic vasodilation, although they also cause modest coronary and arteriolar vasodilation, as well as venodilation.
+
+In patients with chronic stable angina, nitrate therapy improves exercise tolerance, time to onset of angina, and ST-segment depression during exercise testing. They are particularly effective in combination with beta-blockers or calcium-channel blockers.
+
+Ranolazine
+Ranolazine is a novel antianginal agent believed to relieve ischemia by reducing myocardial cellular sodium and calcium overload via inhibition of the late sodium current of the cardiac action potential.
+
+In 3 randomized, double-blind trials of patients with chronic angina, ranolazine prolonged exercise duration and reduced symptoms when given as either monotherapy or in combination with other antianginal drugs. When evaluated in patients with non-ST-elevation ACS, ranolazine reduced recurrent ischemia but did not significantly reduce the risk of death or MI at 1 year.
+
+Hormone Therapy Concerns
+Hormone therapy has been found to be more risky than beneficial as a means of protecting postmenopausal women against CAD.[19] The Heart and Estrogen/Progestin Replacement Study follow-up (HERS-II), completed in 2002, reported that after 6.8 years, hormone therapy did not reduce risk of cardiovascular events.[76]
+
+Similarly, in a study by the Womens Health Initiative, overall health risks exceeded benefits from the use of combined estrogen and progestin therapy as a means of primary prevention of CAD in healthy, postmenopausal women. Participants in the trial were randomized into hormone therapy (n = 8506) or placebo (n = 8102) groups. The average follow-up period was 5.2 years. All-cause mortality in the study was unaffected by the combination therapy.[77]
+
+Because of overall increased risk, combined estrogen and progestin therapy should not be initiated or continued for primary prevention of CAD.[78]
+
+Antibiotic Therapy in Coronary Artery Atherosclerosis
+Although inflammation is considered to be a risk factor for the development of atherosclerosis, antibiotic therapy does not appear to have a significant role in secondary prevention of this disorder. Several multicenter trials have evaluated the effect of antibiotic therapy on recurrent cardiac events when used as secondary prevention. The Azithromycin in Coronary Artery Disease: Elimination of Myocardial Infarction with Chlamydia (ACADEMIC) trial,[79] the Azithromycin in Acute Coronary Syndrome (AZACS) study,[80] the South Thames Trial of Antibiotics in Myocardial Infarction and Unstable Angina (STAMINA),[81] the Azithromycin Coronary Events Study (ACES),[82] and the antibiotic arm of the Pravastatin or Atorvastatin Evaluation and Infection Therapy (PROVE-IT) trial[83] all returned negative results in terms of any significant benefit from antibiotic therapy.
+
+Revascularization Procedures
+Revascularization therapies for symptomatic or ischemia-producing atherosclerotic lesions include percutaneous approaches and open heart surgery. For a detailed discussion of these approaches, see Percutaneous Transluminal Coronary Angioplasty and Comparison of Revascularization Procedures in Coronary Artery Disease.
+
+Long-term mortality has been similar after CABG and PCI in most patient subgroups with multivessel CAD; therefore, the choice of treatment typically depends on patient preferences for other outcomes. Exceptions to this are patients with diabetes and those age 65 years or older; Hlatky et al found CABG to be a superior option in these subgroups, because of lower mortality.[84]
+
+The SYNTAX study determined that in high- and intermediate-risk patients with 3-vessel disease, the rates of revascularization and of major adverse cardiac and cerebrovascular events were significantly higher in patients who had undergone PCI than in those who had undergone CABG.[3, 4] The study also found that PCI and CABG were equally effective in the treatment of low-risk patients with 3-vessel disease and in low- and intermediate-risk patients with left main CAD.
+
+Other revascularization techniques include transmyocardial laser revascularization.
+
+Medical therapy versus PCI revascularization
+The COURAGE trial demonstrated that performing PCI in severe lesions reduces angina but does not improve overall outcomes over medical therapy alone in patients with stable CAD. The trial randomized patients with stable CAD, ischemia, and significant stenoses of 70% or more in at least 1 proximal coronary artery to a regimen of optimal medical treatment alone or optimal medical treatment combined with PCI. The primary outcome was death from any cause or non-fatal MI during a follow-up period of between 2.5 and 7 years (median 4.6 years).[85]
+
+The results of COURAGE showed no evidence of a better outcome for the PCI group than for the group receiving medical treatment alone, for the combined endpoint death, MI and stroke (20.0% PCI group vs 19.5% medical treatment); for admission to hospital for ACS (12.4% vs 11.8%, respectively); or for MI (13.2% vs 12.3%, respectively). Thus, at least among the patients studied in COURAGE, both treatment strategies resulted in similar outcomes for major cardiac complications and deaths. There was a statistically significant advantage for reduction in the prevalence of angina in the PCI group, with respect to freedom from angina. However, by the end of 5 years of follow-up, the difference was no longer significant (74% of the PCI group and 72% of the group receiving medical treatment only were free of angina).
+
+The results of the trial likely resulted from the fact that most of the lesions responsible for later coronary events are nonobstructive. Thus, prophylactic stenting of all identified lesions (the full metal jacket) is impractical and certainly not justified at this time.
+
+In a prospective, natural-history study of coronary atherosclerosis, patients underwent 3-vessel coronary angiography and gray-scale and radiofrequency intravascular ultrasonographic imaging after percutaneous coronary intervention.[86] Major adverse events were related to both recurrence at the site of culprit lesions and to nonculprit lesions.
+
+European Society of Cardiology Guidelines
+The European Society of Cardiology (ESC) released updated guidelines on the management of stable CAD.[87, 88] These guidelines note that microvascular angina and vasospasm are more common as causes of angina than previously believed, and they increase reliance on pretest probabilities (PTP) for stable CAD as well as discuss a larger role for modern imaging modalities (eg, cardiac magnetic resonance [CMR] imaging and coronary computed-tomography angiography [CCTA]).
+
+Highlights of these new guidelines include the following[87, 88] :
+
+PTP for a CAD diagnosis uses more contemporary data than those used in the Diamond and Forrester Chest Pain Prediction Rule: For example, in patients with suspected CAD using the new criteria, if the PTP is < 15%, investigate other possible causes and consider a diagnosis of functional coronary disease; if the PTP is intermediate (eg, 15%-85%), send the patient for noninvasive testing; if the PTP is high (eg, >85%), a diagnosis of CAD is established, and patient risk stratification should follow
+In stable CAD, the functional impact of coronary lesions relative to their angiographic severity has a larger role than previously in determining the role of PCI
+In patients with severe symptoms or clinical characteristics suggestive of high-risk coronary anatomy: Initiate guideline-directed medical therapy
+For noncomplex coronary disease: Consider medical therapy first; in the presence of complex coronary lesions or if the patient has many comorbidities, CABG is preferred over PCI; however, if the patient prefers PCI, use drug-eluting stents
+In patients within the lower range of intermediate PTP for stable CAD (in whom good image quality can be obtained): Consider CCTA as an alternative to stress-imaging techniques (1) to exclude stable CAD and (2) after an inconclusive exercise electrocardiogram (ECG) or stress imaging test or those in whom stress testing is contraindicated
+On first contact in every person with chest pain: Obtain a resting echocardiogram
+In patients with a clinically important left main coronary artery stenosis: If there is only 1-vessel involvement, use PCI for ostial or mid-shaft lesions but also include a heart team discussion to decide on PCI or CABG for lesions at a distal bifurcation; for multivessel involvement, use the SYNTAX (SYNergy between percutaneous coronary intervention with TAXus and cardiac surgery) score (eg, if 22, the team should discuss, but if 23, CABG should be chosen)
+New second-line anti-anginal agents include ranolazine, nicorandil, and ivabradine (not approved for angina in the United States)
+However, the following 3 studies are not recommended[87, 88] :
+
+Coronary calcium scoring on CT imaging in asymptomatic patients
+Screening for CAD with CCTA in asymptomatic patients
+Stenosis quantification with CCTA in patients with a high likelihood of calcifications
+In collaboration with the European Association for the Study of Diabetes (EASD), the ESC also developed guidelines on diabetes, prediabetes, and cardiovascular diseases; these guidelines place emphasis on the following[87, 89] :
+
+Patient-centered care
+Less aggressive approach to glycemic control for the elderly and patients with "long-standing diabetes with autonomic neuropathy
+A simplified diagnostics algorithm in which glycosylated hemoglobin or fasting plasma glucose studies have priority in the workup, but the oral glucose-tolerance test is reserved for "cases of uncertainty
+CABG as the preferred/first revascularization choice, rather than PCI
+Lifestyle Changes
+Diet
+High intakes of red or processed meat were associated with modest increases in total mortality, cancer mortality, and cardiovascular disease mortality in a study by Sinha et al. The baseline population was a cohort of half a million people aged 50-71 years from the National Institutes of Health-AARP (formerly known as the American Association of Retired Persons) Diet and Health Study.[90]
+
+A meta-analysis by Ferdowsian and Barnard suggested that plant-based diets are effective in lowering plasma cholesterol concentrations. In a review of 4 types of plant-based diets studied in 27 trials, a vegetarian or vegan diet combined with nuts, soy, and/or fiber demonstrated the greatest effects (up to 35% reduction in plasma LDL-C, followed by vegan and ovolactovegetarian diets. Diets that included small amounts of lean meat demonstrated less dramatic reductions in levels of total cholesterol and LDL.[91]
+
+The ATP III recommended a multifaceted lifestyle approach to reduce the risk for CHD. This is the approach of therapeutic lifestyle changes (TLCs), and its essential features are as follows:
+
+Reduced intake of saturated fats (< 7% of total energy intake) and cholesterol (< 200 mg/d)
+Therapeutic options for enhancing LDL lowering, such as plant stanols/sterols (2 g/d) and increased viscous (soluble) fiber intake (10-25 g/d)
+Weight reduction
+Increased physical activity
+To initiate TLCs, intake of saturated fats and cholesterol is first reduced to lower LDL-C levels. To improve overall health, the ATP III TLC diet generally contains the recommendations embodied in the Dietary Guidelines for Americans, 2000. One exception is that total fat is allowed to range from 25-35% of total energy intake, provided saturated fats and trans fatty acids are kept low. A higher intake of total fat, mostly in the form of unsaturated fat, can help to reduce triglyceride levels and to raise HDL-C levels in persons with the metabolic syndrome.
+
+In accordance with the Dietary Guidelines, moderate physical activity is encouraged. After 6 weeks, the LDL response is determined; if the LDL-C goal has not been achieved, other therapeutic options for LDL lowering, such as plant stanol/sterols and viscous fiber, can be added.
+
+After maximum reduction of LDL-C levels with dietary therapy, emphasis shifts to management of the metabolic syndrome and associated lipid risk factors. Most persons with these latter abnormalities are overweight or obese and sedentary.
+
+Weight therapy for patients who are overweight or obese enhances LDL lowering and provides other health benefits, including modification of other lipid and nonlipid risk factors. Assistance in the treatment of these patients is provided by the Clinical Guidelines on the Identification, Evaluation, and Treatment of Overweight and Obesity in Adults from the NHLBI Obesity Education Initiative (1998). Additional risk reduction can be achieved by simultaneously increasing physical activity.
+
+At all stages of dietary therapy, physicians are encouraged to refer patients to registered dietitians or other qualified nutritionists for medical nutrition therapy, which is the term for the nutritional intervention and guidance provided by a nutrition professional.
+
+Moderate alcohol intake (20 g/day or less) in men is associated with a reduced incidence of coronary heart disease events.[92] The mechanism(s) of this benefit is not well understood. Although alcohol may have cardiovascular benefits in women,[93] even moderate intake of alcohol in women has been associated with a significantly increased risk for breast cancer.[94] Heavy alcohol intake is associated with an increased incidence of coronary heart disease events, as well as with cardiomyopathy, arrhythmia, and other adverse health effects and obviously should be discouraged.
+
+Physical activity
+Lack of physical activity is a major modifiable risk factor for CHD. A sedentary lifestyle augments the lipid and nonlipid risk factors of the metabolic syndrome. Inactivity may enhance risk by impairing cardiovascular fitness and coronary blood flow. Regular physical activity reduces very low-density lipoprotein (VLDL) levels, raises HDL-C levels, and, in some persons, lowers LDL levels. It can also lower blood pressure, reduce insulin resistance, and favorably influence cardiovascular function.
+
+Most health benefits occur with at least 150 minutes a week of moderate-intensity physical activity, such as brisk walking. Additional benefits occur with more physical activity.[80]
+
+The ATP III therefore recommends that regular physical activity become a routine component in the management of high serum cholesterol levels. The evidence base for this recommendation is contained in the US Surgeon General's Report on Physical Activity.
+
+Additional Therapies for Atherosclerosis
+Partial ileal bypass is a surgical procedure that uses shortening of the ileum to lower circulating cholesterol levels. It has been used since the 1960s for the treatment of hyperlipidemia. Chelation therapy, using intravenous ethylenediaminetetraacetic acid and/or hydrogen peroxide, is a controversial treatment for atherosclerosis. Plethysmography/extracorporeal counterpulsation may reduce angina and improve exercise tolerance in patients with CAD, possibly by improving vascular endothelial function.
+
+Stable Coronary Artery Disease after Intervention
+Patients presenting with stable angina or ischemia after physiologic testing and who have undergone revascularization therapy, either in the form of PCI or CABG, benefit from adjuvant pharmacologic therapy and aggressive risk reduction. In post-PCI patients, adjuvant pharmacologic therapy, such as administration of intravenous glycoprotein IIb/IIIa inhibitors (eg, eptifibatide, abciximab), oral aspirin, clopidogrel, or ticlopidine, significantly reduces adverse cardiovascular outcomes. Consultation with a cardiac rehabilitation team is recommended for assistance with aggressive risk reduction, which comprises smoking cessation, weight management, physical exercise, and lipid control.
+
+Consultations
+Consultation with the following may be indicated:
+
+Cardiologists
+Cardiovascular surgeons
+Lipidologists
+Nutritionists and dietitians
+Cardiac rehabilitation team
+Radiologists
+Consultation with a cardiac rehabilitation team for assistance with smoking cessation, weight management, physical exercise, and lipid control is recommended.
+
+Medication Summary
+The goals of pharmacotherapy are to reduce morbidity and mortality and to prevent complications. Prevention and treatment of atherosclerosis requires risk factor control, including the medical treatment of hypertension, diabetes mellitus, and cigarette habituation.
+
+Advances in the understanding of the vascular biology of atherosclerosis raise the possibility of novel therapies that address more directly the various aspects of endothelial dysfunction and the role of endothelial dysfunction in atherogenesis. Potential cellular targets include vascular smooth muscle cells, monocyte/macrophage cell lines, platelets, and endothelial cells. Evidence shows that antiplatelet agents, antioxidant therapies, amino acid supplementation, angiotensin converting enzyme (ACE) inhibitors, and angiotensin-receptor blockers may be able to prevent or slow the progression of atherosclerosis.
+
+Combination therapy in the future may allow for the achievement of greater low-density lipoprotein cholesterol (LDL-C) lowering, with associated cardiovascular benefit. In one example of such therapy, treatment with Vytorin, which combines ezetimibe (decreases small intestinal absorption of cholesterol) with simvastatin, produced benefit in cardiovascular morbidity and mortality over and above that demonstrated for simvastatin alone.[95] PCSK9 (proprotein convertase subtilisin/kexin type 9) inhibitors (eg, alirocumab, evolocumab) dramatically lower LDL-C when added to maximally tolerated statin therapy. Studies are under way to determine if outcomes (eg, cardiovascular morbidity and mortality) will improve.[96, 97, 98]
+
+Another cholesteryl ester transfer protein inhibitor that raises high-density lipoprotein (HDL) while reducing LDL is anacetrapib. Patients with coronary heart disease or those who are at high risk for coronary heart disease who were treated with this drug had few adverse side effects and few adverse cardiovascular effects.[99]
+
+Patients who are discharged on antilipid medications that were begun in the hospital tend to stay on the therapy and to derive significant reduction in the recurrent cardiac event rate. The American Heart Association (AHA) has promulgated its Get With the Guidelines program, which involves an Internet-based checklist of discharge medications to ensure that coronary artery disease (CAD) patients are started on aspirin, beta-blockers, ACE inhibitors, and statins (if needed) in the hospital.[100]
+
+HMG-CoA Reductase Inhibitors
+Class Summary
+These agents lower LDL-C levels by reducing the production of mevalonic acid from HMG-CoA and by stimulating LDL catabolism. They also lower triglyceride levels and raise serum HDL-C levels, and they have a low incidence of adverse effects, the most common being hepatotoxicity and myopathy. Aspirin and HMG-CoA reductase inhibitors may reduce plaque inflammation.[91]
+
+HMG-CoA reductase inhibitors include the following:
+
+- Atorvastatin (Lipitor)
+
+- Pravastatin (Pravachol)[32, 91, 101]
+
+- Simvastatin (Zocor)[102, 103]
+
+- Rosuvastatin (Crestor)
+
+- Pitavastatin (Livalo)
+
+- Lovastatin (Mevacor, Altocor)[104]
+
+- Fluvastatin (Lescol)
+
+Atorvastatin, pravastatin, simvastatin, and rosuvastatin competitively inhibit HMG-CoA, which catalyzes the rate-limiting step in cholesterol synthesis. One study suggests that the maximal doses of rosuvastatin and atorvastatin resulted in significant regression of coronary atherosclerosis. Although rosuvastatin resulted in lower LDL cholesterol levels and higher HDL cholesterol levels, a similar degree of regression of percent atheroma value (PAV) was observed in the two groups.[105] Before initiating therapy, place patients on a cholesterol-lowering diet for 3-6 months, and continue diet indefinitely. Holdaas et al suggest the use of rosuvastatin for patients with diabetes mellitus because it may better reduce the risk of fatal and nonfatal cardiac events.
+
+Pitavastatin is indicated for primary or mixed hyperlipidemia. Lovastatin is an adjunct to dietary therapy in reducing serum cholesterol; immediate-release (Mevacor) and extended-release (Altocor) versions are available. Fluvastatin is also used as an adjunct to dietary therapy in decreasing cholesterol levels.
+
+View full drug information
+Atorvastatin (Lipitor)
+Competitively inhibits HMG-CoA, which catalyzes rate-limiting step in cholesterol synthesis. Before initiating therapy, place patients on cholesterol-lowering diet for 3-6 mo, and continue diet indefinitely.
+
+View full drug information
+Pravastatin (Pravachol)
+Competitively inhibits HMG-CoA, which catalyzes rate-limiting step in cholesterol synthesis. Before initiating therapy, place patients on cholesterol-lowering diet for 3-6 mo, and continue diet indefinitely.
+
+View full drug information
+Simvastatin (Zocor)
+Competitively inhibits HMG-CoA, which catalyzes rate-limiting step in cholesterol synthesis. Before initiating therapy, place patients on cholesterol-lowering diet for 3-6 mo, and continue diet indefinitely.
+
+View full drug information
+Rosuvastatin (Crestor)
+Competitively inhibits HMG-CoA, which catalyzes rate-limiting step in cholesterol synthesis. Before initiating therapy, place patients on cholesterol-lowering diet for 3-6 mo, and continue diet indefinitely.
+
+View full drug information
+Pitavastatin (Livalo)
+HMG-CoA reductase inhibitor (statin) indicated for primary or mixed hyperlipidemia. In clinical trials, 2 mg/d reduced total cholesterol and LDL cholesterol similar to atorvastatin 10 mg/d and simvastatin 20 mg/d.
+
+View full drug information
+Lovastatin (Mevacor, Altocor)
+Adjunct to dietary therapy in reducing serum cholesterol. Immediate-release (Mevacor) and extended-release (Altocor) are available.
+
+View full drug information
+Fluvastatin (Lescol)
+Used as an adjunct to dietary therapy in decreasing cholesterol levels.
+
+PCSK9 Inhibitors
+Class Summary
+Proprotein convertase subtilisin/kexin type 9 (PCSK9) inhibitors decrease LDLR degradation by PCSK9, and thereby improve LDL-C clearance and lower plasma LDL-C. On July 24, 2015, the FDA gave approval for the first PCSK9 inhibitor, alirocumab.[106]
+
+View full drug information
+Alirocumab (Praluent)
+Alirocumab is a monoclonal antibody that binds to PCSK9. LDL-C is cleared from the circulation preferentially through the LDL receptor (LDLR) pathway. PCSK9 is a serine protease that destroys LDLR in the liver, resulting in decreased LDL-C clearance and increased plasma LDL-C. PCSK9 inhibitors decrease LDLR degradation by PCSK9.
+
+Alirocumab is indicated as an adjunct to diet and maximally tolerated statin therapy for the treatment of adults with heterozygous familial hypercholesterolemia (HeFH) or clinical atherosclerotic cardiovascular disease, who require additional lowering of LDL-C.
+
+View full drug information
+Evolocumab (Repatha)
+Evolocumab is a monoclonal antibody that inhibits the serine protease PCSK9. PCSK9 destroys the LDL receptor in the liver, thereby decreasing LDL-C clearance. This agent is indicated as an adjunct to diet and maximally tolerated statin therapy for the treatment of adults with heterozygous familial hypercholesterolemia (HeFH) or clinical atherosclerotic CVD, who require additional lowering of LDL-C.
+
+Evolocumab is also indicated as an adjunct to diet and other LDL-lowering therapies (eg, statins, ezetimibe, LDL apheresis) for the treatment of adults and adolescents aged 13-17 y with homozygous familial hypercholesterolemia (HoFH) who require additional lowering of LDL-C.
+
+Calcium Channel Blocker
+Class Summary
+Calcium channel blockers inhibit calcium ions from entering slow channels, select voltage-sensitive areas, and vascular smooth muscle. The calcium-channel blocker amlodipine (Norvasc) relaxes coronary smooth muscle and produces coronary vasodilation, which in turn improves myocardial oxygen delivery. Because the atherosclerotic plaque is marked by changes in calcium regulation, the potential antiatherosclerotic role for calcium antagonists has piqued interest.
+
+View full drug information
+Amlodipine (Norvasc)
+Relaxes coronary smooth muscle and produces coronary vasodilation, which, in turn, improves myocardial oxygen delivery.
+
+View full drug information
+Nifedipine (Procardia, Procardia XL, Adalat, Adalat CC, Nifedical XL)
+Relaxes coronary smooth muscle and produces coronary vasodilation, which in turn improves myocardial oxygen delivery. Sublingual administration is generally safe, despite theoretical concerns.
+
+View full drug information
+Verapamil (Calan, Calan SR, Covera-HS, Verelan)
+During depolarization, inhibits calcium ion from entering slow channels or voltage-sensitive areas of the vascular smooth muscle and myocardium.
+
+View full drug information
+Felodipine (Plendil)
+Relaxes coronary smooth muscle and produces coronary vasodilation, which in turn improves myocardial oxygen delivery.
+
+Benefits nonpregnant patients with systolic dysfunction, hypertension, or arrhythmias. Can be used during pregnancy if indicated clinically.
+
+Calcium channel blockers potentiate ACE inhibitor effects. Renal protection is not proven, but these agents reduce morbidity and mortality rates in congestive heart failure. Calcium channel blockers are indicated in patients with diastolic dysfunction. Effective as monotherapy in black patients and elderly patients.
+
+Calcium channel blockers potentiate ACE inhibitor effects. Renal protection is not proven, but these agents reduce morbidity and mortality rates in congestive heart failure. Calcium channel blockers are indicated in patients with diastolic dysfunction. Effective as monotherapy in black patients and elderly patients.
+
+View full drug information
+Diltiazem (Cardizem, Cardizem LA, Cardizem CD, Tiazac, Dilacor)
+During depolarization, inhibits the influx of extracellular calcium across both the myocardial and vascular smooth muscle cell membranes. Serum calcium levels remain unchanged. The resultant decrease in intracellular calcium inhibits the contractile processes of myocardial smooth muscle cells, resulting in dilation of the coronary and systemic arteries and improved oxygen delivery to the myocardial tissue.
+
+Decreases conduction velocity in AV node. Also increases refractory period via blockade of calcium influx. This, in turn, stops reentrant phenomenon.
+
+Decreases myocardial oxygen demand by reducing peripheral vascular resistance, reducing heart rate by slowing conduction through SA and AV nodes, and reducing LV inotropy. Slows AV nodal conduction time and prolongs AV nodal refractory period, which may convert SVT or slow the rate in atrial fibrillation. Also has vasodilator activity but may be less potent than other agents. Total peripheral resistance, systemic blood pressure, and afterload are decreased.
+
+Calcium channel blockers provide control of hypertension associated with less impairment of function of the ischemic kidney. Calcium channel blockers may have beneficial long-term effects, but this remains uncertain.
+
+ACE Inhibitors
+Class Summary
+Hypertension and atherosclerosis may be intimately linked through their effects on vascular endothelial dysfunction, which are mediated by the renin-angiotensin system (RAS). Angiotensin II (A-II), a potent vasoconstrictor and the principal active peptide of the RAS, can produce structural changes in the vessel wall associated with atherosclerosis. The ACE inhibitors ramipril (Altace) and quinapril (Accupril) prevent conversion of angiotensin I (A-I) to A-II, resulting in increased levels of plasma renin and a reduction in aldosterone secretion. Examples of other commonly used ACE inhibitors are captopril (Capoten), enalapril (Vasotec), and lisinopril (Zestril).
+
+View full drug information
+Ramipril (Altace)
+Prevents conversion of A-I to A-II, a potent vasoconstrictor, resulting in increased levels of plasma renin and a reduction in aldosterone secretion.
+
+View full drug information
+Quinapril (Accupril)
+Prevents conversion of A-I to A-II, a potent vasoconstrictor, resulting in increased levels of plasma renin and a reduction in aldosterone secretion.
+
+View full drug information
+Captopril (Capoten)
+Prevents conversion of angiotensin I to angiotensin II, a potent vasoconstrictor, resulting in lower aldosterone secretion.
+
+Rapidly absorbed, but bioavailability is significantly reduced with food intake. It achieves a peak concentration in an hour and has a short half-life. The drug is cleared by the kidney.
+
+Impaired renal function requires reduction of dosage. Absorbed well PO. Give at least 1 h before meals. If added to water, use within 15 min.
+
+Can be started at low dose and titrated upward as needed and as patient tolerates.
+
+View full drug information
+Enalapril (Vasotec)
+Prevents conversion of angiotensin I to angiotensin II, a potent vasoconstrictor, resulting in increased levels of plasma renin and a reduction in aldosterone secretion.
+
+Helps control blood pressure and proteinuria. Decreases pulmonary-to-systemic flow ratio in the catheterization laboratory and increases systemic blood flow in patients with relatively low pulmonary vascular resistance. Has favorable clinical effect when administered over a long period. Helps prevent potassium loss in distal tubules. Body conserves potassium; thus, less oral potassium supplementation needed.
+
+View full drug information
+Lisinopril (Zestril)
+Prevents conversion of Angiotensin I to angiotensin II, a potent vasoconstrictor, resulting in increased levels of plasma renin and a reduction in aldosterone secretion.
+
+Platelet Aggregation Inhibitors
+Class Summary
+Platelet aggregate inhibitors may have a positive influence on several hemorrhagic parameters and may exert protection against atherosclerosis through inhibition of platelet function and through changes in the hemorrhagic profile.
+
+Platelet aggregate inhibitors include the following:
+
+- Clopidogrel (Plavix)
+
+- Abciximab (ReoPro)
+
+- Aspirin (Anacin, Ascriptin, Bayer Aspirin, Bayer Buffered Aspirin)
+
+Clopidogrel selectively inhibits ADP binding to platelet receptors and subsequent ADP-mediated activation of the glycoprotein IIb/IIIa complex, thereby inhibiting platelet aggregation.
+
+Abciximab is a chimeric human-murine monoclonal antibody approved for use in elective/urgent/emergent PCI. It binds to receptors with high affinity and reduces platelet aggregation by 80% for up to 48 hours following infusion. Abciximab prevents acute cardiac ischemic complications in patients with unstable angina that is unresponsive to conventional therapy.
+
+Aspirin inhibits prostaglandin synthesis, preventing the formation of platelet-aggregating thromboxane A2. Aspirin may be used in low doses to inhibit platelet aggregation and to improve complications of venous stases and thrombosis.
+
+View full drug information
+Clopidogrel
+Selectively inhibits ADP binding to platelet receptor and subsequent ADP-mediated activation of glycoprotein IIb/IIIa complex, thereby inhibiting platelet aggregation.
+
+View full drug information
+Abciximab (ReoPro)
+Chimeric human-murine monoclonal antibody approved for use in elective/urgent/emergent percutaneous coronary intervention. Binds to receptor with high affinity and reduces platelet aggregation by 80% for up to 48 h following infusion. Prevents acute cardiac ischemic complications in patients with unstable angina unresponsive to conventional therapy.
+
+View full drug information
+Aspirin (Anacin, Ascriptin, Bayer Aspirin, Bayer Buffered Aspirin)
+Inhibits prostaglandin synthesis, preventing formation of platelet-aggregating thromboxane A2. May be used in low dose to inhibit platelet aggregation and improve complications of venous stases and thrombosis.
+
+Polyunsaturated Fatty Acids
+Class Summary
+Long-chain omega-3 polyunsaturated fatty acids (PUFAs) possess several properties that may positively influence vascular function. These include favorable mediator profiles (nitric oxide, eicosanoids), which influence vascular reactivity, change vascular tone via actions on selective ion channels, and maintain vascular integrity. In addition to direct effects on contractility, omega-3 PUFAs may affect vascular function and the process of atherogenesis via inhibition of vascular SMC proliferation at the gene expression level and modification of expression of inflammatory cytokinesis and adhesion molecules.
+
+View full drug information
+Omega-3 polyunsaturated fatty acid (Fish oil)
+Possible benefits in the treatment of atherosclerosis include effects on lipoprotein metabolism, hemostatic function, platelet/vessel wall interactions, anti-arrhythmic actions and also inhibition of proliferation of smooth muscle cells and therefore growth of the atherosclerotic plaque. Fish oil feeding has also been found to result in moderate reductions in blood pressure and to modify vascular neuroeffector mechanisms.
+
+Fibric Acid Derivatives
+Class Summary
+The precise mechanism of action of fibric acid derivatives, which includes fenofibrate (Tricor) and gemfibrozil (Lopid), is complex and incompletely understood. These agents increase the activity of lipoprotein lipase and enhance the catabolism of triglyceride-rich lipoproteins, which is responsible for an increase in the HDL-C fraction. A decrease in hepatic VLDL synthesis and an increase in cholesterol excretion into bile also appear to occur. The fibrates typically reduce triglyceride levels by 20-50% and increase HDL-C levels by 10-15%.
+
+Fenofibrate is used as an adjunct to dietary therapy in treating hyperlipidemias (including types IV and V) associated with hypertriglyceridemia. It has not been proven to be of use in the prevention of CAD.
+
+Gemfibrozil is used as an adjunct to dietary therapy in adult patients with type IV and V hyperlipidemias who present at risk for pancreatitis. It is also employed in adjunctive therapy in coronary heart disease prevention in patients with type IIb hyperlipidemia (low HDL, elevated LDL and triglycerides) who do not respond to other agents or to diet modifications.
+
+The effect on LDL-C is variable. levels may be expected to decrease by 10-15%. In patients with marked hypertriglyceridemia, LDL-C levels may increase, which likely reflects the ability of the LDL receptor to clear the increased LDL generated by increased VLDL catabolism. Fibrate therapy may also be responsible for a decrease in the clotting ability of platelets and fibrinogen levels, which may account for some of the reported clinical benefits.
+
+View full drug information
+Fenofibrate (Tricor)
+Adjunct to dietary therapy in treating hyperlipidemias associated with hypertriglyceridemia, including type IV and type V. Not proven to be of use in prevention of coronary artery disease.
+
+View full drug information
+Gemfibrozil (Lopid)
+Adjunct to dietary therapy in adult patients with type IV and V hyperlipidemias presenting at risk for pancreatitis. Adjunctive therapy in coronary heart disease prevention in patients with type IIb hyperlipidemia (low HDL, elevated LDL and triglycerides) not responding to other agents or diet modifications.
+
+Adjunct to dietary therapy in adult patients with type IV and V hyperlipidemias presenting at risk for pancreatitis. Adjunctive therapy in coronary heart disease prevention in patients with type IIb hyperlipidemia (low HDL, elevated LDL and triglycerides) not responding to other agents or diet modifications.
+
+Bile Acid Sequestrants
+Class Summary
+The bile acid sequestrants block enterohepatic circulation of bile acids and increase the fecal loss of cholesterol. This results in a decrease in intrahepatic levels of cholesterol. The liver compensates by up-regulating hepatocyte LDL-receptor activity. The net effect is a 10-25% reduction in LDL-C, but no consistent effect on triglycerides or HDL-C exists. Bile acid sequestrants include cholestyramine (Questran, LoCholest, Prevalite) and colestipol (Colestid).
+
+Cholestyramine can be used as an adjunct in primary hypercholesterolemia. It forms a nonabsorbable complex with bile acids in the intestine, which in turn inhibits enterohepatic reuptake of intestinal bile salts.
+
+Colestipol forms a soluble complex after binding to bile acid, increasing fecal loss of bile acidbound LDL-C.
+
+View full drug information
+Colestipol (Colestid)
+Forms a soluble complex after binding to bile acid, increasing fecal loss of bile acid-bound LDL cholesterol.
+
+View full drug information
+Cholestyramine (Questran, LoCholest, Prevalite)
+May use as adjunct in primary hypercholesterolemia. Forms a nonabsorbable complex with bile acids in the intestine, which, in turn, inhibits enterohepatic reuptake of intestinal bile salts.
+
+May use as adjunct in primary hypercholesterolemia.
+
+Antioxidants
+Class Summary
+Protect polyunsaturated fatty acids in membranes from attack by free radicals and protect red blood cells against hemolysis. Antioxidants have beneficial effects on cell functions and protective properties that are pivotal in atherogenesis and cardiovascular disease. Antioxidants may inhibit platelet aggregation and proinflammatory activity of monocytes.
+
+View full drug information
+Vitamin E (Vita-Plus E, Softgels, Aquasol E)
+Protects polyunsaturated fatty acids in membranes from attack by free radicals.
+
+Nicotinic Acid Derivatives
+Class Summary
+The nicotinic acid derivative niacin (Niaspan, Niacor, Slo-Niacin), or vitamin B-3, inhibits the hepatic secretion of VLDL-C. Used in tissue respiration, lipid metabolism, and glycogenolysis, niacin is effective in most categories of hyperlipidemia. It has been demonstrated to lower LDL-C and triglyceride levels by 32% and 20-50%, respectively, and to raise the HDL-C level by 43%. Niacin also lowers lipoprotein(a) levels; this may be of some clinical importance, because lipoprotein(a) levels have been associated with coronary heart disease in numerous epidemiologic studies. The clinical benefit of lowering lipoprotein(a) levels has not been determined.
+
+The extended-release formulation of niacin may reduce flushing, an unpleasant adverse effect that causes 30-40% of patients to discontinue niacin therapy.
+
+View full drug information
+Niacin (Niaspan, Niacor, Slo-Niacin)
+Used in tissue respiration, lipid metabolism, and glycogenolysis. Available in immediate- and extended-release formulations. Extended-release formulation may reduce flushing, an unpleasant adverse effect that causes 30-40% of patients to discontinue therapy.
+
+Antianginal Agent
+Class Summary
+Ranolazine is a novel antianginal agent believed to relieve ischemia by reducing myocardial cellular sodium and calcium overload via inhibition of the late sodium current of the cardiac action potential.
+
+View full drug information
+Ranolazine (Ranexa)
+Cardioselective anti-ischemic agent (piperazine derivative) that partially inhibits fatty acid oxidation. Also inhibits late sodium current into myocardial cells and prolongs QTc interval. Indicated for chronic angina unresponsive to other antianginal treatments. Used in combination with amlodipine, beta-blockers, or nitrates. Unlike beta-blockers, calcium channel blockers, and nitrates, does not reduce blood pressure or heart rate. Effect on angina rate or exercise tolerance appears to be smaller in women than in men. Absorption is highly variable but unaffected by food.
