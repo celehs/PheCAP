@@ -1,3 +1,13 @@
+![](CAD_article_mayo.txt) 
+
+![](CAD_article_medline.txt) 
+
+![](CAD_article_medscape.txt) 
+
+![](CAD_article_merck.txt) 
+
+![](CAD_article_wiki.txt) 
+
 ![](CAD_dict.txt) 
 
 ![](iterate_notes.py) 
