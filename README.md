@@ -20,6 +20,8 @@ Follow the [main steps](https://celehs.github.io/PheCAP/articles/main.html), and
 
 ## References
 
+- Yichi Zhang`*`, Tianrun Cai`*`, Sheng Yu`*`, Kelly Cho, Chuan Hong, Jiehuan Sun, Jie Huang, Yuk-Lam Ho, Ashwin Ananthakrishnan, Zongqi Xia, Stanley Shaw, Vivian Gainer, Victor Castro, Nicholas Link, Jacqueline Honerlaw, Selena Huang, David Gagnon, Elizabeth Karlson, Robert Plenge, Peter Szolovits, Guergana Savova, Susanne Churchill, Christopher O'Donnell, Shawn Murphy, J Michael Gaziano, Isaac Kohane, Tianxi Cai`*`, and Katherine Liao`*`. Methods for High-throughput Phenotyping with Electronic Medical Record Data Using a Common Semi-supervised Approach (PheCAP). Nature Protocols (2019). `*`contributed equally. 
+
 - Yu, S., Chakrabortty, A., Liao, K. P., Cai, T., Ananthakrishnan, A. N., Gainer, V. S., … Cai, T. (2016). Surrogate-assisted feature extraction for high-throughput phenotyping. Journal of the American Medical Informatics Association, ocw135. <[doi:10.1093/jamia/ocw135](https://doi.org/10.1093/jamia/ocw135)>
 
 - Liao, K. P., Cai, T., Savova, G. K., Murphy, S. N., Karlson, E. W., Ananthakrishnan, A. N., … Kohane, I. (2015). Development of phenotype algorithms using electronic medical records and incorporating natural language processing. BMJ, 350(apr24 11), h1885–h1885. <[doi:10.1136/bmj.h1885](https://doi.org/10.1136/bmj.h1885)>
