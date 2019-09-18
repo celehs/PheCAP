@@ -13,7 +13,7 @@ Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
 URL: https://github.com/celehs/PheCAP
 BugReports: https://github.com/celehs/PheCAP/issues
-License: GPL (>= 2)
+License: GPL-3
 Encoding: UTF-8
 ByteCompile: yes
 Imports: graphics, methods, stats, utils, glmnet, RMySQL
