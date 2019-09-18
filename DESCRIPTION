@@ -11,7 +11,6 @@ Authors@R: c(
     )
 Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
-             Background and details about the methods can be found at <doi:10.1093/jamia/ocw135> and <doi:10.1136/bmj.h1885>.
 URL: https://github.com/celehs/PheCAP
 BugReports: https://github.com/celehs/PheCAP/issues
 License: GPL (>= 2)
