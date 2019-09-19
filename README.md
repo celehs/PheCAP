@@ -1,4 +1,4 @@
-__High-throughput phenotyping with electronic medical record data using a common semi-supervised approach__
+__High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)__
 
 ## Overview
 
