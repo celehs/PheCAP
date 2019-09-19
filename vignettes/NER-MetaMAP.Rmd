@@ -2,7 +2,7 @@
 title: "NER using MetaMAP"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{PheCAP}
+  %\VignetteIndexEntry{PheCAP-NER-MetaMAP}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

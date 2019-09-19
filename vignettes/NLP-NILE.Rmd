@@ -2,7 +2,7 @@
 title: "Running NLP using NILE"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{PheCAP}
+  %\VignetteIndexEntry{PheCAP-NLP-NILE}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

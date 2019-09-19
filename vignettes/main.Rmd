@@ -2,7 +2,7 @@
 title: "Main Steps"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{PheCAP}
+  %\VignetteIndexEntry{PheCAP-main}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

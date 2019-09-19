@@ -13,8 +13,9 @@
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Example 1: Simulated Data">
 <meta property="og:description" content="">
 <meta name="twitter:card" content="summary">
@@ -76,7 +77,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/celehs/PheCAP">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -89,6 +90,7 @@
 <!--/.navbar -->
 
       
+
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
@@ -102,32 +104,32 @@
 
     
     
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(PheCAP)</code></pre></div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Random">set.seed</a></span>(<span class="dv">123</span>)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(PheCAP)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span>(<span class="dv">123</span>)</a></code></pre></div>
 <p>Generate simulated data.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">latent &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.3</span>)
-latent2 &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.3</span>)
-ehr_data &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/data.frame">data.frame</a></span>(
-  <span class="dt">patient_id =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">8000</span>,
-  <span class="dt">ICD1 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">7</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.2</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">ICD2 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">6</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.8</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.1</span>),
-  <span class="dt">ICD3 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">1</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span> <span class="op">+</span><span class="st"> </span>latent2) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">ICD4 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">NLP1 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">8</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.2</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.6</span>),
-  <span class="dt">NLP2 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">1.1</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.5</span>),
-  <span class="dt">NLP3 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">5</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.1</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">NLP4 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">11</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">1.9</span> <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.9</span>),
-  <span class="dt">NLP5 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">3</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span> <span class="op">+</span><span class="st"> </span>latent2) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">NLP6 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">NLP7 =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">1</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),
-  <span class="dt">HU =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Poisson">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">30</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/GammaDist">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.1</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.1</span>),
-  <span class="dt">label =</span> <span class="ot">NA</span>)
-ii &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/sample">sample.int</a></span>(<span class="dv">8000</span>, <span class="dv">400</span>)
-ehr_data[ii, <span class="st">"label"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/with">with</a></span>(
-  ehr_data[ii, ], <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Binomial">rbinom</a></span>(<span class="dv">400</span>, <span class="dv">1</span>, <span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/Logistic">plogis</a></span>(
-    <span class="op">-</span><span class="dv">5</span> <span class="op">+</span><span class="st"> </span><span class="fl">1.5</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Log">log1p</a></span>(ICD1) <span class="op">+</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Log">log1p</a></span>(NLP1) <span class="op">+</span>
-<span class="st">      </span><span class="fl">0.8</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Log">log1p</a></span>(NLP3) <span class="op">-</span><span class="st"> </span><span class="fl">0.5</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Log">log1p</a></span>(HU))))
-<span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">head</a></span>(ehr_data)</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">latent &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.3</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">latent2 &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.3</span>)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3">ehr_data &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="dt">patient_id =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">8000</span>,</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="dt">ICD1 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">7</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.2</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">  <span class="dt">ICD2 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">6</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.8</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.1</span>),</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">  <span class="dt">ICD3 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">1</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span> <span class="op">+</span><span class="st"> </span>latent2) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">  <span class="dt">ICD4 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">  <span class="dt">NLP1 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">8</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.2</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.6</span>),</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">  <span class="dt">NLP2 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">1.1</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.5</span>),</a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">  <span class="dt">NLP3 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">5</span> <span class="op">*</span><span class="st"> </span>(<span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.1</span>) <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">  <span class="dt">NLP4 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">11</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">1.9</span> <span class="op">+</span><span class="st"> </span>latent) <span class="op">/</span><span class="st"> </span><span class="fl">1.9</span>),</a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">  <span class="dt">NLP5 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">3</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span> <span class="op">+</span><span class="st"> </span>latent2) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14">  <span class="dt">NLP6 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">2</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">  <span class="dt">NLP7 =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">1</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.5</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.5</span>),</a>
+<a class="sourceLine" id="cb3-16" data-line-number="16">  <span class="dt">HU =</span> <span class="kw"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="dv">8000</span>, <span class="dv">30</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="dv">8000</span>, <span class="fl">0.1</span>) <span class="op">/</span><span class="st"> </span><span class="fl">0.1</span>),</a>
+<a class="sourceLine" id="cb3-17" data-line-number="17">  <span class="dt">label =</span> <span class="ot">NA</span>)</a>
+<a class="sourceLine" id="cb3-18" data-line-number="18">ii &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/sample.html">sample.int</a></span>(<span class="dv">8000</span>, <span class="dv">400</span>)</a>
+<a class="sourceLine" id="cb3-19" data-line-number="19">ehr_data[ii, <span class="st">"label"</span>] &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/with.html">with</a></span>(</a>
+<a class="sourceLine" id="cb3-20" data-line-number="20">  ehr_data[ii, ], <span class="kw"><a href="https://rdrr.io/r/stats/Binomial.html">rbinom</a></span>(<span class="dv">400</span>, <span class="dv">1</span>, <span class="kw"><a href="https://rdrr.io/r/stats/Logistic.html">plogis</a></span>(</a>
+<a class="sourceLine" id="cb3-21" data-line-number="21">    <span class="dv">-5</span> <span class="op">+</span><span class="st"> </span><span class="fl">1.5</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(ICD1) <span class="op">+</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(NLP1) <span class="op">+</span></a>
+<a class="sourceLine" id="cb3-22" data-line-number="22"><span class="st">      </span><span class="fl">0.8</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(NLP3) <span class="op">-</span><span class="st"> </span><span class="fl">0.5</span> <span class="op">*</span><span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(HU))))</a>
+<a class="sourceLine" id="cb3-23" data-line-number="23"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(ehr_data)</a></code></pre></div>
 <pre><code>##   patient_id ICD1 ICD2 ICD3 ICD4 NLP1 NLP2 NLP3 NLP4 NLP5 NLP6 NLP7  HU
 ## 1          1    2   11    3    0    0    2    2    2    1    7    0   4
 ## 2          2    5   11    3    1    5    0    1   11    5    0    0   0
@@ -139,10 +141,10 @@ ehr_data[ii, <span class="st">"label"</span>] &lt;-<span class="st"> </span><spa
 ## 1    NA
 ## 2    NA
 ## 3    NA
-## 4     0
+## 4    NA
 ## 5    NA
 ## 6    NA</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/head">tail</a></span>(ehr_data)</code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/head.html">tail</a></span>(ehr_data)</a></code></pre></div>
 <pre><code>##      patient_id ICD1 ICD2 ICD3 ICD4 NLP1 NLP2 NLP3 NLP4 NLP5 NLP6 NLP7 HU
 ## 7995       7995    9   23    0    7   11    4    1   17    4    0    0  1
 ## 7996       7996   21    7    9    0    6    1    1    6    4    1    2 11
@@ -153,112 +155,1327 @@ ehr_data[ii, <span class="st">"label"</span>] &lt;-<span class="st"> </span><spa
 ##      label
 ## 7995    NA
 ## 7996    NA
-## 7997     1
-## 7998    NA
+## 7997    NA
+## 7998     0
 ## 7999    NA
-## 8000     0</code></pre>
+## 8000    NA</code></pre>
 <p>Define features and labels used for phenotyping.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data &lt;-<span class="st"> </span><span class="kw"><a href="../reference/PhecapData.html">PhecapData</a></span>(ehr_data, <span class="st">"HU"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, <span class="dt">patient_id =</span> <span class="st">"patient_id"</span>)
-data</code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">data &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapData.html">PhecapData</a></span>(ehr_data, <span class="st">"HU"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, <span class="dt">patient_id =</span> <span class="st">"patient_id"</span>)</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">data</a></code></pre></div>
 <pre><code>## PheCAP Data
 ## Feature: 8000 observations of 12 variables
-## Label: 155 yes, 245 no, 7600 missing
+## Label: 132 yes, 268 no, 7600 missing
 ## Size of training samples: 240
 ## Size of validation samples: 160</code></pre>
 <p>Specify the surrogate used for surrogate-assisted feature extraction (SAFE). The typical way is to specify a main ICD code, a main NLP CUI, as well as their combination. The default lower_cutoff is 1, and the default upper_cutoff is 10. In some cases one may want to define surrogate through lab test. Feel free to change the cutoffs based on domain knowledge.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">surrogates &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/list">list</a></span>(
-  <span class="kw"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span>(
-    <span class="dt">variable_names =</span> <span class="st">"ICD1"</span>,
-    <span class="dt">lower_cutoff =</span> <span class="dv">1</span>, <span class="dt">upper_cutoff =</span> <span class="dv">10</span>),
-  <span class="kw"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span>(
-    <span class="dt">variable_names =</span> <span class="st">"NLP1"</span>,
-    <span class="dt">lower_cutoff =</span> <span class="dv">1</span>, <span class="dt">upper_cutoff =</span> <span class="dv">10</span>))</code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">surrogates &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/list.html">list</a></span>(</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">  <span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">    <span class="dt">variable_names =</span> <span class="st">"ICD1"</span>,</a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">    <span class="dt">lower_cutoff =</span> <span class="dv">1</span>, <span class="dt">upper_cutoff =</span> <span class="dv">10</span>),</a>
+<a class="sourceLine" id="cb9-5" data-line-number="5">  <span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(</a>
+<a class="sourceLine" id="cb9-6" data-line-number="6">    <span class="dt">variable_names =</span> <span class="st">"NLP1"</span>,</a>
+<a class="sourceLine" id="cb9-7" data-line-number="7">    <span class="dt">lower_cutoff =</span> <span class="dv">1</span>, <span class="dt">upper_cutoff =</span> <span class="dv">10</span>))</a></code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system.time">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span>(feature_selected &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(data, surrogates))</a></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   8.420   0.000   8.421</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">feature_selected</code></pre></div>
+##   8.086   0.004   8.090</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">feature_selected</a></code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "ICD1" "ICD2" "NLP1" "NLP2" "NLP3"</code></pre>
 <p>Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">model &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(data, surrogates, feature_selected)
-model</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">model &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(data, surrogates, feature_selected)</a></code></pre></div>
+<pre><code>## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">model</a></code></pre></div>
 <pre><code>## Phenotyping model:
 ## $lasso_bic
 ## (Intercept)        ICD1        NLP1          HU        ICD2        NLP2 
-##  -4.9590028   1.7349301   1.3597876  -0.3887948   0.0000000   0.0000000 
+##  -5.3901962   1.9297295   1.2402141  -0.4471979   0.0000000   0.0000000 
 ##        NLP3 
-##   0.0000000 
+##   0.9516273 
 ## 
-## AUC on training data: 0.936 
-## Average AUC on random splits: 0.932</code></pre>
+## AUC on training data: 0.95 
+## Average AUC on random splits: 0.938</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">validation &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)
-validation</code></pre></div>
-<pre><code>## AUC on validation data: 0.943 
-## AUC on training data: 0.936 
-## Average AUC on random splits: 0.932</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/Round">round</a></span>(validation<span class="op">$</span>valid_roc[validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">&lt;=</span><span class="st"> </span><span class="fl">0.2</span>, ], <span class="dv">3</span>)</code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">validation &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(data, model)</a></code></pre></div>
+<pre><code>## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values
+
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to
+## unique 'x' values</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1">validation</a></code></pre></div>
+<pre><code>## AUC on validation data: 0.921 
+## AUC on training data: 0.95 
+## Average AUC on random splits: 0.938</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/Round.html">round</a></span>(validation<span class="op">$</span>valid_roc[validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">&lt;=</span><span class="st"> </span><span class="fl">0.2</span>, ], <span class="dv">3</span>)</a></code></pre></div>
 <pre><code>##       cutoff pos.rate   FPR   TPR   PPV   NPV    F1
-##  [1,]  0.999    0.003 0.000 0.178 1.000 0.658 0.302
-##  [2,]  0.954    0.150 0.010 0.433 0.964 0.734 0.598
-##  [3,]  0.907    0.206 0.020 0.552 0.945 0.776 0.697
-##  [4,]  0.861    0.256 0.031 0.655 0.931 0.816 0.769
-##  [5,]  0.771    0.300 0.041 0.716 0.917 0.842 0.805
-##  [6,]  0.750    0.312 0.051 0.745 0.902 0.855 0.816
-##  [7,]  0.707    0.338 0.061 0.780 0.890 0.871 0.831
-##  [8,]  0.700    0.350 0.071 0.796 0.876 0.878 0.834
-##  [9,]  0.666    0.362 0.082 0.806 0.862 0.882 0.833
-## [10,]  0.663    0.369 0.092 0.806 0.847 0.881 0.826
-## [11,]  0.657    0.375 0.102 0.806 0.833 0.880 0.820
-## [12,]  0.641    0.381 0.112 0.809 0.820 0.880 0.814
-## [13,]  0.624    0.394 0.122 0.819 0.809 0.884 0.814
-## [14,]  0.607    0.406 0.133 0.842 0.801 0.897 0.821
-## [15,]  0.582    0.425 0.143 0.871 0.794 0.913 0.831
-## [16,]  0.567    0.431 0.153 0.871 0.783 0.912 0.824
-## [17,]  0.533    0.438 0.163 0.871 0.771 0.911 0.818
-## [18,]  0.516    0.444 0.173 0.876 0.762 0.913 0.815
-## [19,]  0.503    0.462 0.184 0.903 0.757 0.930 0.824
-## [20,]  0.469    0.469 0.194 0.903 0.747 0.929 0.818</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(validation)</code></pre></div>
+##  [1,]  0.999    0.003 0.000 0.061 1.000 0.701 0.115
+##  [2,]  0.969    0.100 0.009 0.308 0.939 0.759 0.464
+##  [3,]  0.854    0.175 0.018 0.490 0.925 0.809 0.641
+##  [4,]  0.680    0.194 0.027 0.584 0.907 0.837 0.710
+##  [5,]  0.632    0.225 0.036 0.636 0.888 0.853 0.741
+##  [6,]  0.596    0.253 0.050 0.700 0.864 0.874 0.773
+##  [7,]  0.503    0.262 0.064 0.700 0.833 0.873 0.761
+##  [8,]  0.461    0.269 0.073 0.700 0.814 0.872 0.753
+##  [9,]  0.430    0.275 0.082 0.700 0.795 0.871 0.745
+## [10,]  0.408    0.281 0.091 0.700 0.778 0.870 0.737
+## [11,]  0.382    0.291 0.100 0.710 0.763 0.872 0.736
+## [12,]  0.341    0.300 0.109 0.720 0.750 0.875 0.735
+## [13,]  0.320    0.312 0.118 0.734 0.738 0.879 0.736
+## [14,]  0.297    0.331 0.127 0.772 0.734 0.894 0.752
+## [15,]  0.291    0.344 0.136 0.806 0.729 0.907 0.765
+## [16,]  0.290    0.359 0.150 0.820 0.713 0.912 0.763
+## [17,]  0.285    0.369 0.164 0.820 0.695 0.911 0.752
+## [18,]  0.255    0.375 0.173 0.824 0.684 0.912 0.748
+## [19,]  0.234    0.388 0.182 0.846 0.679 0.921 0.753
+## [20,]  0.215    0.400 0.191 0.868 0.674 0.931 0.759
+## [21,]  0.201    0.412 0.200 0.880 0.667 0.936 0.759</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(validation)</a></code></pre></div>
 <p><img src="example1_files/figure-html/unnamed-chunk-9-1.png" width="700"></p>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">phenotype &lt;-<span class="st"> </span><span class="kw"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(data, model)
-idx &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/which.min">which.min</a></span>(<span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/MathFun">abs</a></span>(validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">-</span><span class="st"> </span><span class="fl">0.05</span>))
-cut.fpr95 &lt;-<span class="st"> </span>validation<span class="op">$</span>valid_roc[idx, <span class="st">"cutoff"</span>]
-case_status &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/ifelse">ifelse</a></span>(phenotype<span class="op">$</span>prediction <span class="op">&gt;=</span><span class="st"> </span>cut.fpr95, <span class="dv">1</span>, <span class="dv">0</span>)
-predict.table &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/cbind">cbind</a></span>(phenotype, case_status)
-predict.table[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1">phenotype &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(data, model)</a>
+<a class="sourceLine" id="cb25-2" data-line-number="2">idx &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span>(<span class="kw"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span>(validation<span class="op">$</span>valid_roc[, <span class="st">"FPR"</span>] <span class="op">-</span><span class="st"> </span><span class="fl">0.05</span>))</a>
+<a class="sourceLine" id="cb25-3" data-line-number="3">cut.fpr95 &lt;-<span class="st"> </span>validation<span class="op">$</span>valid_roc[idx, <span class="st">"cutoff"</span>]</a>
+<a class="sourceLine" id="cb25-4" data-line-number="4">case_status &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span>(phenotype<span class="op">$</span>prediction <span class="op">&gt;=</span><span class="st"> </span>cut.fpr95, <span class="dv">1</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb25-5" data-line-number="5">predict.table &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span>(phenotype, case_status)</a>
+<a class="sourceLine" id="cb25-6" data-line-number="6">predict.table[<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, ]</a></code></pre></div>
 <pre><code>##    patient_id  prediction case_status
-## 1           1 0.024632962           0
-## 2           2 0.642443804           0
-## 3           3 0.985160234           1
-## 4           4 0.006970989           0
-## 5           5 0.001007518           0
-## 6           6 0.805623067           1
-## 7           7 0.797994817           1
-## 8           8 0.002978738           0
-## 9           9 0.883250676           1
-## 10         10 0.079871271           0</code></pre>
+## 1           1 0.034377662           0
+## 2           2 0.433139377           0
+## 3           3 0.990857331           1
+## 4           4 0.004233424           0
+## 5           5 0.003442046           0
+## 6           6 0.702835815           1
+## 7           7 0.843285354           1
+## 8           8 0.001620771           0
+## 9           9 0.913644435           1
+## 10         10 0.044409875           0</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+
       </div>
 
 </div>
 
 
+
       <footer><div class="copyright">
-  <p>Developed by Yichi Zhang, Chuan Hong.</p>
+  <p>Developed by Yichi Zhang, Chuan Hong,  PARSE Ltd..</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.1.</p>
 </div>
+
       </footer>
 </div>
 
   
+
 
   </body>
 </html>
