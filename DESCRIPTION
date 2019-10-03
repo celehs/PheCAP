@@ -7,7 +7,7 @@ Date: 2019-03-29
 Authors@R: c(
     person("Yichi", "Zhang", role = c("aut", "cre"), email = "yichizhang@uri.edu"),
     person("Chuan", "Hong", role = "aut"),
-    person(family = "PARSE Ltd.", role = c("aut", "cph"))
+    person(family = "PARSE LTD", role = "aut")
     )
 Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
