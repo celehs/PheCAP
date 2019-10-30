@@ -14,6 +14,8 @@ Install development version from GitHub:
 devtools::install_github("celehs/PheCAP")
 ```
 
+Install from [SOURCE CODE](https://github.com/celehs/PheCAP/releases/)
+
 ## Get Started
 
 Follow the [main steps](https://celehs.github.io/PheCAP/articles/main.html), and try the R codes from the [simulated data](https://celehs.github.io/PheCAP/articles/example1.html) and [real EHR data](https://celehs.github.io/PheCAP/articles/example2.html) examples. 
