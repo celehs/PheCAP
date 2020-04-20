@@ -14,7 +14,7 @@ Install development version from GitHub:
 devtools::install_github("celehs/PheCAP")
 ```
 
-Install from [SOURCE CODE](https://github.com/celehs/PheCAP/blob/master/PheCAP_1.0.tar.gz)
+Install from [SOURCE CODE](https://github.com/celehs/PheCAP/blob/master/archive/PheCAP_1.0.tar.gz)
 
 ## Get Started
 
