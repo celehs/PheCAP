@@ -1,17 +1,16 @@
 Package: PheCAP
 Type: Package
-Title: High-Throughput Phenotyping with Electronic Health Records
-       using a Common Automated Pipeline
+Title: High-Throughput Phenotyping with Electronic Health Records using a Common Automated Pipeline
 Version: 1.1.0
-Date: 2019-03-29
 Authors@R: c(
-    person("Yichi", "Zhang", role = c("aut", "cre"), email = "yichizhang@uri.edu"),
+    person("Yichi", "Zhang", role = "aut"),
     person("Chuan", "Hong", role = "aut"),
-    person(family = "PARSE LTD", role = "aut")
+    person("Tianxi", "Cai", role = "aut"),
+    person(family = "PARSE LTD", role =  c("aut", "cre"), email = "software@parse-health.org")
     )
 Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
-URL: https://github.com/celehs/PheCAP
+URL: https://celehs.github.io/PheCAP/, https://github.com/celehs/PheCAP
 BugReports: https://github.com/celehs/PheCAP/issues
 License: GPL-3
 Encoding: UTF-8
