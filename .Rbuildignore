@@ -1,6 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-docs/
-paper/
-pkgdown/
-archive/
+docs
+paper
+pkgdown
+archive
+include

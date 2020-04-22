@@ -1,0 +1,96 @@
+Overview of Coronary Artery Disease
+By James Wayne Warnica, MD
+
+NOTE: This is the Professional Version. CONSUMERS: Click here for the Consumer Version
+Coronary Artery Disease
+Overview of Coronary Artery Disease
+Angina Pectoris
+Acute Coronary Syndromes (ACS)
+Coronary artery disease (CAD) involves impairment of blood flow through the coronary arteries, most commonly by atheromas. Clinical presentations include silent ischemia, angina pectoris, acute coronary syndromes (unstable angina, MI), and sudden cardiac death. Diagnosis is by symptoms, ECG, stress testing, and sometimes coronary angiography. Prevention consists of modifying reversible risk factors (eg, hypercholesterolemia, hypertension, physical inactivity, obesity, and smoking). Treatment includes drugs and procedures to reduce ischemia and restore or improve coronary blood flow.
+
+In developed countries, CAD is the leading cause of death in both sexes, accounting for about one third of all deaths. Mortality rate among white men is about 1/10,000 at ages 25 to 34 and nearly 1/100 at ages 55 to 64. Mortality rate among white men aged 35 to 44 is 6.1 times that among age-matched white women. For unknown reasons, the sex difference is less marked in nonwhites. Mortality rate among women increases after menopause and, by age 75, equals or even exceeds that of men.
+
+Etiology
+Usually, CAD is due to subintimal deposition of atheromas in large and medium-sized coronary arteries (atherosclerosissee Atherosclerosis). Less often, CAD is due to coronary spasm. Rare causes include coronary artery embolism, dissection, aneurysm (eg, in Kawasaki disease), and vasculitis (eg, in SLE, syphilis).
+
+Pathophysiology
+Coronary atherosclerosis is often irregularly distributed in different vessels but typically occurs at points of turbulence (eg, vessel bifurcations). As the atheromatous plaque grows, the arterial lumen progressively narrows, resulting in ischemia (often causing angina pectoris). The degree of stenosis required to cause ischemia varies with O2 demand.
+
+Occasionally, an atheromatous plaque ruptures or splits. Reasons are unclear but probably relate to plaque morphology, plaque Ca content, and plaque softening due to an inflammatory process. Rupture exposes collagen and other thrombogenic material, which activates platelets and the coagulation cascade, resulting in an acute thrombus, which interrupts coronary blood flow and causes some degree of myocardial ischemia. The consequences of acute ischemia, collectively referred to as acute coronary syndromes (ACS), depend on the location and degree of obstruction and range from unstable angina to transmural infarction to sudden death.
+
+Coronary artery spasm is a transient, focal increase in vascular tone, markedly narrowing the lumen and reducing blood flow; symptomatic ischemia (variant anginasee Variant Angina) may result. Marked narrowing can trigger thrombus formation, causing infarction or life-threatening arrhythmia. Spasm can occur in arteries with or without atheroma. In arteries without atheroma, basal coronary artery tone is probably increased, and response to vasoconstricting stimuli is probably exaggerated. The exact mechanism is unclear but may involve abnormalities of nitric oxide production or an imbalance between endothelium-derived contracting and relaxing factors. In arteries with atheroma, the atheroma causes endothelial dysfunction, possibly resulting in local hypercontractility. Proposed mechanisms include loss of sensitivity to intrinsic vasodilators (eg, acetylcholine) and increased production of vasoconstrictors (eg, angiotensin II, endothelin, leukotrienes, serotonin, thromboxane) in the area of the atheroma. Recurrent spasm may damage the intima, leading to atheroma formation. Use of vasoconstricting drugs (eg, cocaine, nicotine ) and emotional stress also can trigger coronary spasm.
+
+Risk Factors
+Risk factors for CAD are the same as those for atherosclerosis: high blood levels of low-density lipoprotein (LDL) cholesterol and lipoprotein a, low blood levels of high-density lipoprotein (HDL) cholesterol, diabetes mellitus (particularly type 2), smoking, obesity, and physical inactivity. Smoking may be a stronger predictor of MI in women (especially those < 45). Genetic factors play a role, and several systemic disorders (eg, hypertension, hypothyroidism) and metabolic disorders (eg, hyperhomocysteinemia) contribute to risk. A high level of apoprotein B (apo B) is an important risk factor; it may identify increased risk when total cholesterol or LDL level is normal.
+
+High blood levels of C-reactive protein indicate plaque instability and inflammation and may be a stronger predictor of risk of ischemic events than high levels of LDL. High blood levels of triglycerides and insulin (reflecting insulin resistance) may be risk factors, but data are less clear. CAD risk is increased by smoking tobacco; a diet high in fat and calories and low in phytochemicals (found in fruits and vegetables), fiber, and vitamins C, D, and E; a diet relatively low in -3 (n-3) polyunsaturated fatty acids (PUFAsat least in some people); and poor stress management.
+
+Anatomy
+The right and left coronary arteries arise from the right and left coronary sinuses in the root of the aorta just above the aortic valve orifice (see see Figure: Arteries of the heart.). The coronary arteries divide into large and medium-sized arteries that run along the hearts surface (epicardial coronary arteries) and subsequently send smaller arterioles into the myocardium. The left coronary artery begins as the left main artery and quickly divides into the left anterior descending (LAD), circumflex, and sometimes an intermediate artery (ramus intermedius). The LAD artery usually follows the anterior interventricular groove and, in some people, continues over the apex. This artery supplies the anterior septum (including the proximal conduction system) and the anterior free wall of the left ventricle (LV). The circumflex artery, which is usually smaller than the LAD artery, supplies the lateral LV free wall. Most people have right dominance: The right coronary artery passes along the atrioventricular (AV) groove over the right side of the heart; it supplies the sinus node (in 55%), right ventricle, and usually the AV node and inferior myocardial wall. About 10 to 15% of people have left dominance: The circumflex artery is larger and continues along the posterior AV groove to supply the posterior wall and AV node.
+
+Arteries of the heart.
+
+Treatment
+Medical therapy including aspirin, lipid-lowering drugs (eg, statins), and -blockers
+
+Percutaneous coronary intervention
+
+For acute thrombosis, sometimes fibrinolytic drugs
+
+Coronary artery bypass grafting
+
+Treatment generally aims to reduce cardiac workload by decreasing O2 demand and improving coronary artery blood flow, and, over the long term, to halt and reverse the atherosclerotic process. Coronary artery blood flow can be improved by percutaneous coronary intervention (PCI) or coronary artery bypass grafting (CABG). An acute coronary thrombosis may sometimes be dissolved by fibrinolytic drugs (see Fibrinolytics).
+
+Medical therapy
+Medical management of patients with CAD depends on symptoms, cardiac function, and presence of other disorders. Recommended therapy includes aspirin to prevent clot formation, statins to lower LDL cholesterol levels (improving short-term and long-term outcomes probably by improving atheromatous plaque stability and endothelial function). -Blockers are effective in reducing symptoms of angina (by reducing heart rate and contractility, decreasing O2 demand) and reducing mortality post-infarction, especially in the presence of post-MI LV dysfunction. Ca channel blockers are also helpful, often combined with -blockers in managing angina and hypertension, but have not been proven to reduce mortality. Nitrates modestly dilate coronary arteries and decrease venous return, decreasing cardiac work and relieving angina quickly. Longer acting nitrate formulations help decrease angina events but do not decrease mortality. ACE inhibitors and angiotensin II receptor blockers are most effective in CAD patients with LV dysfunction.
+
+PCI
+At first, PCI was done with balloon angioplasty alone. However, roughly 30 to 40% of patients developed restenosis within 6 mo, and 1 in 3 ultimately required repeat angioplasty or CABG. Insertion of a bare-metal stent following angioplasty reduced the rate of restenosis, but many patients still required repeat treatment. Drug-eluting stents, which secrete an antiproliferative drug (eg, sirolimus, paclitaxel, everolimus) over a period of several weeks, have reduced the rate of restenosis to < 10%. Now, most PCI is done with stents, and about three fourths of all stents used in the US are drug-eluting stents. With the recent controversy over drug-eluting stents and abrupt stent thrombosis, use of the new drug-eluting stents appears to be decreasing in most centers. Most recent studies have shown that the risk of acute thrombosis is much less than originally believed. Patients with acute coronary syndromes (ie, with unstable angina or acute MI) seem to do better with bare-metal stents. Patients without significant infarct or complications may quickly return to work and usual activities, but strenuous activities should be avoided for 6 wk.
+
+ Angioplasty Stent
+Angioplasty Stent
+In-stent thrombosis occurs because of the inherent thrombogenicity of metallic stents. Most cases occur within the first 24 to 48 h. However, late stent thrombosis, occurring after 30 days and as late as  1 yr (rarely), can occur with both bare-metal and drug-eluting stents, especially after cessation of antiplatelet therapy. Progressive endothelialization of the bare-metal stent occurs within the first few months and reduces the risk of thrombosis. However, the antiproliferative drugs secreted by drug-eluting stents inhibit this process and prolong the risk of thrombosis. Thus, patients who undergo stent placement are treated with various antiplatelet drugs (see Antiplatelet drugs). The current standard regimen for patients with a bare-metal or drug-eluting stent consists of aspirin given indefinitely, plus clopidogrel, prasugrel, or ticagrelor for at least 12 mo, and intraprocedural anticoagulation with heparin or a similar agent (eg, bivalirudin, particularly for those at high risk of bleeding).The best results are obtained when the newer antiplatelet drugs are begun before the procedure.
+
+Glycoprotein IIb/IIIa inhibitors are no longer routinely used in stable patients (ie, no comorbidities, no acute coronary syndrome) having elective stent placement. Although controversial, they may be beneficial in some patients with an acute coronary syndrome but should not be considered routine. It is unclear whether it is beneficial to give glycoprotein IIb/IIIa inhibitors before arrival in the cardiac catheterization laboratory, but most national organizations do not recommend their use in this situation. After stent insertion, a statin is added if one is not already being used. Patients who receive a statin before the procedure have a lower risk of periprocedural MI.
+
+Overall risk of PCI is comparable with that for CABG. Mortality rate is < 1%; Q wave MI rate is < 2%. In < 1%, intimal dissection causes obstruction requiring emergency CABG. Risk of stroke with PCI is clearly less than with CABG (0.34% vs 1.2%).
+
+PCI by itself does not cure or prevent the progression of CAD, so statins should be a part of post-PCI therapy. Such therapy has been shown to improve long-term event-free survival.
+
+CABG
+CABG uses arteries (eg, internal mammary, radial) whenever possible, and if necessary, sections of autologous veins (eg, saphenous) to bypass diseased segments. At 1 yr, about 85% of venous bypass grafts are patent, and after 5 yr one third or more are completely blocked. However, after 10 yr, as many as 97% of internal mammary artery grafts are patent. Arteries also hypertrophy to accommodate increased flow.
+
+CABG is typically done during cardiopulmonary bypass with the heart stopped; a bypass machine pumps and oxygenates blood. Risks of the procedure include stroke and MI. For patients with a normal-sized heart, no history of MI, good ventricular function, and no additional risk factors, risk is < 5% for perioperative MI, 1 to 2% for stroke, and  1% for mortality; risk increases with age, poor LV function, and presence of underlying disease. Operative mortality rate is 3 to 5 times higher for a second bypass than for the first; thus, timing of the first bypass should be optimal.
+
+After cardiopulmonary bypass, about 25 to 30% of patients develop cognitive dysfunction or behavioral changes, possibly caused by microemboli originating in the bypass machine. Cognitive or behavioral changes are more prevalent in elderly patients, prompting suspicion that these changes are most likely due to diminished "neuronal reserve," making elderly patients more susceptible to minor injuries incurred during cardiopulmonary bypass. Dysfunction ranges from mild to severe and may persist for weeks to years. To minimize this risk, some centers use a beating heart technique (ie, no cardiopulmonary bypass), in which a device mechanically stabilizes the part of the heart upon which the surgeon is working.
+
+CAD may progress despite bypass surgery . Postoperatively, the rate of proximal obstruction of bypassed vessels increases. Vein grafts become obstructed early if thrombi form and later (several years) if atherosclerosis causes slow degeneration of the intima and media. Aspirin prolongs vein graft patency. Continued smoking has a profound adverse effect on patency. After CABG, a statin should be started or continued at doses required to reach recommended target levels of LDL.
+
+Prevention
+Prevention of CAD involves modifying atherosclerosis risk factors (see Atherosclerosis : Treatment): smoking cessation, weight loss, a healthful diet, regular exercise, modification of serum lipid levels, reduction of salt intake, and control of hypertension and diabetes. Antihypertensives should be used to achieve a goal blood pressure of < 130/80 mm Hg. Modification of serum lipid levels (particularly with statins) may slow or even partially reverse the progression of CAD. LDL targets are < 100 mg/dL (< 2.59 mmol/L) for patients with known CAD or 70 to 80 mg/dL (1.81 to 2.07 mmol/L) for those with a history of an ischemic event. Nicotinic acid or a fibrate may be added for patients with an HDL < 40 mg/dL (< 1.03 mmol/L), although several recent trials have not clearly shown a lower risk of ischemia or slowed progression of atherosclerosis when drugs are used to raise HDL.
+
+Last full review/revision May 2013 by James Wayne Warnica, MD
+
+Resources In This Article
+Figure 1	Arteries of the heart.
+Figure 2	Angioplasty Stent
+Drugs Mentioned In This Article
+Drug Name	Select Brand Names
+aspirin
+No US brand name
+sirolimus
+RAPAMUNE
+paclitaxel
+TAXOL
+everolimus
+AFINITOR
+prasugrel
+EFFIENT
+clopidogrel
+PLAVIX
+ticagrelor
+BRILINTA
+heparin
+PANHEPRIN
+bivalirudin
+ANGIOMAX
