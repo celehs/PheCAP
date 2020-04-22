@@ -73,7 +73,7 @@ feature_selected
 Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits.
 
 ```{r}
-model <- phecap_train_phenotyping_model(data, surrogates, feature_selected)
+suppressWarnings(model <- phecap_train_phenotyping_model(data, surrogates, feature_selected))
 model
 ```
 
