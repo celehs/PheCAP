@@ -100,12 +100,12 @@ model
 validation <- phecap_validate_phenotyping_model(data, model)
 validation
 
-\dontrun{phecap_plot_roc_curves(validation)}
+\donttest{phecap_plot_roc_curves(validation)}
 
 # Apply the model to all the patients to obtain predicted phenotype.
 phenotype <- phecap_predict_phenotype(data, model)
 
-\dontrun{
+\donttest{
 # A more complicated example
 
 # Load Data.

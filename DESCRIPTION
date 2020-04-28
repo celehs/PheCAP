@@ -1,6 +1,6 @@
 Package: PheCAP
 Type: Package
-Title: High-Throughput Phenotyping with Electronic Health Records using a Common Automated Pipeline
+Title: High-Throughput Phenotyping with EHR using a Common Automated Pipeline
 Version: 1.1.0
 Authors@R: c(
     person("Yichi", "Zhang", role = "aut"),
@@ -10,6 +10,10 @@ Authors@R: c(
     )
 Description: Implement surrogate-assisted feature extraction (SAFE) and
              common machine learning approaches to train and validate phenotyping models.
+             Background and details about the methods can be found at 
+             Zhang et al. (2019) <doi:10.1038/s41596-019-0227-6>,
+             Yu et al. (2017) <doi:10.1093/jamia/ocw135>, and 
+             Liao et al. (2015) <doi:10.1136/bmj.h1885>.
 URL: https://celehs.github.io/PheCAP/, https://github.com/celehs/PheCAP
 BugReports: https://github.com/celehs/PheCAP/issues
 License: GPL-3
