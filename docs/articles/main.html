@@ -107,31 +107,31 @@
 <div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">PheCAP</span>)</pre></body></html></div>
 <p>Load data into R. The last argument of <code>PhecapData</code>, 0.4, refers to the percentage of labels reserved as test set.</p>
 <div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="no">ehr_data</span>)
-<span class="no">data</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapData.html">PhecapData</a></span>(<span class="no">ehr_data</span>, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>)
+<span class="no">data</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/PhecapData.html">PhecapData</a></span>(<span class="no">ehr_data</span>, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>)
 <span class="no">data</span></pre></body></html></div>
 <p>Specify the surrogate used for surrogate-assisted feature extraction (SAFE). The typical way is to specify a main ICD code, a main NLP CUI, as well as their combination. In some cases one may want to define surrogate through lab test. The default lower_cutoff is 1, and the default upper_cutoff is 10. Feel free to change the cutoffs based on domain knowledge.</p>
 <div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">surrogates</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(
-  <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(
+  <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span>(
     <span class="kw">variable_names</span> <span class="kw">=</span> <span class="st">"main_ICD"</span>,
     <span class="kw">lower_cutoff</span> <span class="kw">=</span> <span class="fl">1</span>, <span class="kw">upper_cutoff</span> <span class="kw">=</span> <span class="fl">10</span>),
-  <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(
+  <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span>(
     <span class="kw">variable_names</span> <span class="kw">=</span> <span class="st">"main_NLP"</span>,
     <span class="kw">lower_cutoff</span> <span class="kw">=</span> <span class="fl">1</span>, <span class="kw">upper_cutoff</span> <span class="kw">=</span> <span class="fl">10</span>),
-  <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(
+  <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span>(
     <span class="kw">variable_names</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"main_ICD"</span>, <span class="st">"main_NLP"</span>),
     <span class="kw">lower_cutoff</span> <span class="kw">=</span> <span class="fl">1</span>, <span class="kw">upper_cutoff</span> <span class="kw">=</span> <span class="fl">10</span>))</pre></body></html></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">feature_selected</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>)
+<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">feature_selected</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>)
 <span class="no">feature_selected</span></pre></body></html></div>
 <p>Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits.</p>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">model</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>, <span class="no">feature_selected</span>)
+<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">model</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>, <span class="no">feature_selected</span>)
 <span class="no">model</span></pre></body></html></div>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC.</p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">validation</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">model</span>)
+<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">validation</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">model</span>)
 <span class="no">validation</span>
-<span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(<span class="no">validation</span>)</pre></body></html></div>
+<span class="fu"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(<span class="no">validation</span>)</pre></body></html></div>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
-<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="no">phenotype</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(<span class="no">data</span>, <span class="no">model</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="no">phenotype</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(<span class="no">data</span>, <span class="no">model</span>)</pre></body></html></div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
