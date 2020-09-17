@@ -1,7 +1,7 @@
 Package: PheCAP
 Type: Package
 Title: High-Throughput Phenotyping with EHR using a Common Automated Pipeline
-Version: 1.2.0-1
+Version: 1.2.1
 Authors@R: c(
     person("Yichi", "Zhang", role = "aut"),
     person("Chuan", "Hong", role = "aut"),
@@ -31,7 +31,8 @@ Suggests:
     e1071, 
     randomForestSRC, 
     xgboost, 
-    knitr
+    knitr,
+    rmarkdown 
 VignetteBuilder: knitr    
 Depends: R (>= 3.3.0)
 RoxygenNote: 7.1.1
