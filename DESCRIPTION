@@ -1,7 +1,7 @@
 Package: PheCAP
 Type: Package
 Title: High-Throughput Phenotyping with EHR using a Common Automated Pipeline
-Version: 1.2.0
+Version: 1.2.0-1
 Authors@R: c(
     person("Yichi", "Zhang", role = "aut"),
     person("Chuan", "Hong", role = "aut"),
