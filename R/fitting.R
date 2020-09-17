@@ -61,7 +61,7 @@ fit_lasso_cv <- function(
 
 
 fit_lasso_bic <- function(
-  x, y, subject_weight, penalty_weight = NULL, ...)
+  x, y, subject_weight = NULL, penalty_weight = NULL, ...)
 {
   if (!is.matrix(x)) {
     x <- as.matrix(x)

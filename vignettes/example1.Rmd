@@ -2,7 +2,7 @@
 title: "Example 1: Simulated Data"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{PheCAP-example1}
+  %\VignetteIndexEntry{Example 1: Simulated Data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

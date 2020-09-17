@@ -1,7 +1,7 @@
 Package: PheCAP
 Type: Package
 Title: High-Throughput Phenotyping with EHR using a Common Automated Pipeline
-Version: 1.1.0
+Version: 1.2.0
 Authors@R: c(
     person("Yichi", "Zhang", role = "aut"),
     person("Chuan", "Hong", role = "aut"),
@@ -19,9 +19,20 @@ BugReports: https://github.com/celehs/PheCAP/issues
 License: GPL-3
 Encoding: UTF-8
 ByteCompile: yes
-Imports: graphics, methods, stats, utils, glmnet, RMySQL
-Suggests: ggplot2, e1071, randomForestSRC, xgboost, knitr
+Imports: 
+    graphics, 
+    methods, 
+    stats, 
+    utils, 
+    glmnet, 
+    RMySQL
+Suggests: 
+    ggplot2, 
+    e1071, 
+    randomForestSRC, 
+    xgboost, 
+    knitr
 VignetteBuilder: knitr    
 Depends: R (>= 3.3.0)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 LazyData: true
