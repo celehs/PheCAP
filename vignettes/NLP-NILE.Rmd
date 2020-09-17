@@ -7,7 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-To generate NLP features, parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the [NILE](https://celehs.hms.harvard.edu/packages/nile/). 
+To generate NLP features, parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the [NILE](https://celehs.hms.harvard.edu/software_nile.html). 
 
 As an example, obtain the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the [i2b2 NLP Research Data Sets](https://www.i2b2.org/NLP/DataSets/Main.php). 
 
