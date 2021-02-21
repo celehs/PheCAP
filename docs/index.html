@@ -98,21 +98,33 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-
-<p><strong>High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</strong></p>
+<div id="phecap-high-throughput-phenotyping-with-ehr-using-a-common-automated-pipeline" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#phecap-high-throughput-phenotyping-with-ehr-using-a-common-automated-pipeline" class="anchor"></a>PheCAP: High-Throughput Phenotyping with EHR using a Common Automated Pipeline</h1></div>
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p>Implement surrogate-assisted feature extraction (SAFE) and common machine learning approaches to train and validate phenotyping models. Background and details about the methods can be found at Zhang et al. (2019), Yu et al. (2016) and Liao et al. (2015).</p>
+<p>The PheCAP package implements surrogate-assisted feature extraction (SAFE) and common machine learning approaches to train and validate phenotyping models. PheCAP begins with data from the EMR, including structured data and information extracted from the narrative notes using natural language processing (NLP). The standardized steps integrate automated procedures, which reduce the level of manual input, and machine learning approaches for algorithm training.</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>Install development version from GitHub:</p>
+<p>The PheCAP package can be installed from CRAN or GitHub.</p>
+<div id="stable-version" class="section level3">
+<h3 class="hasAnchor">
+<a href="#stable-version" class="anchor"></a>Stable Version</h3>
+<p>Install stable version from CRAN:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"celehs/PheCAP"</span><span class="op">)</span></code></pre></div>
-<p>Install from <a href="https://github.com/celehs/PheCAP/blob/master/archive/PheCAP_1.0.tar.gz">SOURCE CODE</a></p>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"PheCAP"</span><span class="op">)</span></code></pre></div>
+</div>
+<div id="development-version" class="section level3">
+<h3 class="hasAnchor">
+<a href="#development-version" class="anchor"></a>Development Version</h3>
+<p>Install development version from GitHub:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"celehs/PheCAP"</span><span class="op">)</span></code></pre></div>
+</div>
 </div>
 <div id="get-started" class="section level2">
 <h2 class="hasAnchor">
@@ -124,11 +136,11 @@
 <a href="#references" class="anchor"></a>References</h2>
 <ul>
 <li><p>Yichi Zhang<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, Tianrun Cai<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, Sheng Yu<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, Kelly Cho, Chuan Hong, Jiehuan Sun, Jie Huang, Yuk-Lam Ho, Ashwin Ananthakrishnan, Zongqi Xia, Stanley Shaw, Vivian Gainer, Victor Castro, Nicholas Link, Jacqueline Honerlaw, Selena Huang, David Gagnon, Elizabeth Karlson, Robert Plenge, Peter Szolovits, Guergana Savova, Susanne Churchill, Christopher O’Donnell, Shawn Murphy, J Michael Gaziano, Isaac Kohane, Tianxi Cai<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, and Katherine Liao<code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>. <a href="https://doi.org/10.1038/s41596-019-0227-6">Methods for High-throughput Phenotyping with Electronic Medical Record Data Using a Common Semi-supervised Approach (PheCAP)</a>. <em>Nature Protocols</em> (2019). <code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>contributed equally.</p></li>
-<li><p>Yu, S., Chakrabortty, A., Liao, K. P., Cai, T., Ananthakrishnan, A. N., Gainer, V. S., … Cai, T. <a href="https://doi.org/10.1093/jamia/ocw135">Surrogate-assisted feature extraction for high-throughput phenotyping</a>. <em>Journal of the American Medical Informatics Association</em> (2017), e143-e149.<br></p></li>
+<li><p>Yu, S., Chakrabortty, A., Liao, K. P., Cai, T., Ananthakrishnan, A. N., Gainer, V. S., … Cai, T. <a href="https://doi.org/10.1093/jamia/ocw135">Surrogate-assisted feature extraction for high-throughput phenotyping</a>. <em>Journal of the American Medical Informatics Association</em> (2017), e143-e149.</p></li>
 <li><p>Liao, K. P., Cai, T., Savova, G. K., Murphy, S. N., Karlson, E. W., Ananthakrishnan, A. N., … Kohane, I. <a href="https://doi.org/10.1136/bmj.h1885">Development of phenotype algorithms using electronic medical records and incorporating natural language processing</a>. <em>BMJ</em> (2015), 350(apr24 11), h1885–h1885.</p></li>
 </ul>
 </div>
-
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
