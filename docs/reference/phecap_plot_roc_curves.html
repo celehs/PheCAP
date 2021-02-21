@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -79,14 +79,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.0-1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">Home</a>
+  <a href="../index.html">
+    <span class="fas fa-home"></span>
+     
+  </a>
 </li>
 <li>
   <a href="../articles/main.html">Main Steps</a>
@@ -110,7 +113,7 @@
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -118,10 +121,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/celehs/PheCAP/">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
+  <a href="https://celehs.github.io">CELEHS Software</a>
 </li>
       </ul>
       
@@ -145,10 +145,10 @@
     <p>Plot ROC-like curves to illustrate phenotyping accuracy.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>phecap_plot_roc_curves</span>(
-  <span class='no'>x</span>, <span class='kw'>axis_x</span> <span class='kw'>=</span> <span class='st'>"1 - spec"</span>, <span class='kw'>axis_y</span> <span class='kw'>=</span> <span class='st'>"sen"</span>,
-  <span class='kw'>what</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"training"</span>, <span class='st'>"random-splits"</span>, <span class='st'>"validation"</span>),
-  <span class='kw'>ggplot</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>phecap_plot_roc_curves</span><span class='op'>(</span>
+  <span class='va'>x</span>, axis_x <span class='op'>=</span> <span class='st'>"1 - spec"</span>, axis_y <span class='op'>=</span> <span class='st'>"sen"</span>,
+  what <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"training"</span>, <span class='st'>"random-splits"</span>, <span class='st'>"validation"</span><span class='op'>)</span>,
+  ggplot <span class='op'>=</span> <span class='cn'>TRUE</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -200,7 +200,7 @@ Otherwise, the base R graphics functions will be used.</p></td>
 
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <div class='dont-index'><p>See <code>PheCAP-package</code> for code examples.</p></div>
+    <div class='dont-index'><p>See <code><a href='PheCAP-package.html'>PheCAP-package</a></code> for code examples.</p></div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -217,7 +217,7 @@ Otherwise, the base R graphics functions will be used.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -37,14 +37,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.0-1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">Home</a>
+  <a href="../index.html">
+    <span class="fas fa-home"></span>
+     
+  </a>
 </li>
 <li>
   <a href="../articles/main.html">Main Steps</a>
@@ -68,7 +71,7 @@
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -76,10 +79,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/celehs/PheCAP/">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
+  <a href="https://celehs.github.io">CELEHS Software</a>
 </li>
       </ul>
 </div>
@@ -91,7 +91,7 @@
 
       
 
-      </header><div class="row">
+      </header><script src="NLP-NILE_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Running NLP using NILE</h1>
@@ -104,7 +104,7 @@
 
     
     
-<p>To generate NLP features, parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the <a href="https://celehs.hms.harvard.edu/packages/nile/">NILE</a>.</p>
+<p>To generate NLP features, parse the EMR narrative notes to identify and count positive mentions of all CUIs in the dictionary using the <a href="https://celehs.hms.harvard.edu/software_nile.html">NILE</a>.</p>
 <p>As an example, obtain the “Training: RiskFactors Complete Set 1 MAE” data under “2014 De-identification and Heart Disease Risk Factors Challenge” from the <a href="https://www.i2b2.org/NLP/DataSets/Main.php">i2b2 NLP Research Data Sets</a>.</p>
 <p>Use <a href="https://github.com/celehs/PheCAP/raw/master/include/xml_Utils.java" download>xml_Utils.java</a> to extract notes from downloaded xml files.</p>
 <p>Then use the dictionary <a href="https://github.com/celehs/PheCAP/raw/master/include/CAD_dict.txt" download>CAD_dict.txt</a> generated from MetaMap and parse these notes using NILE.</p>
@@ -124,7 +124,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -82,14 +82,17 @@ and write a dictionary file for use in note parsing." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.0-1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">Home</a>
+  <a href="../index.html">
+    <span class="fas fa-home"></span>
+     
+  </a>
 </li>
 <li>
   <a href="../articles/main.html">Main Steps</a>
@@ -113,7 +116,7 @@ and write a dictionary file for use in note parsing." />
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -121,10 +124,7 @@ and write a dictionary file for use in note parsing." />
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/celehs/PheCAP/">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
+  <a href="https://celehs.github.io">CELEHS Software</a>
 </li>
       </ul>
       
@@ -151,10 +151,10 @@ extract CUIs and associated terms,
 and write a dictionary file for use in note parsing.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>phecap_generate_dictionary_file</span>(
-  <span class='no'>cui_list</span>, <span class='no'>dict_file</span>,
-  <span class='kw'>user</span> <span class='kw'>=</span> <span class='st'>"username"</span>, <span class='kw'>password</span> <span class='kw'>=</span> <span class='st'>"password"</span>,
-  <span class='kw'>host</span> <span class='kw'>=</span> <span class='st'>"localhost"</span>, <span class='kw'>dbname</span> <span class='kw'>=</span> <span class='st'>"umls"</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>phecap_generate_dictionary_file</span><span class='op'>(</span>
+  <span class='va'>cui_list</span>, <span class='va'>dict_file</span>,
+  user <span class='op'>=</span> <span class='st'>"username"</span>, password <span class='op'>=</span> <span class='st'>"password"</span>,
+  host <span class='op'>=</span> <span class='st'>"localhost"</span>, dbname <span class='op'>=</span> <span class='st'>"umls"</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -209,7 +209,7 @@ Return the dictionary invisibly.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

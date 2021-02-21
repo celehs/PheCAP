@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/spacelab/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -37,14 +37,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.0-1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.1</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">Home</a>
+  <a href="../index.html">
+    <span class="fas fa-home"></span>
+     
+  </a>
 </li>
 <li>
   <a href="../articles/main.html">Main Steps</a>
@@ -68,7 +71,7 @@
   <a href="../articles/NER-MetaMAP.html">NER using MetaMAP</a>
 </li>
 <li>
-  <a href="../articles/NLP-NILE.html">Running NLP using NILE</a>
+  <a href="../articles/NLP-NILE.html">NLP using NILE</a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
@@ -76,10 +79,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/celehs/PheCAP/">
-    <span class="fab fa fab fa-github fa-lg"></span>
-     
-  </a>
+  <a href="https://celehs.github.io">CELEHS Software</a>
 </li>
       </ul>
 </div>
@@ -91,7 +91,7 @@
 
       
 
-      </header><div class="row">
+      </header><script src="example1_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Example 1: Simulated Data</h1>
@@ -104,32 +104,35 @@
 
     
     
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">PheCAP</span>)</pre></body></html></div>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span>(<span class="fl">123</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://celehs.github.io/PheCAP/">PheCAP</a></span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></code></pre></div>
 <p>Generate simulated data.</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">latent</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.3</span>)
-<span class="no">latent2</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.3</span>)
-<span class="no">ehr_data</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span>(
-  <span class="kw">patient_id</span> <span class="kw">=</span> <span class="fl">1</span>:<span class="fl">8000</span>,
-  <span class="kw">ICD1</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">7</span> * (<span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.2</span>) + <span class="no">latent</span>) / <span class="fl">0.5</span>),
-  <span class="kw">ICD2</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">6</span> * (<span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.8</span>) + <span class="no">latent</span>) / <span class="fl">1.1</span>),
-  <span class="kw">ICD3</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">1</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.5</span> + <span class="no">latent2</span>) / <span class="fl">0.5</span>),
-  <span class="kw">ICD4</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">2</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.5</span>) / <span class="fl">0.5</span>),
-  <span class="kw">NLP1</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">8</span> * (<span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.2</span>) + <span class="no">latent</span>) / <span class="fl">0.6</span>),
-  <span class="kw">NLP2</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">2</span> * (<span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">1.1</span>) + <span class="no">latent</span>) / <span class="fl">1.5</span>),
-  <span class="kw">NLP3</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">5</span> * (<span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.1</span>) + <span class="no">latent</span>) / <span class="fl">0.5</span>),
-  <span class="kw">NLP4</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">11</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">1.9</span> + <span class="no">latent</span>) / <span class="fl">1.9</span>),
-  <span class="kw">NLP5</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">3</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.5</span> + <span class="no">latent2</span>) / <span class="fl">0.5</span>),
-  <span class="kw">NLP6</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">2</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.5</span>) / <span class="fl">0.5</span>),
-  <span class="kw">NLP7</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">1</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.5</span>) / <span class="fl">0.5</span>),
-  <span class="kw">HU</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span>(<span class="fl">8000</span>, <span class="fl">30</span> * <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span>(<span class="fl">8000</span>, <span class="fl">0.1</span>) / <span class="fl">0.1</span>),
-  <span class="kw">label</span> <span class="kw">=</span> <span class="fl">NA</span>)
-<span class="no">ii</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample.int</a></span>(<span class="fl">8000</span>, <span class="fl">400</span>)
-<span class="no">ehr_data</span>[<span class="no">ii</span>, <span class="st">"label"</span>] <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span>(
-  <span class="no">ehr_data</span>[<span class="no">ii</span>, ], <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">rbinom</a></span>(<span class="fl">400</span>, <span class="fl">1</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Logistic.html">plogis</a></span>(
-    -<span class="fl">5</span> + <span class="fl">1.5</span> * <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(<span class="no">ICD1</span>) + <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(<span class="no">NLP1</span>) +
-      <span class="fl">0.8</span> * <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(<span class="no">NLP3</span>) - <span class="fl">0.5</span> * <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span>(<span class="no">HU</span>))))
-<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">ehr_data</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">latent</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.3</span><span class="op">)</span>
+<span class="va">latent2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.3</span><span class="op">)</span>
+<span class="va">ehr_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>
+  patient_id <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">8000</span>,
+  ICD1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">7</span> <span class="op">*</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  ICD2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">6</span> <span class="op">*</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.8</span><span class="op">)</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">1.1</span><span class="op">)</span>,
+  ICD3 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">1</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.5</span> <span class="op">+</span> <span class="va">latent2</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  ICD4 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">2</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.5</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  NLP1 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">8</span> <span class="op">*</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.2</span><span class="op">)</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.6</span><span class="op">)</span>,
+  NLP2 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">2</span> <span class="op">*</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">1.1</span><span class="op">)</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">1.5</span><span class="op">)</span>,
+  NLP3 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">5</span> <span class="op">*</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.1</span><span class="op">)</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  NLP4 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">11</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">1.9</span> <span class="op">+</span> <span class="va">latent</span><span class="op">)</span> <span class="op">/</span> <span class="fl">1.9</span><span class="op">)</span>,
+  NLP5 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">3</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.5</span> <span class="op">+</span> <span class="va">latent2</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  NLP6 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">2</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.5</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  NLP7 <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">1</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.5</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.5</span><span class="op">)</span>,
+  HU <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">rpois</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">30</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/stats/GammaDist.html">rgamma</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">0.1</span><span class="op">)</span> <span class="op">/</span> <span class="fl">0.1</span><span class="op">)</span>,
+  label <span class="op">=</span> <span class="cn">NA</span><span class="op">)</span>
+<span class="va">ii</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample.int</a></span><span class="op">(</span><span class="fl">8000</span>, <span class="fl">400</span><span class="op">)</span>
+<span class="va">ehr_data</span><span class="op">[</span><span class="va">ii</span>, <span class="st">"label"</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/with.html">with</a></span><span class="op">(</span>
+  <span class="va">ehr_data</span><span class="op">[</span><span class="va">ii</span>, <span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">rbinom</a></span><span class="op">(</span><span class="fl">400</span>, <span class="fl">1</span>, <span class="fu"><a href="https://rdrr.io/r/stats/Logistic.html">plogis</a></span><span class="op">(</span>
+    <span class="op">-</span><span class="fl">5</span> <span class="op">+</span> <span class="fl">1.5</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">ICD1</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">NLP1</span><span class="op">)</span> <span class="op">+</span>
+      <span class="fl">0.8</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">NLP3</span><span class="op">)</span> <span class="op">-</span> <span class="fl">0.5</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html">log1p</a></span><span class="op">(</span><span class="va">HU</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">ehr_data</span><span class="op">)</span></code></pre></div>
 <pre><code>##   patient_id ICD1 ICD2 ICD3 ICD4 NLP1 NLP2 NLP3 NLP4 NLP5 NLP6 NLP7  HU label
 ## 1          1    2   11    3    0    0    2    2    2    1    7    0   4    NA
 ## 2          2    5   11    3    1    5    0    1   11    5    0    0   0    NA
@@ -137,7 +140,8 @@
 ## 4          4    0    5    0    0    0    0    0   15    3    3    7   0    NA
 ## 5          5    0    5    1    0    0    3    7    6   31    0    3 146    NA
 ## 6          6    4   11    4    0   13    2    3    4    2    3    0   0    NA</code></pre>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span>(<span class="no">ehr_data</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="va">ehr_data</span><span class="op">)</span></code></pre></div>
 <pre><code>##      patient_id ICD1 ICD2 ICD3 ICD4 NLP1 NLP2 NLP3 NLP4 NLP5 NLP6 NLP7 HU label
 ## 7995       7995    9   23    0    7   11    4    1   17    4    0    0  1    NA
 ## 7996       7996   21    7    9    0    6    1    1    6    4    1    2 11    NA
@@ -146,31 +150,36 @@
 ## 7999       7999    0    0    0    0    4    0    0    5    0    0    5  0    NA
 ## 8000       8000    0    4    0    0    0   14    1    3    0    4    2  9    NA</code></pre>
 <p>Define features and labels used for phenotyping.</p>
-<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="no">data</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapData.html">PhecapData</a></span>(<span class="no">ehr_data</span>, <span class="st">"HU"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, <span class="kw">patient_id</span> <span class="kw">=</span> <span class="st">"patient_id"</span>)
-<span class="no">data</span></pre></body></html></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/PhecapData.html">PhecapData</a></span><span class="op">(</span><span class="va">ehr_data</span>, <span class="st">"HU"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, patient_id <span class="op">=</span> <span class="st">"patient_id"</span><span class="op">)</span>
+<span class="va">data</span></code></pre></div>
 <pre><code>## PheCAP Data
 ## Feature: 8000 observations of 12 variables
 ## Label: 132 yes, 268 no, 7600 missing
 ## Size of training samples: 240
 ## Size of validation samples: 160</code></pre>
 <p>Specify the surrogate used for surrogate-assisted feature extraction (SAFE). The typical way is to specify a main ICD code, a main NLP CUI, as well as their combination. The default lower_cutoff is 1, and the default upper_cutoff is 10. In some cases one may want to define surrogate through lab test. Feel free to change the cutoffs based on domain knowledge.</p>
-<div class="sourceCode" id="cb9"><html><body><pre class="r"><span class="no">surrogates</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span>(
-  <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(
-    <span class="kw">variable_names</span> <span class="kw">=</span> <span class="st">"ICD1"</span>,
-    <span class="kw">lower_cutoff</span> <span class="kw">=</span> <span class="fl">1</span>, <span class="kw">upper_cutoff</span> <span class="kw">=</span> <span class="fl">10</span>),
-  <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/PhecapSurrogate.html">PhecapSurrogate</a></span>(
-    <span class="kw">variable_names</span> <span class="kw">=</span> <span class="st">"NLP1"</span>,
-    <span class="kw">lower_cutoff</span> <span class="kw">=</span> <span class="fl">1</span>, <span class="kw">upper_cutoff</span> <span class="kw">=</span> <span class="fl">10</span>))</pre></body></html></div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">surrogates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+  <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span><span class="op">(</span>
+    variable_names <span class="op">=</span> <span class="st">"ICD1"</span>,
+    lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span>,
+  <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span><span class="op">(</span>
+    variable_names <span class="op">=</span> <span class="st">"NLP1"</span>,
+    lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
-<div class="sourceCode" id="cb10"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span>(<span class="no">feature_selected</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>))</pre></body></html></div>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="va">feature_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <pre><code>##    user  system elapsed 
-##   9.336   0.016   9.382</code></pre>
-<div class="sourceCode" id="cb12"><html><body><pre class="r"><span class="no">feature_selected</span></pre></body></html></div>
+##    9.78    0.00    9.78</code></pre>
+<div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">feature_selected</span></code></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "ICD1" "ICD2" "NLP1" "NLP2" "NLP3"</code></pre>
 <p>Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits.</p>
-<div class="sourceCode" id="cb14"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/warning.html">suppressWarnings</a></span>(<span class="no">model</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">surrogates</span>, <span class="no">feature_selected</span>))
-<span class="no">model</span></pre></body></html></div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/warning.html">suppressWarnings</a></span><span class="op">(</span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span>, <span class="va">feature_selected</span><span class="op">)</span><span class="op">)</span>
+<span class="va">model</span></code></pre></div>
 <pre><code>## Phenotyping model:
 ## $lasso_bic
 ## (Intercept)        ICD1        NLP1          HU        ICD2        NLP2 
@@ -181,17 +190,20 @@
 ## AUC on training data: 0.95 
 ## Average AUC on random splits: 0.938</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC.</p>
-<div class="sourceCode" id="cb16"><html><body><pre class="r"><span class="no">validation</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span>(<span class="no">data</span>, <span class="no">model</span>)</pre></body></html></div>
-<pre><code>## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to unique
-## 'x' values
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">validation</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span></code></pre></div>
+<pre><code>## Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm):
+## collapsing to unique 'x' values
 
-## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to unique
-## 'x' values</code></pre>
-<div class="sourceCode" id="cb18"><html><body><pre class="r"><span class="no">validation</span></pre></body></html></div>
+## Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm):
+## collapsing to unique 'x' values</code></pre>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">validation</span></code></pre></div>
 <pre><code>## AUC on validation data: 0.921 
 ## AUC on training data: 0.95 
 ## Average AUC on random splits: 0.938</code></pre>
-<div class="sourceCode" id="cb20"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span>(<span class="no">validation</span>$<span class="no">valid_roc</span>[<span class="no">validation</span>$<span class="no">valid_roc</span>[, <span class="st">"FPR"</span>] <span class="kw">&lt;=</span> <span class="fl">0.2</span>, ], <span class="fl">3</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span>, <span class="st">"FPR"</span><span class="op">]</span> <span class="op">&lt;=</span> <span class="fl">0.2</span>, <span class="op">]</span>, <span class="fl">3</span><span class="op">)</span></code></pre></div>
 <pre><code>##       cutoff pos.rate   FPR   TPR   PPV   NPV    F1
 ##  [1,]  0.999    0.003 0.000 0.061 1.000 0.701 0.115
 ##  [2,]  0.969    0.100 0.009 0.308 0.939 0.759 0.464
@@ -214,19 +226,19 @@
 ## [19,]  0.234    0.388 0.182 0.846 0.679 0.921 0.753
 ## [20,]  0.215    0.400 0.191 0.868 0.674 0.931 0.759
 ## [21,]  0.201    0.412 0.200 0.880 0.667 0.936 0.759</code></pre>
-<div class="sourceCode" id="cb22"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span>(<span class="no">validation</span>)</pre></body></html></div>
-<pre><code>## Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
-## when loading 'dplyr'</code></pre>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span><span class="op">(</span><span class="va">validation</span><span class="op">)</span></code></pre></div>
 <pre><code>## Warning: Use of `df$value_x` is discouraged. Use `value_x` instead.</code></pre>
 <pre><code>## Warning: Use of `df$value_y` is discouraged. Use `value_y` instead.</code></pre>
 <p><img src="example1_files/figure-html/unnamed-chunk-9-1.png" width="700"></p>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
-<div class="sourceCode" id="cb26"><html><body><pre class="r"><span class="no">phenotype</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/PheCAP/man/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span>(<span class="no">data</span>, <span class="no">model</span>)
-<span class="no">idx</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span>(<span class="no">validation</span>$<span class="no">valid_roc</span>[, <span class="st">"FPR"</span>] - <span class="fl">0.05</span>))
-<span class="no">cut.fpr95</span> <span class="kw">&lt;-</span> <span class="no">validation</span>$<span class="no">valid_roc</span>[<span class="no">idx</span>, <span class="st">"cutoff"</span>]
-<span class="no">case_status</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span>(<span class="no">phenotype</span>$<span class="no">prediction</span> <span class="kw">&gt;=</span> <span class="no">cut.fpr95</span>, <span class="fl">1</span>, <span class="fl">0</span>)
-<span class="no">predict.table</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span>(<span class="no">phenotype</span>, <span class="no">case_status</span>)
-<span class="no">predict.table</span>[<span class="fl">1</span>:<span class="fl">10</span>, ]</pre></body></html></div>
+<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">phenotype</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span>
+<span class="va">idx</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span>, <span class="st">"FPR"</span><span class="op">]</span> <span class="op">-</span> <span class="fl">0.05</span><span class="op">)</span><span class="op">)</span>
+<span class="va">cut.fpr95</span> <span class="op">&lt;-</span> <span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span><span class="va">idx</span>, <span class="st">"cutoff"</span><span class="op">]</span>
+<span class="va">case_status</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">phenotype</span><span class="op">$</span><span class="va">prediction</span> <span class="op">&gt;=</span> <span class="va">cut.fpr95</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>
+<span class="va">predict.table</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">phenotype</span>, <span class="va">case_status</span><span class="op">)</span>
+<span class="va">predict.table</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span></code></pre></div>
 <pre><code>##    patient_id  prediction case_status
 ## 1           1 0.034377662           0
 ## 2           2 0.433139377           0
@@ -253,7 +265,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

@@ -1,12 +1,12 @@
 template:
   params:
-    bootswatch: spacelab
+    bootswatch: cosmo
 
 navbar:
   title: "PheCAP"
   type: inverse
   left:
-    - text: "Home"
+    - icon: "fa-home"
       href: index.html
     - text: "Main Steps"
       href: articles/main.html  
@@ -18,7 +18,10 @@ navbar:
         href: articles/example2.html       
     - text: "NER using MetaMAP"
       href: articles/NER-MetaMAP.html  
-    - text: "Running NLP using NILE"
+    - text: "NLP using NILE"
       href: articles/NLP-NILE.html         
     - text: "Reference"
       href: reference/index.html
+  right:
+    - text: "CELEHS Software"
+      href: https://celehs.github.io
