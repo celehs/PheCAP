@@ -1,11 +1,11 @@
-pandoc: 2.11.2
+pandoc: 2.3.1
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
+  NER-MetaMAP: NER-MetaMAP.html
+  NLP-NILE: NLP-NILE.html
   example1: example1.html
   example2: example2.html
   main: main.html
-  NER-MetaMAP: NER-MetaMAP.html
-  NLP-NILE: NLP-NILE.html
-last_built: 2021-02-21T17:01Z
+last_built: 2021-02-23T05:55Z
 

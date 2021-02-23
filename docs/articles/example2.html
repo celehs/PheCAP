@@ -37,7 +37,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">PheCAP</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.2.2</span>
       </span>
     </div>
 
@@ -91,7 +91,7 @@
 
       
 
-      </header><script src="example2_files/header-attrs-2.7/header-attrs.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Example 2: Real EHR Data</h1>
@@ -104,21 +104,21 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://celehs.github.io/PheCAP/">PheCAP</a></span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://celehs.github.io/PheCAP/">PheCAP</a></span><span class="op">)</span></pre></div>
 <p>Load Data.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">ehr_data</span><span class="op">)</span>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span><span class="op">(</span><span class="va">ehr_data</span><span class="op">)</span>
 <span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/PhecapData.html">PhecapData</a></span><span class="op">(</span><span class="va">ehr_data</span>, <span class="st">"healthcare_utilization"</span>, <span class="st">"label"</span>, <span class="fl">0.4</span>, patient_id <span class="op">=</span> <span class="st">"patient_id"</span><span class="op">)</span>
-<span class="va">data</span></code></pre></div>
+<span class="va">data</span></pre></div>
 <pre><code>## PheCAP Data
 ## Feature: 10000 observations of 587 variables
 ## Label: 119 yes, 62 no, 9819 missing
 ## Size of training samples: 109
 ## Size of validation samples: 72</code></pre>
 <p>Specify the surrogate used for surrogate-assisted feature extraction (SAFE). The typical way is to specify a main ICD code, a main NLP CUI, as well as their combination. In some cases one may want to define surrogate through lab test. The default lower_cutoff is 1, and the default upper_cutoff is 10. Feel free to change the cutoffs based on domain knowledge.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">surrogates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="va">surrogates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
   <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span><span class="op">(</span>
     variable_names <span class="op">=</span> <span class="st">"main_ICD"</span>,
     lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span>,
@@ -127,21 +127,21 @@
     lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span>,
   <span class="fu"><a href="../reference/PhecapSurrogate.html">PhecapSurrogate</a></span><span class="op">(</span>
     variable_names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"main_ICD"</span>, <span class="st">"main_NLP"</span><span class="op">)</span>,
-    lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+    lower_cutoff <span class="op">=</span> <span class="fl">1</span>, upper_cutoff <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></pre></div>
 <p>Run surrogate-assisted feature extraction (SAFE) and show result.</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="va">feature_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span><span class="op">(</span><span class="va">feature_selected</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_run_feature_extraction.html">phecap_run_feature_extraction</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span><span class="op">)</span><span class="op">)</span></pre></div>
 <pre><code>##    user  system elapsed 
-##  191.51    1.67  193.35</code></pre>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">feature_selected</span></code></pre></div>
+## 243.326   0.233 244.236</code></pre>
+<div class="sourceCode" id="cb7"><pre class="downlit">
+<span class="va">feature_selected</span></pre></div>
 <pre><code>## Feature(s) selected by surrogate-assisted feature extraction (SAFE)
 ## [1] "main_ICD" "main_NLP" "NLP56"    "NLP93"    "NLP160"   "NLP161"   "NLP306"  
 ## [8] "NLP403"   "NLP536"</code></pre>
 <p>Train phenotyping model and show the fitted model, with the AUC on the training set as well as random splits</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/warning.html">suppressWarnings</a></span><span class="op">(</span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span>, <span class="va">feature_selected</span><span class="op">)</span><span class="op">)</span>
-<span class="va">model</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/warning.html">suppressWarnings</a></span><span class="op">(</span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_train_phenotyping_model.html">phecap_train_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">surrogates</span>, <span class="va">feature_selected</span><span class="op">)</span><span class="op">)</span>
+<span class="va">model</span></pre></div>
 <pre><code>## Phenotyping model:
 ## $lasso_bic
 ##            (Intercept)               main_ICD               main_NLP 
@@ -156,20 +156,20 @@
 ## AUC on training data: 0.988 
 ## Average AUC on random splits: 0.971</code></pre>
 <p>Validate phenotyping model using validation label, and show the AUC and ROC</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">validation</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span></code></pre></div>
-<pre><code>## Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm):
-## collapsing to unique 'x' values
+<div class="sourceCode" id="cb11"><pre class="downlit">
+<span class="va">validation</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_validate_phenotyping_model.html">phecap_validate_phenotyping_model</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span></pre></div>
+<pre><code>## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to unique
+## 'x' values
 
-## Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm):
-## collapsing to unique 'x' values</code></pre>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">validation</span></code></pre></div>
+## Warning in regularize.values(x, y, ties, missing(ties)): collapsing to unique
+## 'x' values</code></pre>
+<div class="sourceCode" id="cb13"><pre class="downlit">
+<span class="va">validation</span></pre></div>
 <pre><code>## AUC on validation data: 0.867 
 ## AUC on training data: 0.988 
 ## Average AUC on random splits: 0.971</code></pre>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span>, <span class="st">"FPR"</span><span class="op">]</span> <span class="op">&lt;=</span> <span class="fl">0.2</span>, <span class="op">]</span>, <span class="fl">3</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span>, <span class="st">"FPR"</span><span class="op">]</span> <span class="op">&lt;=</span> <span class="fl">0.2</span>, <span class="op">]</span>, <span class="fl">3</span><span class="op">)</span></pre></div>
 <pre><code>##       cutoff pos.rate   FPR   TPR   PPV   NPV    F1
 ##  [1,]  1.000    0.007 0.000 0.245 1.000 0.353 0.394
 ##  [2,]  0.988    0.319 0.000 0.356 1.000 0.390 0.526
@@ -193,19 +193,19 @@
 ## [20,]  0.674    0.625 0.190 0.804 0.911 0.630 0.854
 ## [21,]  0.652    0.625 0.190 0.804 0.911 0.630 0.854
 ## [22,]  0.631    0.625 0.190 0.804 0.911 0.630 0.854</code></pre>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span><span class="op">(</span><span class="va">validation</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="downlit">
+<span class="fu"><a href="../reference/phecap_plot_roc_curves.html">phecap_plot_roc_curves</a></span><span class="op">(</span><span class="va">validation</span><span class="op">)</span></pre></div>
 <pre><code>## Warning: Use of `df$value_x` is discouraged. Use `value_x` instead.</code></pre>
 <pre><code>## Warning: Use of `df$value_y` is discouraged. Use `value_y` instead.</code></pre>
 <p><img src="example2_files/figure-html/unnamed-chunk-8-1.png" width="700"></p>
 <p>Apply the model to all the patients to obtain predicted phenotype.</p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">phenotype</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span>
+<div class="sourceCode" id="cb20"><pre class="downlit">
+<span class="va">phenotype</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/phecap_predict_phenotype.html">phecap_predict_phenotype</a></span><span class="op">(</span><span class="va">data</span>, <span class="va">model</span><span class="op">)</span>
 <span class="va">idx</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.min.html">which.min</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">abs</a></span><span class="op">(</span><span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span>, <span class="st">"FPR"</span><span class="op">]</span> <span class="op">-</span> <span class="fl">0.05</span><span class="op">)</span><span class="op">)</span>
 <span class="va">cut.fpr95</span> <span class="op">&lt;-</span> <span class="va">validation</span><span class="op">$</span><span class="va">valid_roc</span><span class="op">[</span><span class="va">idx</span>, <span class="st">"cutoff"</span><span class="op">]</span>
 <span class="va">case_status</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span><span class="op">(</span><span class="va">phenotype</span><span class="op">$</span><span class="va">prediction</span> <span class="op">&gt;=</span> <span class="va">cut.fpr95</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>
 <span class="va">predict.table</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html">cbind</a></span><span class="op">(</span><span class="va">phenotype</span>, <span class="va">case_status</span><span class="op">)</span>
-<span class="va">predict.table</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span></code></pre></div>
+<span class="va">predict.table</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span></pre></div>
 <pre><code>##    patient_id   prediction case_status
 ## 1           1 1.467910e-01           0
 ## 2           2 9.999938e-01           1
