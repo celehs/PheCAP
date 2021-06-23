@@ -24,8 +24,7 @@ Imports:
     methods, 
     stats, 
     utils, 
-    glmnet, 
-    RMySQL
+    glmnet
 Suggests: 
     ggplot2, 
     e1071, 
